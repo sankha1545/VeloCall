@@ -8,15 +8,20 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "platforms": ["ios", "android", "web"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.myapp.velocall",
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.myapp.velocall",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
@@ -33,10 +38,30 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-secure-store",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "firebase": {
+        "apiKey": "YOUR_FIREBASE_API_KEY",
+        "authDomain": "YOUR_FIREBASE_PROJECT.firebaseapp.com",
+        "projectId": "YOUR_FIREBASE_PROJECT_ID",
+        "storageBucket": "YOUR_FIREBASE_PROJECT.appspot.com",
+        "messagingSenderId": "YOUR_MSG_SENDER_ID",
+        "appId": "YOUR_FIREBASE_APP_ID"
+      },
+      "oauth": {
+        "expoGoogleClientId": "YOUR_GOOGLE_EXPO_CLIENT_ID",
+        "iosGoogleClientId": "YOUR_GOOGLE_IOS_CLIENT_ID",
+        "androidGoogleClientId": "YOUR_GOOGLE_ANDROID_CLIENT_ID",
+        "webGoogleClientId": "YOUR_GOOGLE_WEB_CLIENT_ID",
+        "githubClientId": "YOUR_GITHUB_CLIENT_ID"
+      },
+      "appScheme": "myapp"
     }
   }
 }
