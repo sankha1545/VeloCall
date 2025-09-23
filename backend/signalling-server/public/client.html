@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WebRTC Meeting</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 12px; background:#111; color:#eee; }
+    video { width: 30%; border-radius:8px; margin: 6px; background:black; }
+    #videos { display:flex; flex-wrap:wrap; }
+    .controls { margin-bottom:12px; }
+    button { padding:8px 12px; margin-right:8px }
+  </style>
+</head>
+<body>
+  <h2>WebRTC Meeting (web client)</h2>
+  <div class="controls">
+    <span id="roomLabel"></span>
+    <button id="btnLeave">Leave</button>
+  </div>
+
+  <div id="videos">
+    <video id="localVideo" autoplay playsinline muted></video>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>

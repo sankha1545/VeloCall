@@ -1,0 +1,103 @@
+com.myapp.velocall.app-apng-3.0.5-0 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\024835a5550ecc1e5d830014f4ef3b5a\transformed\apng-3.0.5\res
+com.myapp.velocall.app-activity-1.10.0-1 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\031eae23da538e01cd6efd5006ba65a8\transformed\activity-1.10.0\res
+com.myapp.velocall.app-play-services-base-18.5.0-2 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\04b3c844b3393ff9a6c840f537ca40ca\transformed\play-services-base-18.5.0\res
+com.myapp.velocall.app-lifecycle-runtime-2.6.2-3 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\07879416d582847e19ddd4470bb4af81\transformed\lifecycle-runtime-2.6.2\res
+com.myapp.velocall.app-camera-lifecycle-1.5.0-rc01-4 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\07983ac809d7883bfa894f74ec3dd965\transformed\camera-lifecycle-1.5.0-rc01\res
+com.myapp.velocall.app-profileinstaller-1.4.0-5 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\res
+com.myapp.velocall.app-swiperefreshlayout-1.1.0-6 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\1667e2edb6996f57f31bcd2879a8080b\transformed\swiperefreshlayout-1.1.0\res
+com.myapp.velocall.app-camera-video-1.5.0-rc01-7 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\1c8a4ec12c8ad12316f0592f489602e3\transformed\camera-video-1.5.0-rc01\res
+com.myapp.velocall.app-viewpager2-1.0.0-8 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\1fb2477d51a67accdb7390602247c355\transformed\viewpager2-1.0.0\res
+com.myapp.velocall.app-startup-runtime-1.1.1-9 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\21a22cf37793525a1498ecaa9681755a\transformed\startup-runtime-1.1.1\res
+com.myapp.velocall.app-exoplayer-core-2.18.1-10 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\235264ac121a4ab32cb8e29ace40e260\transformed\exoplayer-core-2.18.1\res
+com.myapp.velocall.app-activity-ktx-1.10.0-11 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\2d850b2b8d23fa8ec21e091c6c43cf25\transformed\activity-ktx-1.10.0\res
+com.myapp.velocall.app-emoji2-1.3.0-12 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\res
+com.myapp.velocall.app-glide-plugin-3.0.5-13 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\351a16d70326768b2c5854a6980432ee\transformed\glide-plugin-3.0.5\res
+com.myapp.velocall.app-annotation-experimental-1.4.1-14 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\364ed88774b3d8549f8d57fc8c9bb368\transformed\annotation-experimental-1.4.1\res
+com.myapp.velocall.app-camera-camera2-1.5.0-rc01-15 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\res
+com.myapp.velocall.app-biometric-1.1.0-16 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\41304ba5ea27aacda6c80171d436e40a\transformed\biometric-1.1.0\res
+com.myapp.velocall.app-BlurView-version-2.0.6-17 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\4262deed128117f30b2ef6f31cc61b94\transformed\BlurView-version-2.0.6\res
+com.myapp.velocall.app-transition-1.5.0-18 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\4bc89a02aafa865159e134c45ccc2754\transformed\transition-1.5.0\res
+com.myapp.velocall.app-gif-3.0.5-19 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\4d5f55258971ab647b4e3954d8e2aa95\transformed\gif-3.0.5\res
+com.myapp.velocall.app-tracing-1.2.0-20 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\4d8ae305243ed87254227ae759a45910\transformed\tracing-1.2.0\res
+com.myapp.velocall.app-tracing-ktx-1.2.0-21 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\58635ce3b2dda0dea92c0170faed0f25\transformed\tracing-ktx-1.2.0\res
+com.myapp.velocall.app-constraintlayout-2.0.1-22 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\59a0e48df9cc4ebc0ed158061e58e3dc\transformed\constraintlayout-2.0.1\res
+com.myapp.velocall.app-featurecombinationquery-1.5.0-rc01-23 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5a9c3e949dc2b28ff985d1b75e44eb02\transformed\featurecombinationquery-1.5.0-rc01\res
+com.myapp.velocall.app-material-1.12.0-24 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5ae5dcacd584dd15cca165a8a53f860c\transformed\material-1.12.0\res
+com.myapp.velocall.app-camera-extensions-1.5.0-rc01-25 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\res
+com.myapp.velocall.app-camera-core-1.5.0-rc01-26 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\6d4f4b210839754d28db5b3cd9c52137\transformed\camera-core-1.5.0-rc01\res
+com.myapp.velocall.app-expo.modules.splashscreen-0.30.10-27 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\705b05b136136061c5849139228156a1\transformed\expo.modules.splashscreen-0.30.10\res
+com.myapp.velocall.app-lifecycle-service-2.6.2-28 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\7baee5cdc47f0d95d4ac7a407f49d5fc\transformed\lifecycle-service-2.6.2\res
+com.myapp.velocall.app-avif-3.0.5-29 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\7cda1612154e78cb3c2174bbe9612ced\transformed\avif-3.0.5\res
+com.myapp.velocall.app-androidsvg-aar-1.4-30 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\85c0e7eaa4ae652b6742a38072727635\transformed\androidsvg-aar-1.4\res
+com.myapp.velocall.app-fragment-1.6.1-31 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8c2e480ddf423dea3ed80ad64fb01f51\transformed\fragment-1.6.1\res
+com.myapp.velocall.app-expo.modules.filesystem-18.1.11-32 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\res
+com.myapp.velocall.app-lifecycle-process-2.6.2-33 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9199512315edfb2a12b21ef60be4e11d\transformed\lifecycle-process-2.6.2\res
+com.myapp.velocall.app-drawee-3.6.0-34 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\94b38949cdc56a23fbc1809c2b4c8ad0\transformed\drawee-3.6.0\res
+com.myapp.velocall.app-drawerlayout-1.1.1-35 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\97f6fe92773f55de5e6c280d4ae6b7ed\transformed\drawerlayout-1.1.1\res
+com.myapp.velocall.app-savedstate-ktx-1.2.1-36 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9beeb7702c1ef1c88b1d1bbca5247681\transformed\savedstate-ktx-1.2.1\res
+com.myapp.velocall.app-media-1.4.3-37 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9d077ee3f522f4358a979cb3f449ab99\transformed\media-1.4.3\res
+com.myapp.velocall.app-expo.modules.imagepicker-17.0.7-38 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\res
+com.myapp.velocall.app-lifecycle-viewmodel-2.6.2-39 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a3f1f537c108d2cf96d6cfcdf9919046\transformed\lifecycle-viewmodel-2.6.2\res
+com.myapp.velocall.app-core-splashscreen-1.2.0-alpha02-40 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a40c45dd9e4f4e0100705c631e77c8c5\transformed\core-splashscreen-1.2.0-alpha02\res
+com.myapp.velocall.app-react-android-0.79.5-debug-41 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a89efe01639eb7dad7f1852c2dc2010d\transformed\react-android-0.79.5-debug\res
+com.myapp.velocall.app-lifecycle-livedata-core-ktx-2.6.2-42 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\aba69b19b44f1e687811abd21c979f48\transformed\lifecycle-livedata-core-ktx-2.6.2\res
+com.myapp.velocall.app-cardview-1.0.0-43 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\ac8c52e4449120b2006e501efe423c06\transformed\cardview-1.0.0\res
+com.myapp.velocall.app-core-1.13.1-44 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\res
+com.myapp.velocall.app-appcompat-resources-1.7.1-45 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\b4c4899d31b7651802339162e5f3a25d\transformed\appcompat-resources-1.7.1\res
+com.myapp.velocall.app-exifinterface-1.4.1-46 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\b6fa4c66b3826bf44f333a7a6bdcc032\transformed\exifinterface-1.4.1\res
+com.myapp.velocall.app-browser-1.6.0-47 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\bd17582311f056f52c6db3a5d3472b42\transformed\browser-1.6.0\res
+com.myapp.velocall.app-core-ktx-1.13.1-48 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c1e2167a66d618d6ccaff9afd9bde988\transformed\core-ktx-1.13.1\res
+com.myapp.velocall.app-lifecycle-viewmodel-ktx-2.6.2-49 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c1fc33c5412188c4c621b1ff1ef57acc\transformed\lifecycle-viewmodel-ktx-2.6.2\res
+com.myapp.velocall.app-expo.modules.systemui-5.0.11-50 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c402350528eed5ea4bbaca2670c43014\transformed\expo.modules.systemui-5.0.11\res
+com.myapp.velocall.app-emoji2-views-helper-1.3.0-51 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c5e68296472ab88663c72bf266e2a341\transformed\emoji2-views-helper-1.3.0\res
+com.myapp.velocall.app-expo.modules.clipboard-8.0.7-52 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\res
+com.myapp.velocall.app-exoplayer-ui-2.18.1-53 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\ca2a33ee5d417e840e02b8719f2d96e5\transformed\exoplayer-ui-2.18.1\res
+com.myapp.velocall.app-expo.modules.av-16.0.7-54 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\ca6c3a304608855548e7e0998f458afd\transformed\expo.modules.av-16.0.7\res
+com.myapp.velocall.app-autofill-1.1.0-55 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\cb722b861d919ff7ed147762f344b87d\transformed\autofill-1.1.0\res
+com.myapp.velocall.app-awebp-3.0.5-56 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\d05e259969aeaa5ee920ea574b872597\transformed\awebp-3.0.5\res
+com.myapp.velocall.app-fragment-ktx-1.6.1-57 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\d56d1d6bf4e58b58c2382fd38e295d6f\transformed\fragment-ktx-1.6.1\res
+com.myapp.velocall.app-camera-mlkit-vision-1.5.0-rc01-58 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\d7459b95db4bae845e1adde30fd60e09\transformed\camera-mlkit-vision-1.5.0-rc01\res
+com.myapp.velocall.app-recyclerview-1.2.1-59 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\d7a37519f556ee05b265d10b9add0989\transformed\recyclerview-1.2.1\res
+com.myapp.velocall.app-android-image-cropper-4.6.0-60 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\res
+com.myapp.velocall.app-glide-4.16.0-61 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da8f230f9ddb4f356244bf8c0c095e8a\transformed\glide-4.16.0\res
+com.myapp.velocall.app-camera-view-1.5.0-rc01-62 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\db44a1170e756d06f2b1d65b2b94d627\transformed\camera-view-1.5.0-rc01\res
+com.myapp.velocall.app-lifecycle-livedata-core-2.6.2-63 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\dc6d891b867b18dc8931e029a384516e\transformed\lifecycle-livedata-core-2.6.2\res
+com.myapp.velocall.app-frameanimation-3.0.5-64 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\de1de07d4f978c271c6f75ed599525b0\transformed\frameanimation-3.0.5\res
+com.myapp.velocall.app-play-services-basement-18.4.0-65 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e054245bee9bbc8098dc00b5c8db8d90\transformed\play-services-basement-18.4.0\res
+com.myapp.velocall.app-coordinatorlayout-1.2.0-66 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e244c8cec913b808626e8030fc0aa61c\transformed\coordinatorlayout-1.2.0\res
+com.myapp.velocall.app-lifecycle-livedata-2.6.2-67 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e2d154a1a4d787afbd3b045212e52757\transformed\lifecycle-livedata-2.6.2\res
+com.myapp.velocall.app-lifecycle-runtime-ktx-2.6.2-68 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e9cd1d94524a98143cacf8a753d527da\transformed\lifecycle-runtime-ktx-2.6.2\res
+com.myapp.velocall.app-core-runtime-2.2.0-69 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\efc81dcea1af953d356bdc4ecb85f58c\transformed\core-runtime-2.2.0\res
+com.myapp.velocall.app-appcompat-1.7.1-70 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f5b3a4a80434b798b3cd931484423e18\transformed\appcompat-1.7.1\res
+com.myapp.velocall.app-savedstate-1.2.1-71 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f985e0a59f7b06ecd22ee355d5c5fa12\transformed\savedstate-1.2.1\res
+com.myapp.velocall.app-lifecycle-viewmodel-savedstate-2.6.2-72 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\fb695f2e5efac5395e2a16e93ba4786f\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.myapp.velocall.app-expo.modules.securestore-14.2.4-73 C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\fc50e4449bb9b0514df5402ee56e0026\transformed\expo.modules.securestore-14.2.4\res
+com.myapp.velocall.app-pngs-74 E:\Apploication\frontend\android\app\build\generated\res\pngs\debug
+com.myapp.velocall.app-res-75 E:\Apploication\frontend\android\app\build\generated\res\processDebugGoogleServices
+com.myapp.velocall.app-resValues-76 E:\Apploication\frontend\android\app\build\generated\res\resValues\debug
+com.myapp.velocall.app-packageDebugResources-77 E:\Apploication\frontend\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.myapp.velocall.app-packageDebugResources-78 E:\Apploication\frontend\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.myapp.velocall.app-debug-79 E:\Apploication\frontend\android\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.myapp.velocall.app-debug-80 E:\Apploication\frontend\android\app\src\debug\res
+com.myapp.velocall.app-main-81 E:\Apploication\frontend\android\app\src\main\res
+com.myapp.velocall.app-debug-82 E:\Apploication\frontend\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-83 E:\Apploication\frontend\node_modules\@react-native-clipboard\clipboard\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-84 E:\Apploication\frontend\node_modules\@react-native-community\datetimepicker\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-85 E:\Apploication\frontend\node_modules\expo-constants\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-86 E:\Apploication\frontend\node_modules\expo-dev-client\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-87 E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-88 E:\Apploication\frontend\node_modules\expo-dev-menu-interface\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-89 E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-90 E:\Apploication\frontend\node_modules\expo-json-utils\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-91 E:\Apploication\frontend\node_modules\expo-manifests\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-92 E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-93 E:\Apploication\frontend\node_modules\expo-updates-interface\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-94 E:\Apploication\frontend\node_modules\expo\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-95 E:\Apploication\frontend\node_modules\react-native-edge-to-edge\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-96 E:\Apploication\frontend\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-97 E:\Apploication\frontend\node_modules\react-native-permissions\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-98 E:\Apploication\frontend\node_modules\react-native-reanimated\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-99 E:\Apploication\frontend\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-100 E:\Apploication\frontend\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-101 E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\packaged_res\debug\packageDebugResources
+com.myapp.velocall.app-debug-102 E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\packaged_res\debug\packageDebugResources

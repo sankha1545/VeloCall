@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "66842164687",
+    "project_id": "velocall-32a42",
+    "storage_bucket": "velocall-32a42.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66842164687:android:38ceb5a7e7b840fde4a6ba",
+        "android_client_info": {
+          "package_name": "com.myapp.velocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66842164687-m3rt9vmv0mv8gmnromq9t0lpdrsd0632.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdIF-2ksby9OajKLAwTP7Bz6Jbx_FuOV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66842164687-m3rt9vmv0mv8gmnromq9t0lpdrsd0632.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "66842164687-504fplthvt10dj692ep8gbmfpqrtbsmk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.myapp.velocall"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

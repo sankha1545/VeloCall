@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">66842164687-m3rt9vmv0mv8gmnromq9t0lpdrsd0632.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">66842164687</string>
+    <string name="google_api_key" translatable="false">AIzaSyCdIF-2ksby9OajKLAwTP7Bz6Jbx_FuOV4</string>
+    <string name="google_app_id" translatable="false">1:66842164687:android:38ceb5a7e7b840fde4a6ba</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCdIF-2ksby9OajKLAwTP7Bz6Jbx_FuOV4</string>
+    <string name="google_storage_bucket" translatable="false">velocall-32a42.firebasestorage.app</string>
+    <string name="project_id" translatable="false">velocall-32a42</string>
+</resources>

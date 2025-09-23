@@ -1,0 +1,26 @@
+{
+  "name": "signalling-server",
+  "version": "1.0.0",
+  "description": "Minimal signalling server (Express + ws) for WebRTC clients",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "echo \"No linter configured\" && exit 0",
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "uuid": "^13.0.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

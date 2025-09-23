@@ -1,241 +1,198 @@
-// public/client.js
-(async function () {
+// server/public/client.js
+(function () {
+  // parse query params: ?room=room-abc&video=true
   const params = new URLSearchParams(location.search);
-  const room = params.get('room');
-  const identity = params.get('identity') || `guest-${Math.random().toString(36).slice(2,6)}`;
-  const wantOwner = params.get('owner') === '1';
+  const room = params.get("room") || "default-room";
+  const startWithVideo = params.get("video") !== "false"; // default true
 
-  const titleEl = document.getElementById('title');
-  const metaEl = document.getElementById('meta');
-  const videos = document.getElementById('videos');
-  const logEl = document.getElementById('log');
+  document.getElementById("roomLabel").textContent = `Room: ${room}`;
 
-  function log(...args) {
-    console.log(...args);
-    logEl.innerText = args.map(a => (typeof a === 'object' ? JSON.stringify(a) : String(a))).join(' ');
-  }
+  const localVideo = document.getElementById("localVideo");
+  const videosDiv = document.getElementById("videos");
 
-  if (!room) {
-    titleEl.innerText = 'Missing room';
-    metaEl.innerText = 'Please provide ?room=... in the URL';
-    return;
-  }
+  // ws URL (same host)
+  const wsUrl = ((location.protocol === "https:") ? "wss://" : "ws://") + location.host + "/ws";
+  const ws = new WebSocket(wsUrl);
+  let myId = null;
 
-  titleEl.innerText = `Room: ${room}`;
-  metaEl.innerText = `Identity: ${identity} ${wantOwner ? '(owner)' : ''}`;
+  // peers: remoteId -> RTCPeerConnection
+  const peers = new Map();
+  // remote video elements
+  const remoteVideos = new Map();
 
-  // fetch ICE servers from server
-  async function fetchIceServers() {
-    try {
-      const resp = await fetch('/api/ice-servers');
-      return await resp.json();
-    } catch (err) {
-      console.warn('ICE fetch failed', err);
-      return { iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] };
-    }
-  }
+  // Optional STUN servers - uncomment if you want better NAT traversal:
+  // const ICE_CONFIG = { iceServers: [{ urls: "stun:stun.l.google.com:19302" }] };
+  const ICE_CONFIG = { iceServers: [] };
 
-  const { iceServers } = await fetchIceServers();
+  const localStreamPromise = navigator.mediaDevices.getUserMedia({
+    audio: true,
+    video: startWithVideo
+  });
 
-  const socket = io();
-  const pcs = {}; // peerConnection map: socketId -> RTCPeerConnection
-  let localStream;
-
-  async function getLocalMedia() {
-    try {
-      localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-      // show local
-      const localContainer = document.createElement('div');
-      localContainer.className = 'participant';
-      const label = document.createElement('div');
-      label.innerText = `${identity} (you)`;
-      localContainer.appendChild(label);
-
-      const v = document.createElement('video');
-      v.autoplay = true; v.muted = true; v.playsInline = true;
-      v.srcObject = localStream;
-      localContainer.appendChild(v);
-      videos.appendChild(localContainer);
-    } catch (err) {
-      console.error('getUserMedia failed', err);
-      alert('Could not access camera/microphone: ' + err.message);
-      throw err;
-    }
-  }
-
-  function createVideoElementFor(id, labelText) {
-    const container = document.createElement('div');
-    container.className = 'participant';
-    container.setAttribute('data-sid', id);
-
-    const label = document.createElement('div');
-    label.innerText = labelText;
-    container.appendChild(label);
-
-    const v = document.createElement('video');
+  function createRemoteVideoEl(id) {
+    const v = document.createElement("video");
     v.autoplay = true;
     v.playsInline = true;
-    container.appendChild(v);
-
-    const controls = document.createElement('div');
-    controls.className = 'controls';
-    container.appendChild(controls);
-
-    videos.appendChild(container);
-    return container;
+    v.id = `remote-${id}`;
+    v.style.width = "30%";
+    v.style.borderRadius = "8px";
+    v.style.margin = "6px";
+    videosDiv.appendChild(v);
+    remoteVideos.set(id, v);
+    return v;
   }
 
-  function attachTrack(container, track) {
-    try {
-      if (track.kind === 'video') {
-        const el = track.attach();
-        el.style.width = '320px';
-        container.appendChild(el);
-      } else if (track.kind === 'audio') {
-        const el = track.attach();
-        el.style.display = 'none';
-        container.appendChild(el);
-      }
-    } catch (err) {
-      console.warn('attach failed', err);
+  ws.addEventListener("open", () => {
+    console.log("ws open, joining room", room);
+    ws.send(JSON.stringify({ type: "join", room }));
+  });
+
+  ws.addEventListener("message", async (ev) => {
+    const msg = JSON.parse(ev.data);
+    // console.log("ws msg", msg);
+    if (msg.type === "joined") {
+      myId = msg.id;
+      const others = msg.others || [];
+      const localStream = await localStreamPromise;
+      localVideo.srcObject = localStream;
+
+      // create offer to each existing peer
+      others.forEach(async (otherId) => {
+        await createOfferToPeer(otherId, localStream);
+      });
+    } else if (msg.type === "new-peer") {
+      // a new peer joined - existing peers should create an offer to them
+      const newId = msg.id;
+      const localStream = await localStreamPromise;
+      await createOfferToPeer(newId, localStream);
+    } else if (msg.type === "signal") {
+      const from = msg.from;
+      const payload = msg.payload;
+      await handleSignal(from, payload);
+    } else if (msg.type === "peer-left") {
+      const id = msg.id;
+      closePeer(id);
     }
-  }
+  });
 
-  function detachTracks(container) {
-    const video = container.querySelector('video');
-    if (video && video.srcObject) {
-      const tracks = video.srcObject.getTracks();
-      tracks.forEach(t => t.stop());
-    }
-    container.remove();
-  }
-
-  // create RTCPeerConnection with handlers
-  function createPeerConnection(targetSocketId, remoteIdentity, isInitiator) {
-    log('createPeerConnection', targetSocketId, 'initiator?', isInitiator);
-    if (pcs[targetSocketId]) return pcs[targetSocketId];
-
-    const pc = new RTCPeerConnection({ iceServers });
-    pcs[targetSocketId] = pc;
+  async function createOfferToPeer(remoteId, localStream) {
+    if (peers.has(remoteId)) return;
+    const pc = new RTCPeerConnection(ICE_CONFIG);
+    peers.set(remoteId, pc);
 
     // add local tracks
-    if (localStream) {
-      localStream.getTracks().forEach(track => pc.addTrack(track, localStream));
-    }
+    localStream.getTracks().forEach((t) => pc.addTrack(t, localStream));
 
-    // when remote track arrives, attach to UI
-    const remoteContainer = createVideoElementFor(targetSocketId, remoteIdentity || targetSocketId);
+    // create remote video element set remote track when added
+    const remoteVideo = createRemoteVideoEl(remoteId);
+
+    // when remote track arrives
     pc.ontrack = (ev) => {
-      // use first stream
-      const stream = ev.streams && ev.streams[0];
-      const videoTag = remoteContainer.querySelector('video');
-      if (videoTag) videoTag.srcObject = stream;
+      // assign stream
+      remoteVideo.srcObject = ev.streams[0];
     };
 
-    pc.onicecandidate = (ev) => {
-      if (ev.candidate) {
-        socket.emit('signal', { to: targetSocketId, signal: ev.candidate });
+    pc.onicecandidate = (event) => {
+      if (event.candidate) {
+        ws.send(JSON.stringify({
+          type: "signal",
+          room,
+          to: remoteId,
+          from: myId,
+          payload: { type: "candidate", candidate: event.candidate }
+        }));
       }
     };
 
-    pc.onconnectionstatechange = () => {
-      if (pc.connectionState === 'failed' || pc.connectionState === 'closed' || pc.connectionState === 'disconnected') {
-        log('PC closed for', targetSocketId);
-        try { pc.close(); } catch (e) {}
-        delete pcs[targetSocketId];
-        const el = document.querySelector(`[data-sid="${targetSocketId}"]`);
-        if (el) detachTracks(el);
-      }
-    };
+    const offer = await pc.createOffer();
+    await pc.setLocalDescription(offer);
 
-    // If initiator create offer
-    (async () => {
-      try {
-        if (isInitiator) {
-          const offer = await pc.createOffer();
-          await pc.setLocalDescription(offer);
-          socket.emit('signal', { to: targetSocketId, signal: pc.localDescription });
-        }
-      } catch (err) {
-        console.error('offer error', err);
-      }
-    })();
-
-    return pc;
+    ws.send(JSON.stringify({
+      type: "signal",
+      room,
+      to: remoteId,
+      from: myId,
+      payload: { type: "offer", sdp: offer.sdp }
+    }));
   }
 
-  // handle incoming signals
-  socket.on('signal', async (data) => {
-    try {
-      const from = data.from;
-      const signal = data.signal;
-      if (!pcs[from]) {
-        // create pc (not initiator)
-        createPeerConnection(from, data.fromIdentity || from, false);
-      }
-      const pc = pcs[from];
-      if (!pc) return;
+  async function handleSignal(from, payload) {
+    // if we don't have a peer for "from", create one (we are being offered)
+    if (!peers.has(from)) {
+      const pc = new RTCPeerConnection(ICE_CONFIG);
+      peers.set(from, pc);
 
-      if (signal.type === 'offer') {
-        await pc.setRemoteDescription(new RTCSessionDescription(signal));
-        const answer = await pc.createAnswer();
-        await pc.setLocalDescription(answer);
-        socket.emit('signal', { to: from, signal: pc.localDescription });
-      } else if (signal.type === 'answer') {
-        await pc.setRemoteDescription(new RTCSessionDescription(signal));
-      } else if (signal.candidate) {
-        await pc.addIceCandidate(new RTCIceCandidate(signal));
-      }
-    } catch (err) {
-      console.error('signal handler error', err);
+      const remoteVideo = createRemoteVideoEl(from);
+
+      pc.ontrack = (ev) => {
+        remoteVideo.srcObject = ev.streams[0];
+      };
+
+      pc.onicecandidate = (event) => {
+        if (event.candidate) {
+          ws.send(JSON.stringify({
+            type: "signal",
+            room,
+            to: from,
+            from: myId,
+            payload: { type: "candidate", candidate: event.candidate }
+          }));
+        }
+      };
+
+      // attach local stream tracks
+      const localStream = await localStreamPromise;
+      localStream.getTracks().forEach((t) => pc.addTrack(t, localStream));
     }
-  });
 
-  socket.on('connect', async () => {
-    log('socket connect', socket.id);
-    // ensure we have local media first
-    await getLocalMedia();
-    // join-room
-    socket.emit('join-room', { roomId: room, identity, wantOwner });
-  });
+    const pc = peers.get(from);
 
-  socket.on('existing-participants', (list) => {
-    // list: array of { socketId, identity }
-    log('existing', list);
-    (list || []).forEach(p => {
-      // create peer and initiate offer TO each existing participant
-      createPeerConnection(p.socketId, p.identity, true);
+    if (payload.type === "offer") {
+      const desc = { type: "offer", sdp: payload.sdp };
+      await pc.setRemoteDescription(desc);
+      const answer = await pc.createAnswer();
+      await pc.setLocalDescription(answer);
+      ws.send(JSON.stringify({
+        type: "signal",
+        room,
+        to: from,
+        from: myId,
+        payload: { type: "answer", sdp: answer.sdp }
+      }));
+    } else if (payload.type === "answer") {
+      const desc = { type: "answer", sdp: payload.sdp };
+      await pc.setRemoteDescription(desc);
+    } else if (payload.type === "candidate") {
+      try {
+        await pc.addIceCandidate(payload.candidate);
+      } catch (e) {
+        console.warn("Failed to add candidate", e);
+      }
+    }
+  }
+
+  function closePeer(id) {
+    const pc = peers.get(id);
+    if (pc) {
+      try { pc.close(); } catch(e) {}
+      peers.delete(id);
+    }
+    const v = remoteVideos.get(id);
+    if (v && v.parentNode) v.parentNode.removeChild(v);
+    remoteVideos.delete(id);
+  }
+
+  // leave handler
+  document.getElementById("btnLeave").addEventListener("click", () => {
+    ws.send(JSON.stringify({ type: "leave", room }));
+    ws.close();
+    // stop local stream
+    localStreamPromise.then((s) => {
+      s.getTracks().forEach((t) => t.stop());
     });
-  });
-
-  socket.on('new-participant', (payload) => {
-    // payload: { socketId, identity }
-    log('new participant', payload);
-    // create PC that will be answerer (isInitiator=false)
-    createPeerConnection(payload.socketId, payload.identity, false);
-  });
-
-  socket.on('participant-left', (payload) => {
-    log('participant-left', payload);
-    const el = document.querySelector(`[data-sid="${payload.socketId}"]`);
-    if (el) detachTracks(el);
-    if (pcs[payload.socketId]) {
-      try { pcs[payload.socketId].close(); } catch(e){}
-      delete pcs[payload.socketId];
-    }
-  });
-
-  socket.on('owner-changed', (payload) => {
-    log('owner-changed', payload);
-  });
-
-  socket.on('kicked', (payload) => {
-    alert('You were kicked: ' + (payload && payload.reason));
-    // cleanup
-    if (localStream) localStream.getTracks().forEach(t => t.stop());
-    Object.values(pcs).forEach(pc => { try { pc.close(); } catch (e) {} });
-    socket.disconnect();
-    location.href = '/';
+    // remove remote videos
+    for (const id of Array.from(remoteVideos.keys())) closePeer(id);
+    alert("Left the room");
   });
 
 })();
