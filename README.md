@@ -1,201 +1,267 @@
-VeloCall
+# VeloCall ( Under Development features may get changed and this file may be updated in future )
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![Built with Expo](https://img.shields.io/badge/Expo-React%20Native-blue.svg)]()
 
+> **VeloCall** — a production-minded, mobile-first video calling solution built with Expo (React Native + TypeScript) and WebRTC. Fast peer-to-peer media with a lightweight Socket.IO signalling server and optional S3-backed recording support.
 
+---
 
-VeloCall — a production-minded, mobile-first video calling solution built with Expo, React Native (TypeScript) and WebRTC. Fast peer-to-peer media with a lightweight Socket.IO signalling server and optional S3-backed features.
+## Table of Contents
 
-Table of Contents
+* [Demo / Preview](#demo--preview)
+* [Key Features](#key-features)
+* [Tech Stack](#tech-stack)
+* [Architecture Overview](#architecture-overview)
+* [Getting Started](#getting-started)
 
-Demo / Preview
+  * [Prerequisites](#prerequisites)
+  * [Local Setup (Backend)](#local-setup-backend)
+  * [Local Setup (Mobile Client)](#local-setup-mobile-client)
+* [Configuration](#configuration)
 
-Key Features
+  * [Environment variables (`.env.example`)](#environment-variables-envexample)
+* [STUN / TURN & Deployment Notes](#stun--turn--deployment-notes)
+* [Usage](#usage)
+* [Troubleshooting](#troubleshooting)
+* [Testing](#testing)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact / Acknowledgements](#contact--acknowledgements)
 
-Tech Stack
+---
 
-Architecture Overview
+## Demo / Preview
 
-Getting Started
+* Room creation
+* Call signaling & connect flow
+* Two-way video/audio
+* Mute / camera switch / hang up
 
-Prerequisites
+**Recommended assets:** vertical mobile screenshots (9:16) and a short GIF showing call connect/disconnect flows.
 
-Local Setup (Backend)
+---
 
-Local Setup (Mobile Client)
+## Key Features
 
-Configuration
+* One-to-one real-time video & audio calls (mobile-first)
+* WebRTC peer-to-peer media with STUN/TURN fallback
+* Lightweight Socket.IO signalling server (SDP / ICE exchange)
+* Reconnection and ICE-restart logic for flaky networks
+* Optional recording/persistence to S3-compatible storage
+* TypeScript across frontend & backend for maintainability and DX
 
-Environment variables (.env.example)
+---
 
-STUN/TURN & Deployment Notes
+## Tech Stack
 
-Usage
+* **Frontend:** Expo (React Native) + TypeScript
+* **Realtime:** WebRTC (native mobile bindings) + Socket.IO for signalling
+* **Backend:** Node.js + Express + Socket.IO
+* **Storage (optional):** AWS S3 (or S3-compatible)
+* **Infrastructure:** STUN/TURN servers (e.g., public STUN, coturn for TURN)
 
-Troubleshooting
+---
 
-Testing
+## Architecture Overview
 
-Contributing
+1. Client requests a call token / joins a room and connects to the Socket.IO signalling server.
+2. Signalling server brokers SDP and ICE messages (offer/answer, ICE candidates).
+3. Peers negotiate a WebRTC connection and consult STUN/TURN servers for NAT traversal.
+4. Media flows P2P where possible; TURN relays media when direct P2P is blocked (e.g., symmetric NATs).
+5. Optional server-side workflows handle recording uploads to S3 and session persistence.
 
-License
+```
+[Mobile Client A] <----Socket.IO----> [Signalling Server] <----Socket.IO----> [Mobile Client B]
+      |                                          |
+      +---- WebRTC (P2P) ----[STUN/TURN]---------+
+```
 
-Contact / Acknowledgements
+---
 
-Demo / Preview
+## Getting Started
 
-Insert screenshots, animated GIFs, or a short demo video here.
+Follow these steps to run **VeloCall** locally for development.
 
-Recommended sizes: mobile screenshots (vertical) and a short GIF (6–12s) showing call connect/disconnect flows.
+### Prerequisites
 
-Key Features
+* Node.js v18+ (recommended)
+* npm or yarn
+* Expo CLI (`npm i -g expo-cli`) for managed workflow
+* Optional: Docker (handy for running coturn locally)
 
-One-to-one real-time video & audio calls (mobile-first)
+### Local Setup (Backend)
 
-WebRTC peer-to-peer media with STUN/TURN fallback
-
-Socket.IO signalling server (SDP/ICE exchange)
-
-Reconnection and ICE-restart logic for flaky networks
-
-Optional recording/persistence to S3-compatible storage
-
-TypeScript across frontend and backend for maintainability
-
-Tech Stack
-
-Frontend: Expo (React Native) + TypeScript
-
-Real-time: WebRTC (mobile native bindings) + Socket.IO for signalling
-
-Backend: Node.js + Express + Socket.IO
-
-Infrastructure: STUN/TURN servers, optional AWS S3 (or compatible)
-
-Architecture Overview
-
-Client requests a call token / joins a room and connects to the Socket.IO signalling server.
-
-Signalling server brokers SDP & ICE messages between peers.
-
-Peers negotiate a WebRTC connection and consult STUN/TURN servers for NAT traversal.
-
-Media flows P2P where possible; TURN relays media when direct P2P is blocked.
-
-Optional server-side workflows handle recording uploads to S3 and session persistence.
-
-Getting Started
-
-Follow these steps to run VeloCall locally.
-
-Prerequisites
-
-Node.js (v18+ recommended)
-
-npm or yarn
-
-Expo CLI (for development with managed workflow)
-
-Optional: Docker (useful for running a TURN server like coturn locally)
-
-Local Setup (Backend)
+```bash
 # clone repository
 git clone https://github.com/<your-org>/velocall.git
 cd velocall/backend
 
-
-# install
+# install deps
 npm install
 
-
-# copy env example
+# copy env example and edit
 cp .env.example .env
-# edit .env to set values (SEE .env.example section below)
+# edit .env to configure ports, STUN/TURN, AWS keys, etc.
 
-
-# start backend (dev)
+# run the backend in dev mode
 npm run dev
+```
 
-The backend exposes the Socket.IO signalling endpoints (e.g. /socket.io) and optionally REST endpoints for token generation, recordings, etc.
+The backend exposes the Socket.IO signalling endpoints (e.g. `/socket.io`) and optional REST endpoints for token generation and recordings.
 
-Local Setup (Mobile Client)
+### Local Setup (Mobile Client)
+
+```bash
 cd ../frontend
 npm install
 cp .env.example .env
-# run the Expo dev server
+
+# start Expo dev server
 npx expo start
-# open on physical device using Expo Go, or run on simulator
+```
 
-Use a real device on the same LAN as your backend for testing P2P behavior; emulators can complicate NAT traversal.
+Open on a real device using **Expo Go** (recommended) or run on a simulator. Use two physical devices (or device + emulator) on the same LAN to test P2P and ICE behavior.
 
-Configuration
+---
 
-Place configuration inside root .env files for backend and frontend. Example below.
+## Configuration
 
-Environment variables (.env.example)
+Place runtime configuration into root `.env` files for backend and frontend. Keep secrets out of source control.
+
+### Environment variables (`.env.example`)
+
+```env
 # Backend
 PORT=4000
 SIGNALING_SECRET=your_signaling_secret
 STUN_SERVERS=["stun:stun.l.google.com:19302"]
-TURN_SERVERS=[{"url":"turn:your-turn-host:3478","username":"user","credential":"pass"}]
+TURN_SERVERS=[{"url":"turn:turn.example.com:3478","username":"user","credential":"pass"}]
 AWS_S3_BUCKET=velocall-recordings
 AWS_REGION=us-east-1
 AWS_ACCESS_KEY_ID=xxxxx
 AWS_SECRET_ACCESS_KEY=xxxxx
 
-
 # Frontend
 REACT_APP_SIGNALING_URL=http://<backend-host>:4000
 REACT_APP_S3_UPLOAD_ENDPOINT=http://<backend-host>:4000/api/upload
-STUN/TURN & Deployment Notes
 
-For production, run a TURN server (e.g., coturn) behind a public IP. TURN is critical for mobile carriers and symmetric NATs.
+# Optional additional flags
+LOG_LEVEL=info
+ENABLE_RECORDINGS=true
+```
 
-Ensure your TURN server credentials rotate or are provisioned securely.
+> **Security note:** When using TURN in production, provision credentials dynamically or use short-lived credentials (e.g., time-limited HMAC) rather than embedding static user\:pass in the client.
 
-If using AWS, configure CORS, S3 lifecycle rules, and encryption for stored recordings.
+---
 
-Usage
+## STUN / TURN & Deployment Notes
 
-Start backend and Expo dev server.
+* **TURN is essential** for mobile networks and for users behind symmetric NATs. Public STUN alone is not sufficient in many mobile scenarios.
+* For production, run a TURN server (e.g., `coturn`) on a machine with a public IP and open UDP/TCP ports (default 3478) and TLS ports if using TURN over TLS.
+* Rotate TURN credentials regularly or use an HMAC-based credential provisioning scheme for security.
+* If using AWS S3 for recordings, configure CORS, lifecycle rules, server-side encryption, and IAM policies that grant the minimum required permissions.
 
-Open the app on two devices (or a device + emulator) and create/join the same room.
+**Docker / example coturn (local dev)**
 
-The signalling server will exchange SDP/ICE and the call should connect P2P.
+```yaml
+# docker-compose.yml (example)
+version: '3.8'
+services:
+  coturn:
+    image: instrumentisto/coturn
+    restart: unless-stopped
+    ports:
+      - "3478:3478"
+      - "3478:3478/udp"
+    volumes:
+      - ./coturn/turnserver.conf:/etc/turnserver.conf:ro
+    command: ["turnserver", "-c", "/etc/turnserver.conf"]
+```
 
-Use in-app controls to mute, switch camera, or end call.
+Minimal `turnserver.conf` (example):
 
-Troubleshooting
+```
+listening-port=3478
+fingerprint
+lt-cred-mech
+use-auth-secret
+static-auth-secret=<YOUR_STATIC_SECRET>
+realm=velocall
+no-loopback-peers
+no-multicast-peers
 
-WebRTC native module not found (mobile): Ensure native WebRTC bindings are installed and linked. For managed Expo apps, follow the recommended approach (or use a custom dev client) to include native WebRTC.
+# logging, limits, etc.
+```
 
-No media / black screen: Confirm permissions for camera/microphone; verify both peers have correct ICE candidates; check TURN availability when behind carrier NAT.
+---
 
-Calls fail on mobile data but work on Wi‑Fi: Likely missing TURN relay. Configure a public TURN server.
+## Usage
 
-Testing
+1. Start backend and Expo dev server.
+2. Open the app on two devices and join the same room.
+3. The signalling server will exchange SDP/ICE and peers should connect P2P.
+4. Use in-app controls to mute/unmute, switch camera, or end the call.
 
-Unit tests: npm run test (backend & frontend where available)
+---
 
-End-to-end: Manual E2E test across two physical devices on separate networks (Wi‑Fi and cellular) to validate TURN fallback and ICE restarts.
+## Troubleshooting
 
-Contributing
+**WebRTC native module not found (mobile)**
 
-Fork the repo
+* Ensure native WebRTC bindings are installed and linked. For managed Expo apps, either use a custom dev client with the native modules included or follow `expo-dev-client` instructions.
 
-Create a feature branch (git checkout -b feat/awesome)
+**No media / black screen**
 
-Commit your changes (git commit -m 'feat: add awesome')
+* Verify camera & microphone permissions.
+* Check ICE candidates in logs and ensure STUN/TURN entries are correct.
+* Test with a public TURN server to confirm NAT traversal.
 
-Open a pull request and describe your changes
+**Calls work on Wi‑Fi but fail on mobile data**
 
-Please follow conventional commits & keep PRs small and focused.
+* Likely missing TURN relay. Ensure a public TURN server is available and reachable.
 
-License
+---
 
-MIT © Your Name / Organization
+## Testing
 
-Contact / Acknowledgements
+* **Unit tests** (where present):
 
-Built by Sankha Subhra Das. For questions, reach out: sankhasubhradas1@gmail.com.
+```bash
+npm run test
+```
 
-Special thanks to the WebRTC community and libraries that enable cross-platform real-time media.
+* **End-to-end (manual):**
+
+  * Test with two physical devices on separate networks (Wi‑Fi and cellular) to validate TURN fallback, ICE restarts, and reconnection behavior.
+
+---
+
+## Contributing
+
+Thanks for your interest in contributing! To contribute:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit using conventional commits: `git commit -m "feat: add awesome"`
+4. Open a pull request and describe your changes clearly
+
+Please keep PRs focused and small. Add tests where appropriate and follow TypeScript and code style guidelines used in the repo.
+
+---
+
+## License
+
+MIT © 2025 Sankha Subhra Das
+
+---
+
+## Contact / Acknowledgements
+
+Built by **Sankha Subhra Das** — [sankhasubhradas1@gmail.com](mailto:sankhasubhradas1@gmail.com)
+
+Special thanks to the WebRTC community and the maintainers of libraries that enable cross-platform real-time media.
+
+---
+
+*This README is intended as a production-ready, developer-friendly starting point. Customize the configuration, deployment notes, and examples to match your infrastructure and CI/CD setup.*
