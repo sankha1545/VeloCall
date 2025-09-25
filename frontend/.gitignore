@@ -1,39 +1,54 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+﻿# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
-node_modules/
+/node_modules/
 
-# Expo
+# Expo local state (should NOT be committed)
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
-.kotlin/
-*.orig.*
+# Build / output
+*.apk
+*.aab
+build/
+tmp/
+.DS_Store
+
+# Native / signing keys (sensitive)
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.pem
 
 # Metro
 .metro-health-check*
 
-# debug
+# Debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
+# Local env files (do NOT commit secrets)
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.production.local
 
-# local env files
-.env*.local
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 
+# macOS
+.DS_Store
+
+# Misc
+*.orig.*
+.vscode/
+.idea/
+
+# Example files (keep but don't treat as literal)
 app-example
