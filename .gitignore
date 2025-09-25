@@ -1,0 +1,47 @@
+# Node modules
+frontend/node_modules/
+backend/node_modules/   # if you have a backend folder
+
+# Expo and React Native
+frontend/.expo/
+frontend/.expo-shared/
+frontend/build/
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Metro bundler cache
+frontend/.metro/
+frontend/.expo-cache/
+frontend/.expo/logs/
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# TypeScript
+frontend/**/*.tsbuildinfo
+
+# Yarn or npm lock files (if needed, usually you want to commit them)
+# frontend/package-lock.json
+# frontend/yarn.lock
+
+# Other OS-specific files
+*.bak
+*.tmp
