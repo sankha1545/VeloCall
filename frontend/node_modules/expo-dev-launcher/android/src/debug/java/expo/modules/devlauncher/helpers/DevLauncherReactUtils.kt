@@ -121,21 +121,21 @@ private fun injectDebugServerHost(
   val devSupportManagerBaseClass: Class<*> = DevSupportManagerBase::class.java
   devSupportManagerBaseClass.setProtectedDeclaredField(
     devSupportManager,
-    "mJSAppBundleName",
+    "jsAppBundleName",
     appBundleName
   )
-  val mDevSettingsField = devSupportManagerBaseClass.getDeclaredField("mDevSettings")
+  val mDevSettingsField = devSupportManagerBaseClass.getDeclaredField("devSettings")
   mDevSettingsField.isAccessible = true
   mDevSettingsField[devSupportManager] = settings
-  val mDevServerHelperField = devSupportManagerBaseClass.getDeclaredField("mDevServerHelper")
+  val mDevServerHelperField = devSupportManagerBaseClass.getDeclaredField("devServerHelper")
   mDevServerHelperField.isAccessible = true
   val devServerHelper = mDevServerHelperField[devSupportManager]
   check(devServerHelper is DevLauncherDevServerHelper)
-  val mSettingsField = DevServerHelper::class.java.getDeclaredField("mSettings")
+  val mSettingsField = DevServerHelper::class.java.getDeclaredField("settings")
   mSettingsField.isAccessible = true
   mSettingsField[devServerHelper] = settings
 
-  val packagerConnectionSettingsField = DevServerHelper::class.java.getDeclaredField("mPackagerConnectionSettings")
+  val packagerConnectionSettingsField = DevServerHelper::class.java.getDeclaredField("packagerConnectionSettings")
   packagerConnectionSettingsField.isAccessible = true
   packagerConnectionSettingsField[devServerHelper] = settings.public_getPackagerConnectionSettings()
 }
@@ -185,14 +185,14 @@ private fun injectLocalBundleLoader(
     // [0] Disable `mAllowPackagerServerAccess`
     // so that ReactHost could use jsBundlerLoader from ReactHostDelegate
     val reactHostClass = ReactHostImpl::class.java
-    val mAllowPackagerServerAccessField = reactHostClass.getDeclaredField("mAllowPackagerServerAccess")
+    val mAllowPackagerServerAccessField = reactHostClass.getDeclaredField("allowPackagerServerAccess")
     mAllowPackagerServerAccessField.isAccessible = true
     mAllowPackagerServerAccessField[reactHost] = false
 
     val newJsBundleLoader = JSBundleLoader.createFileLoader(bundlePath)
 
     // [1] Replace the ReactHostDelegate.jsBundlerLoader with our new loader
-    val mReactHostDelegateField = reactHostClass.getDeclaredField("mReactHostDelegate")
+    val mReactHostDelegateField = reactHostClass.getDeclaredField("reactHostDelegate")
     mReactHostDelegateField.isAccessible = true
     val reactHostDelegate = mReactHostDelegateField[reactHost] as ReactHostDelegate
     if (reactHostDelegate.javaClass.canonicalName == EXPO_REACT_HOST_DELEGATE_CLASS) {
@@ -229,11 +229,11 @@ fun injectDevServerHelper(context: Context, devSupportManager: DevSupportManager
   )
   val oldDevServerHelper: DevServerHelper = DevSupportManagerBase::class.java.getProtectedFieldValue(
     devSupportManager,
-    "mDevServerHelper"
+    "devServerHelper"
   )
   DevSupportManagerBase::class.java.setProtectedDeclaredField(
     devSupportManager,
-    "mDevServerHelper",
+    "devServerHelper",
     devLauncherDevServerHelper
   )
   oldDevServerHelper.closePackagerConnection()

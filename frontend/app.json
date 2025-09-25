@@ -36,10 +36,7 @@
         "webGoogleClientId": "...",
         "githubClientId": "..."
       },
-      "appScheme": "myapp",
-      "eas": {
-        "projectId": "fe0f8709-d952-4171-8874-37d38f60e78b"
-      }
+      "appScheme": "myapp"
     }
   }
 }

@@ -1,185 +1,175 @@
 package expo.modules.devmenu.fab
 
+import FloatingActionButtonContent
 import android.annotation.SuppressLint
-import android.content.Context
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Path
-import android.graphics.RectF
-import android.graphics.Region
-import android.view.Gravity
-import android.view.MotionEvent
-import android.view.View
-import android.widget.FrameLayout
-import expo.modules.devmenu.DevMenuManager
-import kotlin.math.abs
-import kotlin.math.max
-import kotlin.math.min
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.AnimationVector2D
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.VectorConverter
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.gestures.awaitFirstDown
+import androidx.compose.foundation.gestures.drag
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.input.pointer.positionChange
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.DpSize
+import androidx.compose.ui.unit.dp
+import expo.modules.devmenu.compose.DevMenuState
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 
-private const val CLICK_DRAG_TOLERANCE = 10f
-private const val MARGIN = 24
-private const val SIZE = 150
+private val FabDefaultSize = DpSize(48.dp, 92.dp)
+private val Margin = 16.dp
+private const val ClickDragTolerance = 40f
 
-@SuppressLint("ViewConstructor")
-class MovableFloatingActionButton(
-  context: Context,
-  private val updateSystemGestureExclusionRects: () -> Unit
-) : FrameLayout(context), View.OnTouchListener {
-  private var downRawX = 0f
-  private var downRawY = 0f
-  private var dX = 0f
-  private var dY = 0f
-  private var isActive = false
+private typealias AnimatableOffset = Animatable<Offset, AnimationVector2D>
 
-  // stencilPath is used to make the view rounded
-  private val stencilPath = Path()
-
-  // eventRegion is used to add rounded corners to the touch area
-  private var eventRegion = Region()
-
-  init {
-    layoutParams = LayoutParams(SIZE, SIZE).apply {
-      gravity = Gravity.BOTTOM or Gravity.END
-      setMargins(MARGIN, MARGIN, MARGIN, MARGIN)
+/**
+ * A floating action button that can be dragged across the screen and springs to the
+ * nearest horizontal edge when released. A tap triggers the onClick action.
+ */
+@SuppressLint("UnusedBoxWithConstraintsScope")
+@Composable
+fun MovableFloatingActionButton(
+  state: DevMenuState,
+  modifier: Modifier = Modifier,
+  fabSize: DpSize = FabDefaultSize,
+  margin: Dp = Margin,
+  onRefreshPress: () -> Unit = {},
+  onOpenMenuPress: () -> Unit = {}
+) {
+  BoxWithConstraints(modifier = modifier.fillMaxSize()) {
+    val totalFabSize = DpSize(fabSize.width + margin * 2, fabSize.height + margin * 2)
+    val totalFabSizePx = with(LocalDensity.current) {
+      Offset(totalFabSize.width.toPx(), totalFabSize.height.toPx())
     }
-    z = Float.MAX_VALUE
-
-    setOnTouchListener(this)
-
-    addView(
-      View(context).apply {
-        layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT).apply {
-          gravity = Gravity.CENTER
-        }
-        setBackgroundColor(Color.MAGENTA)
-      }
+    val bounds = Offset(
+      x = constraints.maxWidth - totalFabSizePx.x,
+      y = constraints.maxHeight - totalFabSizePx.y
     )
-  }
 
-  fun onClick() {
-    val reactHostWrapper = DevMenuManager.getReactHost()
-      ?: return
-    val currentActivity = reactHostWrapper.currentReactContext?.currentActivity
-      ?: return
+    val previousBounds = rememberPrevious(bounds)
+    val velocityTracker = remember { ExpoVelocityTracker() }
+    val defaultOffset = bounds.copy(y = bounds.y * 0.75f)
+    val animatedOffset = remember { Animatable(defaultOffset, Offset.VectorConverter) }
+    val pillInteractionSource = remember { MutableInteractionSource() }
 
-    DevMenuManager.openMenu(currentActivity)
-  }
+    LaunchedEffect(bounds.x, bounds.y) {
+      previousBounds?.let {
+        val oldX = animatedOffset.value.x
+        val oldY = animatedOffset.value.y
+        val newX = (oldX / previousBounds.x) * bounds.x
+        val newY = (oldY / previousBounds.y) * bounds.y
+        val newTarget = calculateTargetPosition(
+          currentPosition = Offset(newX, newY),
+          velocity = ExpoVelocityTracker.PointF(0f, 0f),
+          bounds = bounds,
+          totalFabWidth = totalFabSizePx.x
+        )
 
-  override fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
-    val layoutParams = view.layoutParams as MarginLayoutParams
-    val action = motionEvent.action
-
-    when (action) {
-      MotionEvent.ACTION_DOWN -> {
-        if (!eventRegion.contains(motionEvent.x.toInt(), motionEvent.y.toInt())) {
-          return false
-        }
-
-        downRawX = motionEvent.rawX
-        downRawY = motionEvent.rawY
-        dX = view.x - downRawX
-        dY = view.y - downRawY
-        isActive = true
-
-        return true
+        animatedOffset.snapTo(newTarget)
       }
+    }
 
-      MotionEvent.ACTION_MOVE, MotionEvent.ACTION_OUTSIDE -> {
-        if (!isActive) {
-          return false
-        }
+    AnimatedVisibility(
+      visible = state.showFab,
+      enter = fadeIn(),
+      exit = fadeOut()
+    ) {
+      Box(
+        modifier = Modifier
+          .offset { animatedOffset.value.toIntOffset() }
+          .size(totalFabSize)
+          .padding(margin)
+          .pointerInput(bounds.x, bounds.y) {
+            coroutineScope {
+              while (true) {
+                awaitPointerEventScope {
+                  val firstDown = awaitFirstDown(requireUnconsumed = false)
+                  val pointerId = firstDown.id
 
-        val viewWidth = view.width
-        val viewHeight = view.height
+                  launch {
+                    animatedOffset.stop()
+                  }
 
-        val viewParent = view.parent as View
-        val parentWidth = viewParent.width
-        val parentHeight = viewParent.height
+                  var dragDistance = 0f
+                  var dragOffset = animatedOffset.value
 
-        var newX = motionEvent.rawX + dX
-        newX = max(layoutParams.leftMargin.toDouble(), newX.toDouble()).toFloat()
-        newX = min((parentWidth - viewWidth - layoutParams.rightMargin).toDouble(), newX.toDouble()).toFloat()
+                  drag(pointerId) { change ->
+                    dragOffset = (dragOffset + change.positionChange())
+                      .coerceIn(maxX = bounds.x, maxY = bounds.y)
+                    dragDistance += change.positionChange().getDistance()
+                    velocityTracker.registerPosition(dragOffset.x, dragOffset.y)
+                    change.consume()
 
-        var newY = motionEvent.rawY + dY
-        newY = max(layoutParams.topMargin.toDouble(), newY.toDouble()).toFloat()
-        newY = min((parentHeight - viewHeight - layoutParams.bottomMargin).toDouble(), newY.toDouble()).toFloat()
-
-        view.animate()
-          .x(newX)
-          .y(newY)
-          .setDuration(0)
-          .start()
-
-        return true
-      }
-
-      MotionEvent.ACTION_UP -> {
-        if (!isActive) {
-          return false
-        }
-
-        isActive = false
-
-        val upRawX = motionEvent.rawX
-        val upRawY = motionEvent.rawY
-
-        val upDX = upRawX - downRawX
-        val upDY = upRawY - downRawY
-
-        return if (abs(upDX.toDouble()) < CLICK_DRAG_TOLERANCE && abs(upDY.toDouble()) < CLICK_DRAG_TOLERANCE) {
-          onClick()
-          true
-        } else {
-          val viewWidth = view.width
-
-          val centerX = view.x + viewWidth / 2
-
-          val viewParent = view.parent as View
-          val parentWidth = viewParent.width
-
-          val newX = if (centerX < parentWidth / 2) {
-            layoutParams.leftMargin.toFloat()
-          } else {
-            (parentWidth - viewWidth - layoutParams.rightMargin).toFloat()
+                    if (dragDistance > ClickDragTolerance) {
+                      launch {
+                        animatedOffset.animateTo(dragOffset)
+                      }
+                    }
+                  }
+                  if (dragDistance < ClickDragTolerance) {
+                    velocityTracker.clear()
+                    launch {
+                      pillInteractionSource.emitRelease(firstDown.position)
+                    }
+                  } else {
+                    handleRelease(animatedOffset, velocityTracker, totalFabSizePx, bounds)
+                  }
+                }
+              }
+            }
           }
-
-          view.animate()
-            .x(newX)
-            .setDuration(100)
-            .scaleX(1f)
-            .scaleY(1f)
-            .withEndAction { updateSystemGestureExclusionRects() }
-            .start()
-
-          true
-        }
-      }
-
-      else -> {
-        return super.onTouchEvent(motionEvent)
+      ) {
+        FloatingActionButtonContent(
+          interactionSource = pillInteractionSource,
+          onRefreshPress = onRefreshPress,
+          onEllipsisPress = onOpenMenuPress,
+          modifier = Modifier.fillMaxSize()
+        )
       }
     }
   }
+}
 
-  override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
-    super.onSizeChanged(w, h, oldw, oldh)
+/**
+ * Handles the release of the FAB, calculating momentum and animating it to the nearest edge.
+ */
+private fun CoroutineScope.handleRelease(
+  animatedOffset: AnimatableOffset,
+  velocityTracker: ExpoVelocityTracker,
+  totalFabSizePx: Offset,
+  bounds: Offset
+) {
+  val velocity = velocityTracker.calculateVelocity()
+  val newOffset = calculateTargetPosition(animatedOffset.value, velocity, bounds, totalFabSizePx.x)
 
-    // compute the path
-    stencilPath.reset()
-    stencilPath.addRoundRect(0f, 0f, w.toFloat(), h.toFloat(), w.toFloat(), h.toFloat(), Path.Direction.CW)
-    stencilPath.close()
-
-    val rectF = RectF()
-    stencilPath.computeBounds(rectF, true)
-
-    eventRegion = Region()
-    eventRegion.setPath(stencilPath, Region((rectF.left).toInt(), (rectF.top).toInt(), (rectF.right).toInt(), (rectF.bottom).toInt()))
-  }
-
-  override fun dispatchDraw(canvas: Canvas) {
-    val save = canvas.save()
-    canvas.clipPath(stencilPath)
-    super.dispatchDraw(canvas)
-    canvas.restoreToCount(save)
+  velocityTracker.clear()
+  launch {
+    animatedOffset.animateTo(
+      targetValue = newOffset,
+      animationSpec = spring(
+        dampingRatio = 0.65f,
+        stiffness = Spring.StiffnessLow
+      ),
+      initialVelocity = Offset(velocity.x, velocity.y)
+    )
   }
 }
