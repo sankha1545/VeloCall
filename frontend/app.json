@@ -3,21 +3,7 @@
     "name": "my-app",
     "slug": "my-app",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "bundleIdentifier": "com.myapp.velocall"
-    },
-    "android": {
-      "package": "com.myapp.velocall"
-    },
     "owner": "sankha1245",
-    "eas": {
-      "projectId": "fe0f8709-d952-4171-8874-37d38f60e78b"
-    },
     "extra": {
       "backendUrl": "http://192.168.0.128:3000",
       "firebase": {
