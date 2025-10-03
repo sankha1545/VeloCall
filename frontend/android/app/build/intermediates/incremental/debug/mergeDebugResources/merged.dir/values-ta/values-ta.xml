@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> மூலம் பகிர்"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"சுருக்கும்"</string>
     <string gender="unknown" name="alert_description">நினைவூட்டல்</string>
+    <string msgid="389117264260014992" name="autofill">"தன்னிரப்பி"</string>
     <string name="bottomsheet_action_collapse">கீழ்ப்புறச் சீட்டைச் சுருக்கும்</string>
     <string name="bottomsheet_action_expand">கீழ்ப்புறச் சீட்டை விரிவாக்கும்</string>
     <string name="bottomsheet_action_expand_halfway">பாதியளவு விரிவாக்கும்</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">%2$d இல் %1$d எழுத்துகள் உள்ளிடப்பட்டுள்ளன</string>
     <string name="character_counter_overflowed_content_description">%2$d இல் %1$d எழுத்து வரம்பு மீறப்பட்டது</string>
     <string name="clear_text_end_icon_content_description">உரையை அழிக்கும்</string>
+    <string msgid="406453423630273620" name="close_drawer">"வழிசெலுத்தல் மெனுவை மூடும்"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"ஷீட்டை மூடும்"</string>
     <string gender="unknown" name="combobox_description">காம்போ பெட்டி</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">இயக்கு</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play சேவைகளை இயக்கினால் மட்டுமே, %1$s செயல்படும்.</string>
@@ -85,7 +88,10 @@
     <string name="common_signin_button_text_long">Google மூலம் உள்நுழைக</string>
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"கடவுச்சொல்லைப் பயன்படுத்து"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"கிளிப்-போர்டுக்கு இணைப்பு நகலெடுக்கப்பட்டது"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"தவறான உள்ளீடு"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"அறியப்படாத பிழை"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"பாப்-அப் சாளரம்"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"கீழ்த்தோன்றல் மெனு"</string>
     <string name="error_a11y_label">பிழை: தவறானது</string>
     <string name="error_icon_content_description">பிழை</string>
     <string name="exo_controls_cc_disabled_description">சப்டைட்டில்களை இயக்கும்</string>
@@ -157,6 +163,8 @@
     <string name="icon_content_description">உரையாடல் ஐகான்</string>
     <string gender="unknown" name="image_description">படம்</string>
     <string gender="unknown" name="imagebutton_description">பொத்தான், படம்</string>
+    <string msgid="6827826412747255547" name="in_progress">"செயலிலுள்ளது"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"சில மட்டுமே தேர்ந்தெடுக்கப்பட்டுள்ளன"</string>
     <string name="item_view_role_description">தாவல்</string>
     <string gender="unknown" name="link_description">இணைப்பு</string>
     <string name="material_clock_toggle_content_description">AM அல்லது PMமைத் தேர்ந்தெடுக்க உதவும்</string>
@@ -220,26 +228,40 @@
     <string name="mtrl_picker_toggle_to_year_selection">ஆண்டுக் காட்சிக்கு மாற தட்டவும்</string>
     <string name="mtrl_timepicker_cancel">ரத்துசெய்</string>
     <string name="mtrl_timepicker_confirm">சரி</string>
+    <string msgid="542007171693138492" name="navigation_menu">"வழிசெலுத்தல் மெனு"</string>
+    <string msgid="6610465462668679431" name="not_selected">"தேர்ந்தெடுக்கப்படவில்லை"</string>
     <string name="password_toggle_content_description">கடவுச்சொல்லைக் காட்டு</string>
     <string gender="unknown" name="progressbar_description">போக்கு பட்டி</string>
     <string gender="unknown" name="radiogroup_description">ரேடியோ குழு</string>
+    <string msgid="5941395253238309765" name="range_end">"வரம்பு முடிவு"</string>
+    <string msgid="7097486360902471446" name="range_start">"வரம்பு தொடக்கம்"</string>
     <string gender="unknown" name="rn_tab_description">பிரிவு</string>
     <string gender="unknown" name="scrollbar_description">உருட்டுப்பட்டி</string>
     <string msgid="6264217191555673260" name="search_menu_title">"தேடல்"</string>
     <string name="searchview_clear_text_content_description">வார்த்தைகளை அழிக்கும்</string>
     <string name="searchview_navigation_content_description">பின்செல்லும்</string>
+    <string msgid="6043586758067023" name="selected">"தேர்ந்தெடுக்கப்பட்டுள்ளது"</string>
     <string name="side_sheet_accessibility_pane_title">பக்கவாட்டுத் தாள்</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"விழிப்பூட்டல்"</string>
     <string gender="unknown" name="spinbutton_description">ஸ்பின் பட்டன்</string>
     <string gender="unknown" name="state_busy_description">பணிமிகுதி</string>
     <string gender="unknown" name="state_collapsed_description">சுருக்கப்பட்டது</string>
+    <string msgid="4139871816613051306" name="state_empty">"காலியாக உள்ளது"</string>
     <string gender="unknown" name="state_expanded_description">விரிவாக்கப்பட்டது</string>
     <string gender="unknown" name="state_mixed_description">கலந்துள்ளது</string>
+    <string msgid="5834637030682409883" name="state_off">"ஆஃப்"</string>
     <string gender="unknown" name="state_off_description">ஆஃப்</string>
+    <string msgid="1490883874751719580" name="state_on">"ஆன்"</string>
     <string gender="unknown" name="state_on_description">ஆன்</string>
     <string gender="unknown" name="state_unselected_description">தேர்வுநீக்கப்பட்டது</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">சுருக்கம்</string>
+    <string msgid="2561197295334830845" name="switch_role">"மாற்றுதல்"</string>
+    <string msgid="1672349317127674378" name="tab">"பிரிவு"</string>
     <string gender="unknown" name="tablist_description">பிரிவுப் பட்டியல்</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> சதவீதம்."</string>
     <string gender="unknown" name="timer_description">டைமர்</string>
     <string gender="unknown" name="toolbar_description">கருவிப்பட்டி</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"உதவிக்குறிப்பு"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"உதவிக்குறிப்பைக் காட்டும்"</string>
 </resources>

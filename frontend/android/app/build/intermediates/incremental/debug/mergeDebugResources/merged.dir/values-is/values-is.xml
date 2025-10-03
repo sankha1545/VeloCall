@@ -48,6 +48,7 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Deila með"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Deila með <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minnka"</string>
+    <string msgid="389117264260014992" name="autofill">"Sjálfvirk útfylling"</string>
     <string name="bottomsheet_action_collapse">Minnka blað neðst</string>
     <string name="bottomsheet_action_expand">Stækka blað neðst</string>
     <string name="bottomsheet_action_expand_halfway">Stækka til hálfs</string>
@@ -63,6 +64,8 @@
     <string name="character_counter_content_description">Innslegnir stafir %1$d af %2$d</string>
     <string name="character_counter_overflowed_content_description">Yfir hámarksstafafjölda, %1$d af %2$d</string>
     <string name="clear_text_end_icon_content_description">Hreinsa texta</string>
+    <string msgid="406453423630273620" name="close_drawer">"Loka yfirlitsvalmynd"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Loka blaði"</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Kveikja</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s virkar ekki nema þú gerir þjónustu Google Play virka.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Virkja þjónustu Google Play</string>
@@ -84,7 +87,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"Nota aðgangsorð"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Tengill afritaður á klippiborð"</string>
     <string name="crop_image_menu_crop">Klippa</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Ógildur innsláttur"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"Óþekkt villa"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Sprettigluggi"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Fellivalmynd"</string>
     <string name="error_a11y_label">Villa: Ógilt</string>
     <string name="error_icon_content_description">Villa</string>
     <string name="exo_controls_cc_disabled_description">Kveikja á skjátexta</string>
@@ -158,6 +164,8 @@
     <string name="ic_rotate_left_24">Snúa rangsælis</string>
     <string name="ic_rotate_right_24">Snúa</string>
     <string name="icon_content_description">Gluggatákn</string>
+    <string msgid="6827826412747255547" name="in_progress">"Í vinnslu"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Hakað við að hluta til"</string>
     <string name="item_view_role_description">Flipi</string>
     <string name="material_clock_toggle_content_description">Velja f.h. eða e.h.</string>
     <string name="material_hour_24h_suffix">%1$s klst.</string>
@@ -217,13 +225,27 @@
     <string name="mtrl_picker_toggle_to_year_selection">Ýttu til að skipta yfir í ársyfirlit</string>
     <string name="mtrl_timepicker_cancel">Hætta við</string>
     <string name="mtrl_timepicker_confirm">Í lagi</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Yfirlitsvalmynd"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Ekki valið"</string>
     <string name="password_toggle_content_description">Sýna aðgangsorð</string>
     <string name="pick_image_camera">Myndavél</string>
     <string name="pick_image_chooser_title">Veldu mynd</string>
     <string name="pick_image_gallery">Myndasafn</string>
+    <string msgid="5941395253238309765" name="range_end">"Lok sviðs"</string>
+    <string msgid="7097486360902471446" name="range_start">"Upphaf sviðs"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Leit"</string>
     <string name="searchview_clear_text_content_description">Hreinsa texta</string>
     <string name="searchview_navigation_content_description">Til baka</string>
+    <string msgid="6043586758067023" name="selected">"Valið"</string>
     <string name="side_sheet_accessibility_pane_title">Hliðarblað</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"Viðvörun"</string>
+    <string msgid="4139871816613051306" name="state_empty">"Autt"</string>
+    <string msgid="5834637030682409883" name="state_off">"Slökkt"</string>
+    <string msgid="1490883874751719580" name="state_on">"Kveikt"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Skipta"</string>
+    <string msgid="1672349317127674378" name="tab">"Flipi"</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> prósent."</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"ábending"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"sýna ábendingu"</string>
 </resources>

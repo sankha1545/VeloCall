@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <bool name="windowLightSystemBars">false</bool>
     <color name="expoCropBackButtonIconColor">#ffffff</color>
     <color name="expoCropBackgroundColor">#000000</color>
     <color name="expoCropToolbarActionTextColor">#ffffff</color>

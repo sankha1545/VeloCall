@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="colorPrimary">#023c69</color>
     <color name="colorPrimaryDark">#ffffff</color>
-    <color name="iconBackground">#ffffff</color>
-    <color name="splashscreen_background">#ffffff</color>
-    <integer name="react_native_dev_server_port">8082</integer>
+    <color name="splashscreen_background">#FFFFFF</color>
+    <integer name="react_native_dev_server_port">8081</integer>
     <string name="app_name">my-app</string>
     <string name="default_web_client_id" translatable="false">66842164687-m3rt9vmv0mv8gmnromq9t0lpdrsd0632.apps.googleusercontent.com</string>
-    <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
-    <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
-    <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
     <string name="gcm_defaultSenderId" translatable="false">66842164687</string>
     <string name="google_api_key" translatable="false">AIzaSyCdIF-2ksby9OajKLAwTP7Bz6Jbx_FuOV4</string>
     <string name="google_app_id" translatable="false">1:66842164687:android:38ceb5a7e7b840fde4a6ba</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCdIF-2ksby9OajKLAwTP7Bz6Jbx_FuOV4</string>
     <string name="google_storage_bucket" translatable="false">velocall-32a42.firebasestorage.app</string>
     <string name="project_id" translatable="false">velocall-32a42</string>
-    <style name="AppTheme" parent="Theme.EdgeToEdge">
+    <string name="react_native_dev_server_ip" translatable="false">192.168.0.128</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="android:enforceNavigationBarContrast" ns1:targetApi="29">true</item>
     <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="android:statusBarColor">#ffffff</item>
@@ -25,5 +23,6 @@
     <item name="windowSplashScreenBackground">@color/splashscreen_background</item>
     <item name="windowSplashScreenAnimatedIcon">@drawable/splashscreen_logo</item>
     <item name="postSplashScreenTheme">@style/AppTheme</item>
+    <item name="android:windowSplashScreenBehavior">icon_preferred</item>
   </style>
 </resources>

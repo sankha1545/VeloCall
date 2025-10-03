@@ -6,7 +6,7 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-9        android:targetSdkVersion="35" />
+9        android:targetSdkVersion="36" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 11-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:7:3-75
@@ -25,7 +25,7 @@
 16        android:name="android.permission.READ_EXTERNAL_STORAGE"
 16-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:5:20-75
 17        android:maxSdkVersion="32" />
-17-->[BareExpo:expo.modules.image:2.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\bba4934fb137bea6ff6ee5ad91c7be7a\transformed\expo.modules.image-2.4.0\AndroidManifest.xml:17:9-35
+17-->[BareExpo:expo.modules.image:3.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\3e4fb5e1b69041d605df1ec9d6de5ee6\transformed\expo.modules.image-3.0.8\AndroidManifest.xml:17:9-35
 18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 18-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:6:3-68
 18-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:6:20-66
@@ -52,241 +52,238 @@
 28-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
 28-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
 29        </intent>
-30
-31        <package android:name="host.exp.exponent" />
-31-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-53
-31-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-50
-32
+30        <intent>
+30-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-10:18
+31            <action android:name="org.chromium.intent.action.PAY" />
+31-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-69
+31-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:21-66
+32        </intent>
 33        <intent>
-33-->[host.exp.exponent:expo.modules.webbrowser:14.2.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\87c617bde6497fe706593a4fbb26372c\transformed\expo.modules.webbrowser-14.2.0\AndroidManifest.xml:8:9-12:18
-34
-35            <!-- Required for opening tabs if targeting API 30 -->
-36            <action android:name="android.support.customtabs.action.CustomTabsService" />
-36-->[host.exp.exponent:expo.modules.webbrowser:14.2.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\87c617bde6497fe706593a4fbb26372c\transformed\expo.modules.webbrowser-14.2.0\AndroidManifest.xml:11:13-90
-36-->[host.exp.exponent:expo.modules.webbrowser:14.2.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\87c617bde6497fe706593a4fbb26372c\transformed\expo.modules.webbrowser-14.2.0\AndroidManifest.xml:11:21-87
-37        </intent>
-38        <intent>
-38-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:15:9-19:18
+33-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:9-13:18
+34            <action android:name="org.chromium.intent.action.IS_READY_TO_PAY" />
+34-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-81
+34-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:21-78
+35        </intent>
+36        <intent>
+36-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:9-16:18
+37            <action android:name="org.chromium.intent.action.UPDATE_PAYMENT_DETAILS" />
+37-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-88
+37-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:21-85
+38        </intent>
 39
-40            <!-- Required for picking images from the camera roll if targeting API 30 -->
-41            <action android:name="android.media.action.IMAGE_CAPTURE" />
-41-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:18:13-73
-41-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:18:21-70
-42        </intent>
-43        <intent>
-43-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:20:9-24:18
-44
-45            <!-- Required for picking images from the camera if targeting API 30 -->
-46            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
-46-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:23:13-80
-46-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:23:21-77
-47        </intent>
-48        <intent>
-48-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:23:9-25:18
-49            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
-49-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:24:13-86
-49-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:24:21-83
-50        </intent>
-51        <intent>
-51-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:8:9-14:18
-52            <action android:name="android.intent.action.GET_CONTENT" />
-52-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:9:13-72
-52-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:9:21-69
+40        <package android:name="host.exp.exponent" />
+40-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-53
+40-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-50
+41
+42        <intent>
+42-->[host.exp.exponent:expo.modules.webbrowser:15.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c2205bea13112cdf18ef52b4ca051370\transformed\expo.modules.webbrowser-15.0.7\AndroidManifest.xml:8:9-12:18
+43
+44            <!-- Required for opening tabs if targeting API 30 -->
+45            <action android:name="android.support.customtabs.action.CustomTabsService" />
+45-->[host.exp.exponent:expo.modules.webbrowser:15.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c2205bea13112cdf18ef52b4ca051370\transformed\expo.modules.webbrowser-15.0.7\AndroidManifest.xml:11:13-90
+45-->[host.exp.exponent:expo.modules.webbrowser:15.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c2205bea13112cdf18ef52b4ca051370\transformed\expo.modules.webbrowser-15.0.7\AndroidManifest.xml:11:21-87
+46        </intent>
+47        <intent>
+47-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:15:9-19:18
+48
+49            <!-- Required for picking images from the camera roll if targeting API 30 -->
+50            <action android:name="android.media.action.IMAGE_CAPTURE" />
+50-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:18:13-73
+50-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:18:21-70
+51        </intent>
+52        <intent>
+52-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:20:9-24:18
 53
-54            <category android:name="android.intent.category.OPENABLE" />
-54-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:11:13-73
-54-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:11:23-70
-55
-56            <data android:mimeType="*/*" />
-56-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-57        </intent> <!-- Query open documents -->
-58        <intent>
-58-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:15:9-17:18
-59            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
-59-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:16:13-79
-59-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:16:21-76
-60        </intent>
-61    </queries>
-62    <!--
-63  Allows Glide to monitor connectivity status and restart failed requests if users go from a
-64  a disconnected to a connected network state.
-65    -->
-66    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-66-->[BareExpo:expo.modules.image:2.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\bba4934fb137bea6ff6ee5ad91c7be7a\transformed\expo.modules.image-2.4.0\AndroidManifest.xml:12:5-79
-66-->[BareExpo:expo.modules.image:2.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\bba4934fb137bea6ff6ee5ad91c7be7a\transformed\expo.modules.image-2.4.0\AndroidManifest.xml:12:22-76
-67    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
-67-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\41304ba5ea27aacda6c80171d436e40a\transformed\biometric-1.1.0\AndroidManifest.xml:24:5-72
-67-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\41304ba5ea27aacda6c80171d436e40a\transformed\biometric-1.1.0\AndroidManifest.xml:24:22-69
-68    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-68-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\41304ba5ea27aacda6c80171d436e40a\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
-68-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\41304ba5ea27aacda6c80171d436e40a\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
-69
-70    <permission
-70-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-71        android:name="com.myapp.velocall.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-71-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-72        android:protectionLevel="signature" />
-72-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-73
-74    <uses-permission android:name="com.myapp.velocall.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-74-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-74-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-75    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-75-->[com.android.installreferrer:installreferrer:2.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\63044213529fbfda106c70808dc25156\transformed\installreferrer-2.2\AndroidManifest.xml:9:5-110
-75-->[com.android.installreferrer:installreferrer:2.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\63044213529fbfda106c70808dc25156\transformed\installreferrer-2.2\AndroidManifest.xml:9:22-107
-76
-77    <application
-77-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:3-41:17
-78        android:name="com.myapp.velocall.MainApplication"
-78-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:16-47
-79        android:allowBackup="true"
-79-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:162-188
-80        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-80-->[androidx.core:core:1.13.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\af9f1036362c92a9109f915df9f93bd0\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-81        android:dataExtractionRules="@xml/secure_store_data_extraction_rules"
-81-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:307-376
-82        android:debuggable="true"
-83        android:extractNativeLibs="false"
-84        android:fullBackupContent="@xml/secure_store_backup_rules"
-84-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:248-306
-85        android:icon="@mipmap/ic_launcher"
-85-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:81-115
-86        android:label="@string/app_name"
-86-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:48-80
-87        android:roundIcon="@mipmap/ic_launcher_round"
-87-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:116-161
-88        android:supportsRtl="true"
-88-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:221-247
-89        android:theme="@style/AppTheme"
-89-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:189-220
-90        android:usesCleartextTraffic="true" >
-90-->E:\Apploication\frontend\android\app\src\debug\AndroidManifest.xml:6:18-53
-91        <meta-data
-91-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:5-83
-92            android:name="expo.modules.updates.ENABLED"
-92-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:16-59
-93            android:value="false" />
-93-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:60-81
-94        <meta-data
-94-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:5-105
-95            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
-95-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:16-80
-96            android:value="ALWAYS" />
-96-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:81-103
-97        <meta-data
-97-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:5-99
-98            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
-98-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:16-79
-99            android:value="0" />
-99-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:80-97
-100
-101        <activity
-101-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:5-40:16
-102            android:name="com.myapp.velocall.MainActivity"
-102-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:15-43
-103            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
-103-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:44-134
-104            android:exported="true"
-104-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:256-279
-105            android:launchMode="singleTask"
-105-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:135-166
-106            android:screenOrientation="portrait"
-106-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:280-316
-107            android:theme="@style/Theme.App.SplashScreen"
-107-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:210-255
-108            android:windowSoftInputMode="adjustResize" >
-108-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:167-209
-109            <intent-filter>
-109-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:22:7-25:23
-110                <action android:name="android.intent.action.MAIN" />
-110-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:23:9-60
-110-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:23:17-58
-111
-112                <category android:name="android.intent.category.LAUNCHER" />
-112-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:24:9-68
-112-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:24:19-66
-113            </intent-filter>
-114            <intent-filter>
-114-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:26:7-32:23
-115                <action android:name="android.intent.action.VIEW" />
-115-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:7-58
-115-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:15-56
-116
-117                <category android:name="android.intent.category.DEFAULT" />
-117-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:9-67
-117-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:19-65
-118                <category android:name="android.intent.category.BROWSABLE" />
-118-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:7-67
-118-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:17-65
-119
-120                <data android:scheme="myapp" />
-120-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-120-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
-121                <data android:scheme="exp+my-app" />
-121-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-121-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
-122            </intent-filter>
-123            <intent-filter data-generated="true" >
-123-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:33:7-39:23
-123-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:33:22-43
-124                <action android:name="android.intent.action.VIEW" />
-124-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:7-58
-124-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:15-56
-125
-126                <data android:scheme="https" />
-126-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-126-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
-127                <data android:scheme="http" />
-127-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-127-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
+54            <!-- Required for picking images from the camera if targeting API 30 -->
+55            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+55-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:23:13-80
+55-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:23:21-77
+56        </intent>
+57        <intent>
+57-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:23:9-25:18
+58            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+58-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:24:13-86
+58-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:24:21-83
+59        </intent>
+60        <intent>
+60-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:8:9-14:18
+61            <action android:name="android.intent.action.GET_CONTENT" />
+61-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:9:13-72
+61-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:9:21-69
+62
+63            <category android:name="android.intent.category.OPENABLE" />
+63-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:11:13-73
+63-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:11:23-70
+64
+65            <data android:mimeType="*/*" />
+65-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
+66        </intent>
+67    </queries>
+68    <!--
+69  Allows Glide to monitor connectivity status and restart failed requests if users go from a
+70  a disconnected to a connected network state.
+71    -->
+72    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+72-->[BareExpo:expo.modules.image:3.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\3e4fb5e1b69041d605df1ec9d6de5ee6\transformed\expo.modules.image-3.0.8\AndroidManifest.xml:12:5-79
+72-->[BareExpo:expo.modules.image:3.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\3e4fb5e1b69041d605df1ec9d6de5ee6\transformed\expo.modules.image-3.0.8\AndroidManifest.xml:12:22-76
+73    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+73-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\69b9d18aeb9f61526f95ba462f610614\transformed\biometric-1.1.0\AndroidManifest.xml:24:5-72
+73-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\69b9d18aeb9f61526f95ba462f610614\transformed\biometric-1.1.0\AndroidManifest.xml:24:22-69
+74    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+74-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\69b9d18aeb9f61526f95ba462f610614\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+74-->[androidx.biometric:biometric:1.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\69b9d18aeb9f61526f95ba462f610614\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+75
+76    <permission
+76-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+77        android:name="com.myapp.velocall.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+77-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+78        android:protectionLevel="signature" />
+78-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+79
+80    <uses-permission android:name="com.myapp.velocall.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+80-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+80-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+81    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+81-->[com.android.installreferrer:installreferrer:2.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\9861dab188f670a73e15bb8c794a2453\transformed\installreferrer-2.2\AndroidManifest.xml:9:5-110
+81-->[com.android.installreferrer:installreferrer:2.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\9861dab188f670a73e15bb8c794a2453\transformed\installreferrer-2.2\AndroidManifest.xml:9:22-107
+82
+83    <application
+83-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:3-34:17
+84        android:name="com.myapp.velocall.MainApplication"
+84-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:16-47
+85        android:allowBackup="true"
+85-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:162-188
+86        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+86-->[androidx.core:core:1.16.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\631579dc1fcef04dc77622af1b0f3f13\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+87        android:debuggable="true"
+88        android:enableOnBackInvokedCallback="false"
+88-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:248-291
+89        android:extractNativeLibs="false"
+90        android:icon="@mipmap/ic_launcher"
+90-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:81-115
+91        android:label="@string/app_name"
+91-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:48-80
+92        android:roundIcon="@mipmap/ic_launcher_round"
+92-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:116-161
+93        android:supportsRtl="true"
+93-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:221-247
+94        android:theme="@style/AppTheme"
+94-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:17:189-220
+95        android:usesCleartextTraffic="true" >
+95-->E:\Apploication\frontend\android\app\src\debug\AndroidManifest.xml:6:18-53
+96        <meta-data
+96-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:5-83
+97            android:name="expo.modules.updates.ENABLED"
+97-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:16-59
+98            android:value="false" />
+98-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:18:60-81
+99        <meta-data
+99-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:5-105
+100            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+100-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:16-80
+101            android:value="ALWAYS" />
+101-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:19:81-103
+102        <meta-data
+102-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:5-99
+103            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+103-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:16-79
+104            android:value="0" />
+104-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:20:80-97
+105
+106        <activity
+106-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:5-33:16
+107            android:name="com.myapp.velocall.MainActivity"
+107-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:15-43
+108            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode"
+108-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:44-134
+109            android:exported="true"
+109-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:256-279
+110            android:launchMode="singleTask"
+110-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:135-166
+111            android:theme="@style/Theme.App.SplashScreen"
+111-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:210-255
+112            android:windowSoftInputMode="adjustResize" >
+112-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:21:167-209
+113            <intent-filter>
+113-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:22:7-25:23
+114                <action android:name="android.intent.action.MAIN" />
+114-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:23:9-60
+114-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:23:17-58
+115
+116                <category android:name="android.intent.category.LAUNCHER" />
+116-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:24:9-68
+116-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:24:19-66
+117            </intent-filter>
+118            <intent-filter>
+118-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:26:7-32:23
+119                <action android:name="android.intent.action.VIEW" />
+119-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:7-58
+119-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:15-56
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:9-67
+121-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:19-65
+122                <category android:name="android.intent.category.BROWSABLE" />
+122-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:7-67
+122-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:17-65
+123
+124                <data android:scheme="myapp" />
+124-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
+124-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
+125                <data android:scheme="exp+my-app" />
+125-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
+125-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
+126            </intent-filter>
+127        </activity>
 128
-129                <category android:name="android.intent.category.BROWSABLE" />
-129-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:7-67
-129-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:17-65
-130                <category android:name="android.intent.category.DEFAULT" />
-130-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:9-67
-130-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:19-65
-131            </intent-filter>
-132        </activity>
-133
-134        <provider
-134-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-16:20
-135            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
-135-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-83
-136            android:authorities="com.myapp.velocall.fileprovider"
-136-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-64
-137            android:exported="false"
-137-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-37
-138            android:grantUriPermissions="true" >
-138-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-47
-139            <meta-data
-139-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-15:63
-140                android:name="android.support.FILE_PROVIDER_PATHS"
-140-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:17-67
-141                android:resource="@xml/file_provider_paths" />
-141-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-60
-142        </provider>
+129        <provider
+129-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:9-28:20
+130            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+130-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-83
+131            android:authorities="com.myapp.velocall.fileprovider"
+131-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-64
+132            android:exported="false"
+132-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:13-37
+133            android:grantUriPermissions="true" >
+133-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:24:13-47
+134            <meta-data
+134-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:13-27:63
+135                android:name="android.support.FILE_PROVIDER_PATHS"
+135-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:17-67
+136                android:resource="@xml/file_provider_paths" />
+136-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:17-60
+137        </provider>
+138
+139        <service
+139-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-12:19
+140            android:name="com.oney.WebRTCModule.MediaProjectionService"
+140-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-72
+141            android:foregroundServiceType="mediaProjection" >
+141-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-60
+142        </service>
 143
-144        <service
-144-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-12:19
-145            android:name="com.oney.WebRTCModule.MediaProjectionService"
-145-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-72
-146            android:foregroundServiceType="mediaProjection" >
-146-->[:react-native-webrtc] E:\Apploication\frontend\node_modules\react-native-webrtc\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-60
-147        </service>
-148
+144        <activity
+144-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-16:75
+145            android:name="expo.modules.devlauncher.launcher.DevLauncherActivity"
+145-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-81
+146            android:exported="true"
+146-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-36
+147            android:launchMode="singleTask"
+147-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-44
+148            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+148-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-72
 149        <activity
-149-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-25:20
-150            android:name="expo.modules.devlauncher.launcher.DevLauncherActivity"
-150-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-81
+149-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:9-30:20
+150            android:name="expo.modules.devlauncher.compose.AuthActivity"
+150-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:13-73
 151            android:exported="true"
-151-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-36
+151-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:13-36
 152            android:launchMode="singleTask"
-152-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-44
-153            android:theme="@style/Theme.DevLauncher.LauncherActivity" >
-153-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-70
+152-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:13-44
+153            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+153-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:13-72
 154            <intent-filter>
-154-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:13-24:29
+154-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:13-29:29
 155                <action android:name="android.intent.action.VIEW" />
 155-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:7-58
 155-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:15-56
@@ -304,370 +301,331 @@
 161            </intent-filter>
 162        </activity>
 163        <activity
-163-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:9-29:70
+163-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:31:9-34:70
 164            android:name="expo.modules.devlauncher.launcher.errors.DevLauncherErrorActivity"
-164-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:13-93
+164-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:32:13-93
 165            android:screenOrientation="portrait"
-165-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-49
+165-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:33:13-49
 166            android:theme="@style/Theme.DevLauncher.ErrorActivity" />
-166-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:13-67
-167        <activity
-167-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-21:20
-168            android:name="expo.modules.devmenu.DevMenuActivity"
-168-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-64
-169            android:exported="true"
-169-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-36
-170            android:launchMode="singleTask"
-170-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-44
-171            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" >
-171-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-75
-172            <intent-filter>
-172-->[:expo-dev-menu] E:\Apploication\frontend\node_modules\expo-dev-menu\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-20:29
-173                <action android:name="android.intent.action.VIEW" />
-173-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:7-58
-173-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:12:15-56
-174
-175                <category android:name="android.intent.category.DEFAULT" />
-175-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:9-67
-175-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:28:19-65
-176                <category android:name="android.intent.category.BROWSABLE" />
-176-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:7-67
-176-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:13:17-65
+166-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:34:13-67
+167
+168        <meta-data
+168-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:36:9-38:42
+169            android:name="com.google.mlkit.vision.DEPENDENCIES"
+169-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:37:13-64
+170            android:value="barcode_ui" />
+170-->[:expo-dev-launcher] E:\Apploication\frontend\node_modules\expo-dev-launcher\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:38:13-39
+171        <meta-data
+171-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-11:89
+172            android:name="org.unimodules.core.AppLoader#react-native-headless"
+172-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-79
+173            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+173-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-86
+174        <meta-data
+174-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-15:45
+175            android:name="com.facebook.soloader.enabled"
+175-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-57
+176            android:value="true" />
+176-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-33
 177
-178                <data android:scheme="expo-dev-menu" />
-178-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:7-37
-178-->E:\Apploication\frontend\android\app\src\main\AndroidManifest.xml:14:13-35
-179            </intent-filter>
-180        </activity>
+178        <activity
+178-->[com.facebook.react:react-android:0.81.4] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\91fb7ff8dd49949ae89a33d397cb948c\transformed\react-android-0.81.4-debug\AndroidManifest.xml:19:9-21:40
+179            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+179-->[com.facebook.react:react-android:0.81.4] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\91fb7ff8dd49949ae89a33d397cb948c\transformed\react-android-0.81.4-debug\AndroidManifest.xml:20:13-77
+180            android:exported="false" />
+180-->[com.facebook.react:react-android:0.81.4] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\91fb7ff8dd49949ae89a33d397cb948c\transformed\react-android-0.81.4-debug\AndroidManifest.xml:21:13-37
 181
-182        <meta-data
-182-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:9-11:89
-183            android:name="org.unimodules.core.AppLoader#react-native-headless"
-183-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-79
-184            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
-184-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-86
-185        <meta-data
-185-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:9-15:45
-186            android:name="com.facebook.soloader.enabled"
-186-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-57
-187            android:value="true" />
-187-->[:expo-modules-core] E:\Apploication\frontend\node_modules\expo-modules-core\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-33
-188
-189        <activity
-189-->[com.facebook.react:react-android:0.79.5] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a89efe01639eb7dad7f1852c2dc2010d\transformed\react-android-0.79.5-debug\AndroidManifest.xml:19:9-21:40
-190            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-190-->[com.facebook.react:react-android:0.79.5] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a89efe01639eb7dad7f1852c2dc2010d\transformed\react-android-0.79.5-debug\AndroidManifest.xml:20:13-77
-191            android:exported="false" />
-191-->[com.facebook.react:react-android:0.79.5] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a89efe01639eb7dad7f1852c2dc2010d\transformed\react-android-0.79.5-debug\AndroidManifest.xml:21:13-37
-192
-193        <provider
-193-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:8:9-15:20
-194            android:name="expo.modules.clipboard.ClipboardFileProvider"
-194-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:9:13-72
-195            android:authorities="com.myapp.velocall.ClipboardFileProvider"
-195-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:10:13-73
-196            android:exported="true" >
-196-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:11:13-36
-197            <meta-data
-197-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:12:13-14:68
-198                android:name="expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS"
-198-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:13:17-84
-199                android:resource="@xml/clipboard_provider_paths" />
-199-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c68468d514951c48ddbfebcf60883194\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:14:17-65
-200        </provider>
-201
-202        <meta-data
-202-->[host.exp.exponent:expo.modules.camera:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c52e1664627d94fedb6f5004fcb1b4d9\transformed\expo.modules.camera-17.0.7\AndroidManifest.xml:11:9-13:42
-203            android:name="com.google.mlkit.vision.DEPENDENCIES"
-203-->[host.exp.exponent:expo.modules.camera:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c52e1664627d94fedb6f5004fcb1b4d9\transformed\expo.modules.camera-17.0.7\AndroidManifest.xml:12:13-64
-204            android:value="barcode_ui" />
-204-->[host.exp.exponent:expo.modules.camera:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\c52e1664627d94fedb6f5004fcb1b4d9\transformed\expo.modules.camera-17.0.7\AndroidManifest.xml:13:13-39
-205
-206        <service
-206-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:28:9-40:19
-207            android:name="com.google.android.gms.metadata.ModuleDependencies"
-207-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:29:13-78
-208            android:enabled="false"
-208-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:30:13-36
-209            android:exported="false" >
-209-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:31:13-37
-210            <intent-filter>
-210-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:33:13-35:29
-211                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
-211-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:34:17-94
-211-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:34:25-91
-212            </intent-filter>
-213
-214            <meta-data
-214-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:37:13-39:36
-215                android:name="photopicker_activity:0:required"
-215-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:38:17-63
-216                android:value="" />
-216-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:39:17-33
-217        </service>
-218
-219        <activity
-219-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:42:9-46:48
-220            android:name="expo.modules.imagepicker.ExpoCropImageActivity"
-220-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:43:13-74
-221            android:exported="false"
-221-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:44:13-37
-222            android:theme="@style/Base.Theme.AppCompat" /> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
-222-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:45:13-56
-223        <provider
-223-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:48:9-56:20
-224            android:name="expo.modules.imagepicker.fileprovider.ImagePickerFileProvider"
-224-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:49:13-89
-225            android:authorities="com.myapp.velocall.ImagePickerFileProvider"
-225-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:50:13-75
-226            android:exported="false"
-226-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:51:13-37
-227            android:grantUriPermissions="true" >
-227-->[host.exp.exponent:expo.modules.imagepicker:17.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\a10d196b90be1ba4a0fa806fd1733c9e\transformed\expo.modules.imagepicker-17.0.7\AndroidManifest.xml:52:13-47
-228            <meta-data
-228-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-15:63
-229                android:name="android.support.FILE_PROVIDER_PATHS"
-229-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:17-67
-230                android:resource="@xml/image_picker_provider_paths" />
-230-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-60
-231        </provider>
-232
-233        <uses-library
-233-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:29:9-31:40
-234            android:name="androidx.camera.extensions.impl"
-234-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:30:13-59
-235            android:required="false" />
-235-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\5bb671b7ea6a0c407623e3a9913d2d3a\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:31:13-37
-236
-237        <service
-237-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:24:9-33:19
-238            android:name="androidx.camera.core.impl.MetadataHolderService"
-238-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:25:13-75
-239            android:enabled="false"
-239-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:26:13-36
-240            android:exported="false" >
-240-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:27:13-37
-241            <meta-data
-241-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:30:13-32:89
-242                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-242-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:31:17-103
-243                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-243-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3c937dfa92fd4d2f55c3e2fabf783756\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:32:17-86
-244        </service>
-245
-246        <provider
-246-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:21:9-29:20
-247            android:name="com.canhub.cropper.CropFileProvider"
-247-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:22:13-63
-248            android:authorities="com.myapp.velocall.cropper.fileprovider"
-248-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:23:13-72
-249            android:exported="false"
-249-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:24:13-37
-250            android:grantUriPermissions="true" >
-250-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:25:13-47
-251            <meta-data
-251-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-15:63
-252                android:name="android.support.FILE_PROVIDER_PATHS"
-252-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:17-67
-253                android:resource="@xml/library_file_paths" />
-253-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-60
-254        </provider>
-255
-256        <activity
-256-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:31:9-33:39
-257            android:name="com.canhub.cropper.CropImageActivity"
-257-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:32:13-64
-258            android:exported="true" />
-258-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\da3d785accc181b5d8cd59ecc7f8a711\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:33:13-36
-259        <!--
-260        This activity is an invisible delegate activity to start scanner activity
-261        and receive result, so it's unnecessary to support screen orientation and
-262        we can avoid any side effect from activity recreation in any case.
-263        -->
-264        <activity
-264-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f699e8650820767ba3bb6b31c047b0fd\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:15:9-20:20
-265            android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity"
-265-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f699e8650820767ba3bb6b31c047b0fd\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:16:13-107
-266            android:exported="false"
-266-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f699e8650820767ba3bb6b31c047b0fd\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:17:13-37
-267            android:screenOrientation="portrait" >
-267-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\f699e8650820767ba3bb6b31c047b0fd\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:18:13-49
-268        </activity>
+182        <provider
+182-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:8:9-15:20
+183            android:name="expo.modules.clipboard.ClipboardFileProvider"
+183-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:9:13-72
+184            android:authorities="com.myapp.velocall.ClipboardFileProvider"
+184-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:10:13-73
+185            android:exported="true" >
+185-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:11:13-36
+186            <meta-data
+186-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:12:13-14:68
+187                android:name="expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS"
+187-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:13:17-84
+188                android:resource="@xml/clipboard_provider_paths" />
+188-->[host.exp.exponent:expo.modules.clipboard:8.0.7] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\b607ac3a2d9b9ef037bab6c24dd8fd33\transformed\expo.modules.clipboard-8.0.7\AndroidManifest.xml:14:17-65
+189        </provider>
+190
+191        <service
+191-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:28:9-40:19
+192            android:name="com.google.android.gms.metadata.ModuleDependencies"
+192-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:29:13-78
+193            android:enabled="false"
+193-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:30:13-36
+194            android:exported="false" >
+194-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:31:13-37
+195            <intent-filter>
+195-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:33:13-35:29
+196                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+196-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:34:17-94
+196-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:34:25-91
+197            </intent-filter>
+198
+199            <meta-data
+199-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:37:13-39:36
+200                android:name="photopicker_activity:0:required"
+200-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:38:17-63
+201                android:value="" />
+201-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:39:17-33
+202        </service>
+203
+204        <activity
+204-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:42:9-46:48
+205            android:name="expo.modules.imagepicker.ExpoCropImageActivity"
+205-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:43:13-74
+206            android:exported="false"
+206-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:44:13-37
+207            android:theme="@style/Base.Theme.AppCompat" /> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+207-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:45:13-56
+208        <provider
+208-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:48:9-56:20
+209            android:name="expo.modules.imagepicker.fileprovider.ImagePickerFileProvider"
+209-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:49:13-89
+210            android:authorities="com.myapp.velocall.ImagePickerFileProvider"
+210-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:50:13-75
+211            android:exported="false"
+211-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:51:13-37
+212            android:grantUriPermissions="true" >
+212-->[host.exp.exponent:expo.modules.imagepicker:17.0.8] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\26b958b00f2f8b7e72f3f33b7b32e675\transformed\expo.modules.imagepicker-17.0.8\AndroidManifest.xml:52:13-47
+213            <meta-data
+213-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:13-27:63
+214                android:name="android.support.FILE_PROVIDER_PATHS"
+214-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:17-67
+215                android:resource="@xml/image_picker_provider_paths" />
+215-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:17-60
+216        </provider>
+217
+218        <uses-library
+218-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:29:9-31:40
+219            android:name="androidx.camera.extensions.impl"
+219-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:30:13-59
+220            android:required="false" />
+220-->[androidx.camera:camera-extensions:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\6609bb66e13561a1a2706c813b6c9463\transformed\camera-extensions-1.5.0-rc01\AndroidManifest.xml:31:13-37
+221
+222        <service
+222-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:24:9-33:19
+223            android:name="androidx.camera.core.impl.MetadataHolderService"
+223-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:25:13-75
+224            android:enabled="false"
+224-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:26:13-36
+225            android:exported="false" >
+225-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:27:13-37
+226            <meta-data
+226-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:30:13-32:89
+227                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+227-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:31:17-103
+228                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+228-->[androidx.camera:camera-camera2:1.5.0-rc01] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\937b05375f16cf34dc438979102f5383\transformed\camera-camera2-1.5.0-rc01\AndroidManifest.xml:32:17-86
+229        </service>
+230
+231        <provider
+231-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:21:9-29:20
+232            android:name="com.canhub.cropper.CropFileProvider"
+232-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:22:13-63
+233            android:authorities="com.myapp.velocall.cropper.fileprovider"
+233-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:23:13-72
+234            android:exported="false"
+234-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:24:13-37
+235            android:grantUriPermissions="true" >
+235-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:25:13-47
+236            <meta-data
+236-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:25:13-27:63
+237                android:name="android.support.FILE_PROVIDER_PATHS"
+237-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:17-67
+238                android:resource="@xml/library_file_paths" />
+238-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:17-60
+239        </provider>
+240
+241        <activity
+241-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:31:9-33:39
+242            android:name="com.canhub.cropper.CropImageActivity"
+242-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:32:13-64
+243            android:exported="true" />
+243-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\e296c463a0bf3fb9a9e39729791e4f62\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:33:13-36
+244        <!--
+245        This activity is an invisible delegate activity to start scanner activity
+246        and receive result, so it's unnecessary to support screen orientation and
+247        we can avoid any side effect from activity recreation in any case.
+248        -->
+249        <activity
+249-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ac5e909fa451f6b80ed2ba547bdb6190\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:15:9-20:20
+250            android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity"
+250-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ac5e909fa451f6b80ed2ba547bdb6190\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:16:13-107
+251            android:exported="false"
+251-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ac5e909fa451f6b80ed2ba547bdb6190\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:17:13-37
+252            android:screenOrientation="portrait" >
+252-->[com.google.android.gms:play-services-code-scanner:16.1.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ac5e909fa451f6b80ed2ba547bdb6190\transformed\play-services-code-scanner-16.1.0\AndroidManifest.xml:18:13-49
+253        </activity>
+254
+255        <service
+255-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:9:9-15:19
+256            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+256-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:10:13-91
+257            android:directBootAware="true"
+257-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:17:13-43
+258            android:exported="false" >
+258-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:11:13-37
+259            <meta-data
+259-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:12:13-14:85
+260                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+260-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:13:17-120
+261                android:value="com.google.firebase.components.ComponentRegistrar" />
+261-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7b566a262cd8d4f19b83092abb599b41\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:14:17-82
+262            <meta-data
+262-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\0039decd29079f6bdcbfa52471b26c00\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+263                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+263-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\0039decd29079f6bdcbfa52471b26c00\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+264                android:value="com.google.firebase.components.ComponentRegistrar" />
+264-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\0039decd29079f6bdcbfa52471b26c00\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+265            <meta-data
+265-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:20:13-22:85
+266                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+266-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:21:17-120
+267                android:value="com.google.firebase.components.ComponentRegistrar" />
+267-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:22:17-82
+268        </service>
 269
-270        <service
-270-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:9:9-15:19
-271            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-271-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:10:13-91
-272            android:directBootAware="true"
-272-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:17:13-43
-273            android:exported="false" >
-273-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:11:13-37
-274            <meta-data
-274-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:12:13-14:85
-275                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-275-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:13:17-120
-276                android:value="com.google.firebase.components.ComponentRegistrar" />
-276-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8613fffaabc2fa31e055057755011f31\transformed\play-services-mlkit-barcode-scanning-18.3.1\AndroidManifest.xml:14:17-82
-277            <meta-data
-277-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\0144bcface8ec4277afa5471d1877243\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
-278                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-278-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\0144bcface8ec4277afa5471d1877243\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
-279                android:value="com.google.firebase.components.ComponentRegistrar" />
-279-->[com.google.mlkit:vision-common:17.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\0144bcface8ec4277afa5471d1877243\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
-280            <meta-data
-280-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:20:13-22:85
-281                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-281-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:21:17-120
-282                android:value="com.google.firebase.components.ComponentRegistrar" />
-282-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:22:17-82
-283        </service>
+270        <provider
+270-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:9:9-13:38
+271            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+271-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:10:13-78
+272            android:authorities="com.myapp.velocall.mlkitinitprovider"
+272-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:11:13-69
+273            android:exported="false"
+273-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:12:13-37
+274            android:initOrder="99" />
+274-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\639a0af8a6cb49f6a49ae067c6cb8d6b\transformed\common-18.11.0\AndroidManifest.xml:13:13-35
+275
+276        <meta-data
+276-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\8812c53e9f1ab13ee505cba961aa3973\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:11:9-13:43
+277            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+277-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\8812c53e9f1ab13ee505cba961aa3973\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:12:13-84
+278            android:value="GlideModule" />
+278-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\8812c53e9f1ab13ee505cba961aa3973\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:13:13-40
+279
+280        <activity
+280-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\36d2d02a6d062e47c046fecfe8b1acbe\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+281            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+281-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\36d2d02a6d062e47c046fecfe8b1acbe\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+282            android:exported="false"
+282-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\36d2d02a6d062e47c046fecfe8b1acbe\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+283            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+283-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\36d2d02a6d062e47c046fecfe8b1acbe\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
 284
-285        <provider
-285-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:9:9-13:38
-286            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-286-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:10:13-78
-287            android:authorities="com.myapp.velocall.mlkitinitprovider"
-287-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:11:13-69
-288            android:exported="false"
-288-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:12:13-37
-289            android:initOrder="99" />
-289-->[com.google.mlkit:common:18.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3ebe2b4e59f48b5dafe904fa08e01aa0\transformed\common-18.11.0\AndroidManifest.xml:13:13-35
-290        <provider
-290-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:21:9-30:20
-291            android:name="expo.modules.filesystem.FileSystemFileProvider"
-291-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:22:13-74
-292            android:authorities="com.myapp.velocall.FileSystemFileProvider"
-292-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:23:13-74
-293            android:exported="false"
-293-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:24:13-37
-294            android:grantUriPermissions="true" >
-294-->[host.exp.exponent:expo.modules.filesystem:18.1.11] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\8d42067affa37cf5106d40977269b7ff\transformed\expo.modules.filesystem-18.1.11\AndroidManifest.xml:25:13-47
-295            <meta-data
-295-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-15:63
-296                android:name="android.support.FILE_PROVIDER_PATHS"
-296-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:17-67
-297                android:resource="@xml/file_system_provider_paths" />
-297-->[:react-native-webview] E:\Apploication\frontend\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-60
-298        </provider>
-299
-300        <meta-data
-300-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3e348df7ba08fc962cdad2072296ea0d\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:11:9-13:43
-301            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-301-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3e348df7ba08fc962cdad2072296ea0d\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:12:13-84
-302            android:value="GlideModule" />
-302-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\3e348df7ba08fc962cdad2072296ea0d\transformed\okhttp3-integration-4.11.0\AndroidManifest.xml:13:13-40
-303
-304        <activity
-304-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\04b3c844b3393ff9a6c840f537ca40ca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-305            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-305-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\04b3c844b3393ff9a6c840f537ca40ca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-306            android:exported="false"
-306-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\04b3c844b3393ff9a6c840f537ca40ca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-307            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-307-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\04b3c844b3393ff9a6c840f537ca40ca\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-308
-309        <meta-data
-309-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e054245bee9bbc8098dc00b5c8db8d90\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-310            android:name="com.google.android.gms.version"
-310-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e054245bee9bbc8098dc00b5c8db8d90\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-311            android:value="@integer/google_play_services_version" />
-311-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\e054245bee9bbc8098dc00b5c8db8d90\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-312
-313        <provider
-313-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-314            android:name="androidx.startup.InitializationProvider"
-314-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-315            android:authorities="com.myapp.velocall.androidx-startup"
-315-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-316            android:exported="false" >
-316-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-317            <meta-data
-317-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-318                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-318-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-319                android:value="androidx.startup" />
-319-->[androidx.emoji2:emoji2:1.3.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\34317f65008edeee7a1b865842f33bd5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-320            <meta-data
-320-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9199512315edfb2a12b21ef60be4e11d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-321                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-321-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9199512315edfb2a12b21ef60be4e11d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-322                android:value="androidx.startup" />
-322-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9199512315edfb2a12b21ef60be4e11d\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-323            <meta-data
-323-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-324                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-324-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-325                android:value="androidx.startup" />
-325-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-326        </provider>
+285        <meta-data
+285-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a10545a6be58d94cb0466b521c8b7e80\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+286            android:name="com.google.android.gms.version"
+286-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a10545a6be58d94cb0466b521c8b7e80\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+287            android:value="@integer/google_play_services_version" />
+287-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a10545a6be58d94cb0466b521c8b7e80\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+288
+289        <activity
+289-->[androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a21ffe108a309326fdc34e2b5b2faa7f\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
+290            android:name="androidx.compose.ui.tooling.PreviewActivity"
+290-->[androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a21ffe108a309326fdc34e2b5b2faa7f\transformed\ui-tooling\AndroidManifest.xml:24:13-71
+291            android:exported="true" />
+291-->[androidx.compose.ui:ui-tooling-android:1.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\a21ffe108a309326fdc34e2b5b2faa7f\transformed\ui-tooling\AndroidManifest.xml:25:13-36
+292
+293        <provider
+293-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+294            android:name="androidx.startup.InitializationProvider"
+294-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+295            android:authorities="com.myapp.velocall.androidx-startup"
+295-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+296            android:exported="false" >
+296-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+297            <meta-data
+297-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+298                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+298-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+299                android:value="androidx.startup" />
+299-->[androidx.emoji2:emoji2:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\ec408e850478dda81f34a82edfafa25a\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+300            <meta-data
+300-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c06dcf8b1c64a8164439c699a0a87a74\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
+301                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+301-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c06dcf8b1c64a8164439c699a0a87a74\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
+302                android:value="androidx.startup" />
+302-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\c06dcf8b1c64a8164439c699a0a87a74\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
+303            <meta-data
+303-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:29:13-31:52
+304                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+304-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:30:17-85
+305                android:value="androidx.startup" />
+305-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:31:17-49
+306        </provider>
+307
+308        <receiver
+308-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:34:9-52:20
+309            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+309-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:35:13-76
+310            android:directBootAware="false"
+310-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:36:13-44
+311            android:enabled="true"
+311-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:37:13-35
+312            android:exported="true"
+312-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:38:13-36
+313            android:permission="android.permission.DUMP" >
+313-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:39:13-57
+314            <intent-filter>
+314-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:40:13-42:29
+315                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+315-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:41:17-91
+315-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:41:25-88
+316            </intent-filter>
+317            <intent-filter>
+317-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:43:13-45:29
+318                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+318-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:44:17-85
+318-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:44:25-82
+319            </intent-filter>
+320            <intent-filter>
+320-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:46:13-48:29
+321                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+321-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:47:17-88
+321-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:47:25-85
+322            </intent-filter>
+323            <intent-filter>
+323-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:49:13-51:29
+324                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+324-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:50:17-95
+324-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\7f39232bfe938f43c50fd65cf3800b19\transformed\profileinstaller-1.4.1\AndroidManifest.xml:50:25-92
+325            </intent-filter>
+326        </receiver>
 327
-328        <receiver
-328-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-329            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-329-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-330            android:directBootAware="false"
-330-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-331            android:enabled="true"
-331-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-332            android:exported="true"
-332-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-333            android:permission="android.permission.DUMP" >
-333-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-334            <intent-filter>
-334-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-335                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-335-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-336            </intent-filter>
-337            <intent-filter>
-337-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-338                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-338-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-339            </intent-filter>
-340            <intent-filter>
-340-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-341                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-341-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-342            </intent-filter>
-343            <intent-filter>
-343-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-344                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-344-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-344-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\157248c89b6348d2fd007effe30e715a\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-345            </intent-filter>
-346        </receiver>
-347
-348        <service
-348-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-349            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-349-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-350            android:exported="false" >
-350-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-351            <meta-data
-351-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-352                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-352-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-353                android:value="cct" />
-353-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\846de91c81b394b5040c5f223c7e52a6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-354        </service>
-355        <service
-355-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-356            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-356-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-357            android:exported="false"
-357-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-358            android:permission="android.permission.BIND_JOB_SERVICE" >
-358-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-359        </service>
-360
-361        <receiver
-361-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-362            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-362-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-363            android:exported="false" />
-363-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.13\transforms\9ba9d7c95c7bf349bb655a451045ff51\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-364    </application>
-365
-366</manifest>
+328        <service
+328-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+329            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+329-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+330            android:exported="false" >
+330-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+331            <meta-data
+331-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+332                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+332-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+333                android:value="cct" />
+333-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\88112f81aa805f014605d3776e5199c6\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+334        </service>
+335        <service
+335-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+336            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+336-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+337            android:exported="false"
+337-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+338            android:permission="android.permission.BIND_JOB_SERVICE" >
+338-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+339        </service>
+340
+341        <receiver
+341-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+342            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+342-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+343            android:exported="false" />
+343-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\SANKHA SUBHRA\.gradle\caches\8.14.3\transforms\aa07de8e9165c0dbf7e6de3edfc21ff8\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+344    </application>
+345
+346</manifest>

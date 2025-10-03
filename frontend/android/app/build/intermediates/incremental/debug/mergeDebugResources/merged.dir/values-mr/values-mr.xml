@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> सह शेअर करा"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"कोलॅप्स करा"</string>
     <string gender="unknown" name="alert_description">अलर्ट</string>
+    <string msgid="389117264260014992" name="autofill">"ऑटोफिल"</string>
     <string name="bottomsheet_action_collapse">तळाशी असलेली शीट कोलॅप्स करा</string>
     <string name="bottomsheet_action_expand">तळाशी असलेल्या शीटचा विस्तार करा</string>
     <string name="bottomsheet_action_expand_halfway">पूर्णपणे विस्तृत करा</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">%2$d पैकी %1$d वर्ण एंटर केले आहे</string>
     <string name="character_counter_overflowed_content_description">%2$d पैकी %1$d वर्णमर्यादा ओलांडली आहे</string>
     <string name="clear_text_end_icon_content_description">मजकूर साफ करा</string>
+    <string msgid="406453423630273620" name="close_drawer">"नेव्हिगेशन मेनू बंद करा"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"शीट बंद करा"</string>
     <string gender="unknown" name="combobox_description">कॉम्बो बॉक्स</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">सुरू करा</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">तुम्ही Google Play सेवा सक्षम केल्याशिवाय %1$s हा अ‍ॅप कार्य करणार नाही.</string>
@@ -85,7 +88,10 @@
     <string name="common_signin_button_text_long">Google सह साइन इन करा</string>
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"पासवर्ड वापरा"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"लिंक क्लिपबोर्डवर कॉपी केली"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"इनपुट चुकीचे आहे"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"अज्ञात एरर"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"पॉप-अप विंडो"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"ड्रॉपडाउन मेनू"</string>
     <string name="error_a11y_label">एरर: चुकीचा</string>
     <string name="error_icon_content_description">एरर</string>
     <string name="exo_controls_cc_disabled_description">सबटायटल सुरू करा</string>
@@ -157,6 +163,8 @@
     <string name="icon_content_description">डायलॉग आयकन</string>
     <string gender="unknown" name="image_description">प्रतिमा</string>
     <string gender="unknown" name="imagebutton_description">बटण, प्रतिमा</string>
+    <string msgid="6827826412747255547" name="in_progress">"प्रगतीपथावर आहे"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"अंशतः तपासले"</string>
     <string name="item_view_role_description">टॅब</string>
     <string gender="unknown" name="link_description">लिंक</string>
     <string name="material_clock_toggle_content_description">AM किंवा PM निवडा</string>
@@ -220,26 +228,40 @@
     <string name="mtrl_picker_toggle_to_year_selection">वर्ष या दृश्यावर स्विच करण्यासाठी टॅप करा</string>
     <string name="mtrl_timepicker_cancel">रद्द करा</string>
     <string name="mtrl_timepicker_confirm">ओके</string>
+    <string msgid="542007171693138492" name="navigation_menu">"नेव्हिगेशन मेनू"</string>
+    <string msgid="6610465462668679431" name="not_selected">"निवडला नाही"</string>
     <string name="password_toggle_content_description">पासवर्ड दाखवा</string>
     <string gender="unknown" name="progressbar_description">प्रगती बार</string>
     <string gender="unknown" name="radiogroup_description">रेडिओ ग्रुप</string>
+    <string msgid="5941395253238309765" name="range_end">"रेंजचा शेवट"</string>
+    <string msgid="7097486360902471446" name="range_start">"रेंजची सुरुवात"</string>
     <string gender="unknown" name="rn_tab_description">टॅब</string>
     <string gender="unknown" name="scrollbar_description">बार स्क्रोल करा</string>
     <string msgid="6264217191555673260" name="search_menu_title">"शोध"</string>
     <string name="searchview_clear_text_content_description">मजकूर साफ करा</string>
     <string name="searchview_navigation_content_description">मागे जा</string>
+    <string msgid="6043586758067023" name="selected">"निवडला"</string>
     <string name="side_sheet_accessibility_pane_title">साइड शीट</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"सूचना"</string>
     <string gender="unknown" name="spinbutton_description">बटण स्पिन करा</string>
     <string gender="unknown" name="state_busy_description">व्यग्र</string>
     <string gender="unknown" name="state_collapsed_description">संकुचित केले</string>
+    <string msgid="4139871816613051306" name="state_empty">"रिक्त"</string>
     <string gender="unknown" name="state_expanded_description">विस्तारित केले</string>
     <string gender="unknown" name="state_mixed_description">मिश्र</string>
+    <string msgid="5834637030682409883" name="state_off">"बंद आहे"</string>
     <string gender="unknown" name="state_off_description">बंद</string>
+    <string msgid="1490883874751719580" name="state_on">"सुरू आहे"</string>
     <string gender="unknown" name="state_on_description">चालू</string>
     <string gender="unknown" name="state_unselected_description">निवड रद्द केलेले</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"९९९+"</string>
     <string gender="unknown" name="summary_description">सारांश</string>
+    <string msgid="2561197295334830845" name="switch_role">"स्विच"</string>
+    <string msgid="1672349317127674378" name="tab">"टॅब"</string>
     <string gender="unknown" name="tablist_description">टॅब लिस्ट</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> टक्के."</string>
     <string gender="unknown" name="timer_description">टायमर</string>
     <string gender="unknown" name="toolbar_description">टूल बार</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"टूलटिप"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"टूलटिप दाखवा"</string>
 </resources>

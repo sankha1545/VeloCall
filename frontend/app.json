@@ -4,13 +4,28 @@
     "slug": "my-app",
     "version": "1.0.0",
     "owner": "sankha1245",
+    "scheme": "my-app",
+    "platforms": ["android", "ios", "web"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "extra": {
       "backendUrl": "http://192.168.0.128:3000",
       "firebase": {
         "apiKey": "AIzaSyCnxtpE1zzto3-5WywtUfZtpJhSElQtVXM",
         "authDomain": "velocall-32a42.firebaseapp.com",
         "projectId": "velocall-32a42",
-        "storageBucket": "velocall-32a42.firebasestorage.app",
+        "storageBucket": "velocall-32a42.appspot.com",
         "messagingSenderId": "66842164687",
         "appId": "1:66842164687:web:90f9c57959c995e4e4a6ba",
         "measurementId": "G-KWSFJ8D28B"
@@ -21,8 +36,29 @@
         "androidGoogleClientId": "...",
         "webGoogleClientId": "...",
         "githubClientId": "..."
-      },
-      "appScheme": "myapp"
+      }
+    },
+    "android": {
+      "package": "com.myapp.velocall",
+      "googleServicesFile": "./google-services.json",
+      "permissions": ["INTERNET", "CAMERA"],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "exp+my-app",
+              "host": "*"
+            },
+            {
+              "scheme": "https",
+              "host": "*",
+              "pathPrefix": "/--/"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
     }
   }
 }

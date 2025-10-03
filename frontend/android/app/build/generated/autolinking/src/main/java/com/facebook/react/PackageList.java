@@ -32,9 +32,10 @@ import com.swmansion.rnscreens.RNScreensPackage;
 import com.oney.WebRTCModule.WebRTCModulePackage;
 // react-native-webview
 import com.reactnativecommunity.webview.RNCWebViewPackage;
-// react-native-edge-to-edge
-import com.zoontek.rnedgetoedge.EdgeToEdgePackage;
+// react-native-worklets
+import com.swmansion.worklets.WorkletsPackage;
 
+@SuppressWarnings("deprecation")
 public class PackageList {
   private Application application;
   private ReactNativeHost reactNativeHost;
@@ -90,7 +91,7 @@ public class PackageList {
       new RNScreensPackage(),
       new WebRTCModulePackage(),
       new RNCWebViewPackage(),
-      new EdgeToEdgePackage()
+      new WorkletsPackage()
     ));
   }
 }

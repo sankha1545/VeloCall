@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"هم‌رسانی با <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"کوچک کردن"</string>
     <string gender="unknown" name="alert_description">هشدار</string>
+    <string msgid="389117264260014992" name="autofill">"تکمیل خودکار"</string>
     <string name="bottomsheet_action_collapse">جمع کردن برگ زیرین</string>
     <string name="bottomsheet_action_expand">ازهم بازکردن برگ زیرین</string>
     <string name="bottomsheet_action_expand_halfway">گسترده کردن تا نیمه</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">نویسه‌های واردشده %1$d از %2$d</string>
     <string name="character_counter_overflowed_content_description">محدودیت نویسه از حد مجاز %1$d از %2$d بیشتر شده است</string>
     <string name="clear_text_end_icon_content_description">پاک کردن نوشتار</string>
+    <string msgid="406453423630273620" name="close_drawer">"بستن منوی پیمایش"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"بستن برگ"</string>
     <string gender="unknown" name="combobox_description">جعبه گفتگو</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">فعال کردن</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">‏تا وقتی «خدمات Google Play» را فعال نکنید، %1$s کار نمی‌کند.</string>
@@ -86,7 +89,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"استفاده از گذرواژه"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"پیوند در بریده‌دان کپی شد"</string>
     <string name="crop_image_menu_crop">بریدن (کراپ)</string>
+    <string msgid="8038256446254964252" name="default_error_message">"ورودی نامعتبر"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"خطای ناشناس"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"پنجره بالاپر"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"منوی کرکره‌ای"</string>
     <string name="error_a11y_label">خطا: نامعتبر</string>
     <string name="error_icon_content_description">خطا</string>
     <string name="exo_controls_cc_disabled_description">فعال کردن زیرنویس</string>
@@ -163,6 +169,8 @@
     <string name="icon_content_description">نماد کادر گفتگو</string>
     <string gender="unknown" name="image_description">تصویر</string>
     <string gender="unknown" name="imagebutton_description">دکمه، تصویر</string>
+    <string msgid="6827826412747255547" name="in_progress">"درحال انجام"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"ناقص علامت زده‌شده"</string>
     <string name="item_view_role_description">برگه</string>
     <string gender="unknown" name="link_description">پیوند</string>
     <string name="material_clock_toggle_content_description">انتخاب .ق.ظ. یا ب.ظ.</string>
@@ -226,27 +234,41 @@
     <string name="mtrl_picker_toggle_to_year_selection">برای رفتن به نمای سال ضربه بزنید</string>
     <string name="mtrl_timepicker_cancel">لغو</string>
     <string name="mtrl_timepicker_confirm">تأیید</string>
+    <string msgid="542007171693138492" name="navigation_menu">"منوی پیمایش"</string>
+    <string msgid="6610465462668679431" name="not_selected">"انتخاب‌نشده"</string>
     <string name="password_toggle_content_description">نمایش گذرواژه</string>
     <string name="pick_image_chooser_title">منبع را انتخاب کنید</string>
     <string gender="unknown" name="progressbar_description">نوار پیشرفت</string>
     <string gender="unknown" name="radiogroup_description">گروه رادیویی</string>
+    <string msgid="5941395253238309765" name="range_end">"پایان محدوده"</string>
+    <string msgid="7097486360902471446" name="range_start">"شروع محدوده"</string>
     <string gender="unknown" name="rn_tab_description">برگه</string>
     <string gender="unknown" name="scrollbar_description">نوار پیمایش</string>
     <string msgid="6264217191555673260" name="search_menu_title">"جستجو"</string>
     <string name="searchview_clear_text_content_description">پاک کردن نوشتار</string>
     <string name="searchview_navigation_content_description">برگشتن</string>
+    <string msgid="6043586758067023" name="selected">"انتخاب شد"</string>
     <string name="side_sheet_accessibility_pane_title">برگ کناری</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"هشدار"</string>
     <string gender="unknown" name="spinbutton_description">دکمه چرخش</string>
     <string gender="unknown" name="state_busy_description">مشغول</string>
     <string gender="unknown" name="state_collapsed_description">کوچک‌شده</string>
+    <string msgid="4139871816613051306" name="state_empty">"خالی"</string>
     <string gender="unknown" name="state_expanded_description">بزرگ‌شده</string>
     <string gender="unknown" name="state_mixed_description">ترکیب‌شده</string>
+    <string msgid="5834637030682409883" name="state_off">"خاموش"</string>
     <string gender="unknown" name="state_off_description">خاموش</string>
+    <string msgid="1490883874751719580" name="state_on">"روشن"</string>
     <string gender="unknown" name="state_on_description">روشن</string>
     <string gender="unknown" name="state_unselected_description">لغو انتخاب شد</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">خلاصه</string>
+    <string msgid="2561197295334830845" name="switch_role">"کلید"</string>
+    <string msgid="1672349317127674378" name="tab">"برگه"</string>
     <string gender="unknown" name="tablist_description">فهرست برگه</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> درصد."</string>
     <string gender="unknown" name="timer_description">زمان‌سنج</string>
     <string gender="unknown" name="toolbar_description">نوار ابزار</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"نکته‌ابزار"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"نمایش نکته‌ابزار"</string>
 </resources>

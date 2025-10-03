@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"سکیڑیں"</string>
     <string gender="unknown" name="alert_description">الرٹ</string>
+    <string msgid="389117264260014992" name="autofill">"آٹو فل"</string>
     <string name="bottomsheet_action_collapse">نیچے کی شیٹ کو سکیڑیں</string>
     <string name="bottomsheet_action_expand">نیچے کی شیٹ کو پھیلائیں</string>
     <string name="bottomsheet_action_expand_halfway">نصف تک پھیلائیں</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">%2$d میں سے %1$d حروف درج کیے گئے</string>
     <string name="character_counter_overflowed_content_description">حروف کی تعداد کی حد %2$d سے %1$d پہنچ گئی</string>
     <string name="clear_text_end_icon_content_description">ٹیکسٹ صاف کریں</string>
+    <string msgid="406453423630273620" name="close_drawer">"نیویگیشن مینیو بند کریں"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"شیٹ بند کریں"</string>
     <string gender="unknown" name="combobox_description">کومبو باکس</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">فعال کریں</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">‏جب تک آپ Google Play سروسز فعال نہیں کر لیتے، %1$s کام نہیں کرے گی۔</string>
@@ -86,7 +89,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"پاس ورڈ استعمال کریں"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"لنک کلپ بورڈ پر کاپی ہو گیا"</string>
     <string name="crop_image_menu_crop">تصویر کو تراشیں</string>
+    <string msgid="8038256446254964252" name="default_error_message">"غلط ان پٹ"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"نامعلوم خرابی"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"پاپ اپ ونڈو"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"ڈراپ ڈاؤن مینیو"</string>
     <string name="error_a11y_label">خرابی: غلط</string>
     <string name="error_icon_content_description">خرابی</string>
     <string name="exo_controls_cc_disabled_description">سب ٹائٹلز کو فعال کریں</string>
@@ -163,6 +169,8 @@
     <string name="icon_content_description">ڈائیلاگ کا آئیکن</string>
     <string gender="unknown" name="image_description">تصویر</string>
     <string gender="unknown" name="imagebutton_description">بٹن، تصویر</string>
+    <string msgid="6827826412747255547" name="in_progress">"پیشرفت میں"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"جزوی طور پر چیک کردہ"</string>
     <string name="item_view_role_description">ٹیب</string>
     <string gender="unknown" name="link_description">لنک</string>
     <string name="material_clock_toggle_content_description">AM یا PM منتخب کریں</string>
@@ -226,27 +234,41 @@
     <string name="mtrl_picker_toggle_to_year_selection">سال کے منظر پر سوئچ کرنے کے لیے تھپتھپائیں</string>
     <string name="mtrl_timepicker_cancel">منسوخ کریں</string>
     <string name="mtrl_timepicker_confirm">ٹھیک ہے</string>
+    <string msgid="542007171693138492" name="navigation_menu">"نیویگیشن مینیو"</string>
+    <string msgid="6610465462668679431" name="not_selected">"غیر منتخب کردہ"</string>
     <string name="password_toggle_content_description">پاس ورڈ دکھائیں</string>
     <string name="pick_image_chooser_title">ذریعہ منتخب کریں</string>
     <string gender="unknown" name="progressbar_description">پیشرفت کی بار</string>
     <string gender="unknown" name="radiogroup_description">ریڈیو گروپ</string>
+    <string msgid="5941395253238309765" name="range_end">"رینج کا اختتام"</string>
+    <string msgid="7097486360902471446" name="range_start">"رینج کی شروعات"</string>
     <string gender="unknown" name="rn_tab_description">ٹیب</string>
     <string gender="unknown" name="scrollbar_description">سکرول بار</string>
     <string msgid="6264217191555673260" name="search_menu_title">"تلاش کریں"</string>
     <string name="searchview_clear_text_content_description">ٹیکسٹ صاف کریں</string>
     <string name="searchview_navigation_content_description">واپس جائیں</string>
+    <string msgid="6043586758067023" name="selected">"منتخب کردہ"</string>
     <string name="side_sheet_accessibility_pane_title">سائیڈ شیٹ</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"الرٹ"</string>
     <string gender="unknown" name="spinbutton_description">گھمانے کا بٹن</string>
     <string gender="unknown" name="state_busy_description">مصروف</string>
     <string gender="unknown" name="state_collapsed_description">سکیڑا گیا</string>
+    <string msgid="4139871816613051306" name="state_empty">"خالی ہے"</string>
     <string gender="unknown" name="state_expanded_description">توسیع کیا گیا</string>
     <string gender="unknown" name="state_mixed_description">امتزاج</string>
+    <string msgid="5834637030682409883" name="state_off">"آف ہے"</string>
     <string gender="unknown" name="state_off_description">آف ہے</string>
+    <string msgid="1490883874751719580" name="state_on">"آن ہے"</string>
     <string gender="unknown" name="state_on_description">آن ہے</string>
     <string gender="unknown" name="state_unselected_description">غیر منتخب کردہ</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"+999"</string>
     <string gender="unknown" name="summary_description">خلاصہ</string>
+    <string msgid="2561197295334830845" name="switch_role">"سوئچ"</string>
+    <string msgid="1672349317127674378" name="tab">"ٹیب"</string>
     <string gender="unknown" name="tablist_description">ٹیب کی لسٹ</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> فیصد۔"</string>
     <string gender="unknown" name="timer_description">ٹائمر</string>
     <string gender="unknown" name="toolbar_description">ٹول بار</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"ٹول ٹپ"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"ٹول ٹپ دکھائیں"</string>
 </resources>

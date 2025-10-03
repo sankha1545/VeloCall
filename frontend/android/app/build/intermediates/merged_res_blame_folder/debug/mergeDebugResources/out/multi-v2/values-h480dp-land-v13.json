@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.myapp.velocall.app-mergeDebugResources-77:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.myapp.velocall.app-mergeDebugResources-96:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SANKHA SUBHRA\\.gradle\\caches\\8.13\\transforms\\5ae5dcacd584dd15cca165a8a53f860c\\transformed\\material-1.12.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\SANKHA SUBHRA\\.gradle\\caches\\8.14.3\\transforms\\6e2f9cbd31da2024b88dc14f89d0e8a5\\transformed\\material-1.12.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

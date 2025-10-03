@@ -181,8 +181,6 @@
     <attr format="color" name="elevationOverlayColor"/>
     <attr format="boolean" name="elevationOverlayEnabled"/>
     <attr format="boolean" name="enableEdgeToEdge"/>
-    <attr format="boolean" name="enforceNavigationBarContrast"/>
-    <attr format="boolean" name="enforceSystemBarsLightTheme"/>
     <attr format="boolean" name="ensureMinTouchTargetSize"/>
     <attr format="color" name="expoCropBackButtonIconColor"/>
     <attr format="color" name="expoCropBackgroundColor"/>
@@ -674,7 +672,6 @@
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
-    <bool name="windowLightSystemBars">true</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -757,8 +754,6 @@
     <color name="dev_launcher_backgroundColor">#F8F8FA</color>
     <color name="dev_launcher_colorAccentDark">#FFFFFF</color>
     <color name="dev_launcher_colorPrimaryDark">#011A2D</color>
-    <color name="dev_launcher_errorLogButton">#66FFFFFF</color>
-    <color name="dev_launcher_errorMessage">#FF0000</color>
     <color name="dev_launcher_primary">#1B1F23</color>
     <color name="dev_launcher_secondaryBackgroundColor">#F0F1F2</color>
     <color name="dev_launcher_white">#FFFFFF</color>
@@ -785,7 +780,6 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="iconBackground">#ffffff</color>
     <color name="m3_ref_palette_black">#ff000000</color>
     <color name="m3_ref_palette_error0">#ff000000</color>
     <color name="m3_ref_palette_error10">#ff410e0b</color>
@@ -1023,7 +1017,6 @@
     <color name="mtrl_textinput_filled_box_default_background_color">#0A000000</color>
     <color name="mtrl_textinput_focused_box_stroke_color">#00000000</color>
     <color name="mtrl_textinput_hovered_box_stroke_color">#DE000000</color>
-    <color name="navigationBarColor">#801b1b1b</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
@@ -1041,7 +1034,7 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <color name="splashscreen_background">#ffffff</color>
+    <color name="splashscreen_background">#FFFFFF</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
@@ -1984,6 +1977,8 @@
     <item name="accessibility_hint" type="id"/>
     <item name="accessibility_label" type="id"/>
     <item name="accessibility_links" type="id"/>
+    <item name="accessibility_order" type="id"/>
+    <item name="accessibility_order_parent" type="id"/>
     <item name="accessibility_role" type="id"/>
     <item name="accessibility_state" type="id"/>
     <item name="accessibility_state_expanded" type="id"/>
@@ -1992,6 +1987,11 @@
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
+    <item name="androidx_compose_ui_view_composition_context" type="id"/>
+    <item name="coil3_request_manager" type="id"/>
+    <item name="compose_prefetch_scheduler" type="id"/>
+    <item name="compose_view_saveable_id_tag" type="id"/>
+    <item name="consume_window_insets_tag" type="id"/>
     <item name="exo_ad_overlay" type="id"/>
     <item name="exo_artwork" type="id"/>
     <item name="exo_audio_track" type="id"/>
@@ -2039,8 +2039,12 @@
     <item name="ghost_view" type="id"/>
     <item name="ghost_view_holder" type="id"/>
     <item name="glide_custom_view_target_tag" type="id"/>
+    <item name="hide_graphics_layer_in_inspector_tag" type="id"/>
+    <item name="hide_in_inspector_tag" type="id"/>
     <item name="home" type="id"/>
+    <item name="inspection_slot_table_set" type="id"/>
     <item name="invalidate_transform" type="id"/>
+    <item name="is_pooling_container_tag" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="labelled_by" type="id"/>
     <item name="line1" type="id"/>
@@ -2057,14 +2061,17 @@
     <item name="mtrl_internal_children_alpha_tag" type="id"/>
     <item name="mtrl_motion_snapshot_view" type="id"/>
     <item name="mtrl_view_tag_bottom_padding" type="id"/>
+    <item name="nav_controller_view_tag" type="id"/>
     <item name="navigation_bar_item_active_indicator_view" type="id"/>
     <item name="navigation_bar_item_icon_container" type="id"/>
     <item name="navigation_bar_item_icon_view" type="id"/>
     <item name="navigation_bar_item_labels_group" type="id"/>
     <item name="navigation_bar_item_large_label_view" type="id"/>
     <item name="navigation_bar_item_small_label_view" type="id"/>
+    <item name="original_focusability" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="pointer_events" type="id"/>
+    <item name="pooling_container_listener_holder_tag" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
     <item name="react_test_id" type="id"/>
@@ -2082,11 +2089,13 @@
     <item name="tag_accessibility_clickable_spans" type="id"/>
     <item name="tag_accessibility_heading" type="id"/>
     <item name="tag_accessibility_pane_title" type="id"/>
+    <item name="tag_compat_insets_dispatch" type="id"/>
     <item name="tag_on_apply_window_listener" type="id"/>
     <item name="tag_on_receive_content_listener" type="id"/>
     <item name="tag_on_receive_content_mime_types" type="id"/>
     <item name="tag_screen_reader_focusable" type="id"/>
     <item name="tag_state_description" type="id"/>
+    <item name="tag_system_bar_state_monitor" type="id"/>
     <item name="tag_transition_group" type="id"/>
     <item name="tag_unhandled_key_event_manager" type="id"/>
     <item name="tag_unhandled_key_listeners" type="id"/>
@@ -2117,11 +2126,13 @@
     <item name="view_offset_helper" type="id"/>
     <item name="view_tag_instance_handle" type="id"/>
     <item name="view_tag_native_id" type="id"/>
+    <id name="view_tree_disjoint_parent"/>
     <id name="view_tree_lifecycle_owner"/>
     <id name="view_tree_on_back_pressed_dispatcher_owner"/>
     <id name="view_tree_saved_state_registry_owner"/>
     <id name="view_tree_view_model_store_owner"/>
     <item name="visible_removing_fragment_view_tag" type="id"/>
+    <item name="wrapped_composition_tag" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="app_bar_elevation_anim_duration">150</integer>
@@ -2192,7 +2203,7 @@
     <integer name="mtrl_view_gone">2</integer>
     <integer name="mtrl_view_invisible">1</integer>
     <integer name="mtrl_view_visible">0</integer>
-    <integer name="react_native_dev_server_port">8082</integer>
+    <integer name="react_native_dev_server_port">8081</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <plurals name="exo_controls_fastforward_by_amount_description">
@@ -2238,6 +2249,7 @@
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">my-app</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="autofill">Autofill</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an accessibility action to collapse the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
     <string description="A description of an accessibility action to expand the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_expand">Expand the bottom sheet</string>
@@ -2252,6 +2264,11 @@
     <string name="call_notification_ongoing_text">Ongoing call</string>
     <string name="call_notification_screening_text">Screening an incoming call</string>
     <string name="catalyst_change_bundle_location" project="catalyst" translatable="false">Change Bundle Location</string>
+    <string name="catalyst_change_bundle_location_apply" project="catalyst" translatable="false">Apply Changes</string>
+    <string name="catalyst_change_bundle_location_cancel" project="catalyst" translatable="false">Cancel</string>
+    <string name="catalyst_change_bundle_location_input_hint" project="catalyst" translatable="false">127.0.0.1:8081</string>
+    <string name="catalyst_change_bundle_location_input_label" project="catalyst" translatable="false">Provide a custom bundler address and port:</string>
+    <string name="catalyst_change_bundle_location_instructions" project="catalyst" translatable="false">You can connect either via USB (localhost - default) or Wifi. If you connect via USB and running with a physical device, make sure you:\n 1. Connect your device via USB\n 2. Set the bundle location to `localhost:8081`\n 3. Run this command in your terminal:\n      `%1$s`</string>
     <string name="catalyst_copy_button" project="catalyst" translatable="false">Copy\n</string>
     <string name="catalyst_debug_connecting" project="catalyst" translatable="false">Connecting to debugger...</string>
     <string name="catalyst_debug_error" project="catalyst" translatable="false">Failed to connect to debugger!</string>
@@ -2281,6 +2298,8 @@
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="close_drawer">"Close navigation menu"</string>
+    <string name="close_sheet">"Close sheet"</string>
     <string description="input that controls another element that can pop up to help the user set the value of that input" name="combobox_description">Combo Box</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
@@ -2303,13 +2322,12 @@
     <string name="confirm_device_credential_password">Use password</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="crop_image_menu_crop">Crop</string>
+    <string name="default_error_message">"Invalid input"</string>
     <string name="default_error_msg">Unknown error</string>
     <string name="default_media_controller_time">00:00</string>
+    <string name="default_popup_window_title" ns1:ignore="ExtraTranslation">"Pop-Up Window"</string>
     <string name="default_web_client_id" translatable="false">66842164687-m3rt9vmv0mv8gmnromq9t0lpdrsd0632.apps.googleusercontent.com</string>
-    <string name="dev_launcher_error_details" translatable="false">This development build encountered the following error.</string>
-    <string name="dev_launcher_error_header" translatable="false">There was a problem loading the project.</string>
-    <string name="dev_launcher_go_to_home" translatable="false">Go to home</string>
-    <string name="dev_launcher_reload" translatable="false">Reload</string>
+    <string name="dropdown_menu">"Dropdown menu"</string>
     <string name="enter_fullscreen_mode">Enter fullscreen mode</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
@@ -2369,9 +2387,7 @@
     <string name="exo_track_surround_5_point_1">5.1 surround sound</string>
     <string name="exo_track_surround_7_point_1">7.1 surround sound</string>
     <string name="exo_track_unknown">Unknown</string>
-    <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
-    <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
-    <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
+    <string name="expo_system_ui_user_interface_style" translatable="false">light</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
@@ -2403,6 +2419,8 @@
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string description="images, code snippets, text, emojis, or other content that can be combined to deliver information in a visual manner" name="image_description">Image</string>
     <string description="Displays a button with an image (instead of text) that can be pressed or clicked by the user" name="imagebutton_description">Button, Image</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
     <string name="item_view_role_description">Tab</string>
     <string description="provides an interactive reference to a resource" name="link_description">Link</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
@@ -2516,6 +2534,8 @@
     <string name="mtrl_switch_track_path" translatable="false">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string description="Button text to indicate that the widget will ignore the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_cancel">Cancel</string>
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
+    <string name="navigation_menu">"Navigation menu"</string>
+    <string name="not_selected">Not selected</string>
     <string name="ongoing_notification_channel_name">Screen Sharing Notifications</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
@@ -2528,6 +2548,9 @@
     <string description="displays the progress status for tasks that take a long time" name="progressbar_description">Progress Bar</string>
     <string name="project_id" translatable="false">velocall-32a42</string>
     <string description="a group of radio buttons" name="radiogroup_description">Radio Group</string>
+    <string name="range_end">"Range end"</string>
+    <string name="range_start">"Range start"</string>
+    <string name="react_native_dev_server_ip" translatable="false">192.168.0.128</string>
     <string description="an interactive element inside a tablist" name="rn_tab_description">Tab</string>
     <string description="controls the scrolling of content within a viewing area" name="scrollbar_description">Scroll Bar</string>
     <string name="search_menu_title">Search</string>
@@ -2536,22 +2559,31 @@
   </string>
     <string description="Content description for the X button to clear text [CHAR_LIMIT=NONE]" name="searchview_clear_text_content_description">Clear text</string>
     <string description="Content description for the navigation button to return to the previous screen [CHAR_LIMIT=NONE]" name="searchview_navigation_content_description">Back</string>
+    <string name="selected">Selected</string>
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
+    <string name="snackbar_pane_title">Alert</string>
     <string description="defines a type of range that expects the user to select a value from among discrete choices" name="spinbutton_description">Spin Button</string>
-    <string name="splash_screen_text" translatable="false">DEVELOPMENT CLIENT</string>
     <string description="an element currently being updated or modified" name="state_busy_description">busy</string>
     <string description="a menu, dialog, accordian panel, or other widget which is collapsed" name="state_collapsed_description">collapsed</string>
+    <string name="state_empty">Empty</string>
     <string description="a menu, dialog, accordian panel, or other widget which is expanded" name="state_expanded_description">expanded</string>
     <string description="a checkbox, radio button, or other widget which is both checked and unchecked" name="state_mixed_description">mixed</string>
+    <string name="state_off">Off</string>
     <string description="a switch in its disabled state" name="state_off_description">off</string>
+    <string name="state_on">On</string>
     <string description="a switch in its enabled state" name="state_on_description">on</string>
     <string description="used to indicate which elements within single-selection and multiple-selection composite widgets are not selected" name="state_unselected_description">unselected</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string description="provides a summary of current conditions, settings, or state, such as the current temperature in the Weather app" name="summary_description">Summary</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
     <string description="container for a set of tabs" name="tablist_description">Tab List</string>
+    <string name="template_percent"><ns2:g id="percentage">%1$d</ns2:g> percent.</string>
     <string description="a numerical counter listing the amount of elapsed time from a starting point or the remaining time until an end point" name="timer_description">Timer</string>
     <string description="a collection of commonly used function buttons or controls represented in a compact visual form" name="toolbar_description">Tool Bar</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
@@ -2586,7 +2618,8 @@
     <item name="android:windowEnterAnimation">@anim/mtrl_bottom_sheet_slide_in</item>
     <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
   </style>
-    <style name="AppTheme" parent="Theme.EdgeToEdge">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <item name="android:enforceNavigationBarContrast" ns1:targetApi="29">true</item>
     <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="android:statusBarColor">#ffffff</item>
@@ -5975,11 +6008,11 @@
     <style name="Base.v21.Theme.SplashScreen.Light" parent="android:Theme.DeviceDefault.Light.NoActionBar">
         <item name="isLightTheme">true</item>
     </style>
-    <style name="CalendarDatePickerDialog" ns1:targetApi="lollipop" parent="android:Theme.Material.Dialog.Alert">
+    <style name="CalendarDatePickerDialog" parent="android:Theme.Material.Dialog.Alert">
         <item name="android:datePickerStyle">@style/CalendarDatePickerStyle</item>
         <item name="android:windowIsFloating">true</item>
     </style>
-    <style name="CalendarDatePickerStyle" ns1:targetApi="lollipop" parent="android:Widget.Material.DatePicker">
+    <style name="CalendarDatePickerStyle" parent="android:Widget.Material.DatePicker">
         <item name="android:datePickerMode">calendar</item>
     </style>
     <style name="CardView" parent="Base.CardView">
@@ -5998,6 +6031,9 @@
     <item name="android:windowEnterAnimation">@anim/catalyst_slide_up</item>
     <item name="android:windowExitAnimation">@anim/catalyst_slide_down</item>
   </style>
+    <style name="DialogWindowTheme">
+        <item name="android:windowClipToOutline">false</item>
+    </style>
     <style name="ExoMediaButton">
     <item name="android:background">?android:attr/selectableItemBackground</item>
     <item name="android:layout_width">@dimen/exo_media_button_width</item>
@@ -6160,6 +6196,10 @@
     <item name="android:textColor">@color/exo_white_opacity_70</item>
     <item name="android:text">·</item>
   </style>
+    <style name="FloatingDialogWindowTheme">
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="backgroundTint">@macro/m3_comp_dialog_container_color</item>
     <item name="enforceMaterialTheme">true</item>
@@ -6991,6 +7031,7 @@
     <item name="windowSplashScreenBackground">@color/splashscreen_background</item>
     <item name="windowSplashScreenAnimatedIcon">@drawable/splashscreen_logo</item>
     <item name="postSplashScreenTheme">@style/AppTheme</item>
+    <item name="android:windowSplashScreenBehavior">icon_preferred</item>
   </style>
     <style name="Theme.AppCompat" parent="Base.Theme.AppCompat"/>
     <style name="Theme.AppCompat.CompactMenu" parent="Base.Theme.AppCompat.CompactMenu"/>
@@ -7022,19 +7063,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.AppCompat.Transparent.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@android:color/transparent</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">false</item>
-    <item name="android:backgroundDimEnabled">false</item>
-    <item name="android:windowAnimationStyle">@null</item>
-    <item name="android:enforceNavigationBarContrast" ns1:targetApi="q">true</item>
-    <item name="android:navigationBarColor">@android:color/transparent</item>
-    <item name="android:statusBarColor">@android:color/transparent</item>
-    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-  </style>
     <style name="Theme.AutofillInlineSuggestion" parent="@android:style/Theme.DeviceDefault">
         <item name="isAutofillInlineSuggestionTheme">true</item>
         <item name="autofillInlineSuggestionChip">@style/Widget.Autofill.InlineSuggestionChip</item>
@@ -7102,107 +7130,6 @@
     <item name="colorAccent">@color/dev_launcher_colorAccentDark</item>
     <item name="android:windowBackground">@color/dev_launcher_backgroundColor</item>
   </style>
-    <style name="Theme.DevLauncher.LauncherActivity" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:navigationBarColor">@android:color/transparent</item>
-    <item name="android:statusBarColor">@android:color/transparent</item>
-    <item name="android:windowLightStatusBar">true</item>
-    <item name="android:enforceNavigationBarContrast" ns1:targetApi="q">false</item>
-    <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">true</item>
-
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">false</item>
-    <item name="android:backgroundDimEnabled">false</item>
-    <item name="android:windowAnimationStyle">@null</item>
-  </style>
-    <style name="Theme.EdgeToEdge" parent="Theme.EdgeToEdge.DayNight.Common"/>
-    <style name="Theme.EdgeToEdge.DayNight.Common" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">false</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">@bool/windowLightSystemBars</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Light" parent="Theme.EdgeToEdge.Light.Common"/>
-    <style name="Theme.EdgeToEdge.Light.Common" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">true</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material2" parent="Theme.EdgeToEdge.Material2.DayNight.Common"/>
-    <style name="Theme.EdgeToEdge.Material2.DayNight.Common" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">false</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">@bool/windowLightSystemBars</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material2.Light" parent="Theme.EdgeToEdge.Material2.Light.Common"/>
-    <style name="Theme.EdgeToEdge.Material2.Light.Common" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">true</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material3" parent="Theme.EdgeToEdge.Material3.DayNight.Common"/>
-    <style name="Theme.EdgeToEdge.Material3.DayNight.Common" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">false</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">@bool/windowLightSystemBars</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material3.Dynamic" parent="Theme.EdgeToEdge.Material3.Dynamic.DayNight.Common"/>
-    <style name="Theme.EdgeToEdge.Material3.Dynamic.DayNight.Common" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">false</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">@bool/windowLightSystemBars</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material3.Dynamic.Light" parent="Theme.EdgeToEdge.Material3.Dynamic.Light.Common"/>
-    <style name="Theme.EdgeToEdge.Material3.Dynamic.Light.Common" parent="Theme.Material3.DynamicColors.Light.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">true</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-    <style name="Theme.EdgeToEdge.Material3.Light" parent="Theme.EdgeToEdge.Material3.Light.Common"/>
-    <style name="Theme.EdgeToEdge.Material3.Light.Common" parent="Theme.Material3.Light.NoActionBar">
-        <item name="enforceNavigationBarContrast">true</item>
-        <item name="enforceSystemBarsLightTheme">true</item>
-
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="android:navigationBarColor">@color/navigationBarColor</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
     <style name="Theme.FullScreenDialog">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowIsFloating">false</item>
@@ -7951,6 +7878,23 @@
     <item name="colorControlNormal">@color/material_on_surface_emphasis_medium</item>
     <item name="actionMenuTextColor">@color/material_on_surface_emphasis_medium</item>
   </style>
+    <style name="TranslucentDialog">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="android:windowLayoutInDisplayCutoutMode" ns1:targetApi="o_mr1">shortEdges</item>
+    </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid">
@@ -10139,6 +10083,9 @@
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
+    <style name="custom" parent="Theme.Material3.DayNight.NoActionBar">
+        
+    </style>
     <style name="redboxButton">
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_height">wrap_content</item>
@@ -10252,6 +10199,13 @@
         <attr format="string" name="initialActivityCount"/>
         
         <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
+    </declare-styleable>
+    <declare-styleable name="ActivityNavigator">
+        <attr name="android:name"/>
+        <attr format="string" name="action"/>
+        <attr format="string" name="data"/>
+        <attr format="string" name="dataPattern"/>
+        <attr format="string" name="targetPackage"/>
     </declare-styleable>
     <declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
@@ -11811,6 +11765,8 @@
         
         <attr format="string" name="fontProviderQuery"/>
         
+        <attr format="string" name="fontProviderFallbackQuery"/>
+        
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
@@ -11821,7 +11777,7 @@
               default typeface will be used instead. -->
             <enum name="blocking" value="0"/>
             <!-- The async font fetch works as follows.
-              First, check the local cache, then if the requeted font is not cached, trigger a
+              First, check the local cache, then if the requested font is not cached, trigger a
               request the font and continue with layout inflation. Once the font fetch succeeds, the
               target text view will be refreshed with the downloaded font data. The
               fontProviderFetchTimeout will be ignored if async loading is specified. -->
@@ -12675,6 +12631,40 @@
             <enum name="staticPostLayout" value="2"/>
             <enum name="staticLayout" value="3"/>
         </attr><attr format="color" name="telltales_tailColor"/><attr format="float" name="telltales_tailScale"/></declare-styleable>
+    <declare-styleable name="NavAction">
+        <attr name="android:id"/>
+        <attr format="reference" name="destination"/>
+        <attr format="boolean" name="launchSingleTop"/>
+        <attr format="boolean" name="restoreState"/>
+        <attr format="reference" name="popUpTo"/>
+        <attr format="boolean" name="popUpToInclusive"/>
+        <attr format="boolean" name="popUpToSaveState"/>
+        <attr format="reference" name="enterAnim"/>
+        <attr format="reference" name="exitAnim"/>
+        <attr format="reference" name="popEnterAnim"/>
+        <attr format="reference" name="popExitAnim"/>
+    </declare-styleable>
+    <declare-styleable name="NavArgument">
+        <attr name="android:name"/>
+        <attr name="android:defaultValue"/>
+        <attr format="boolean" name="nullable"/>
+        <attr format="string" name="argType"/>
+    </declare-styleable>
+    <declare-styleable name="NavDeepLink">
+        <attr format="string" name="uri"/>
+        <attr format="string" name="action"/>
+        <attr format="string" name="mimeType"/>
+        <attr name="android:autoVerify"/>
+    </declare-styleable>
+    <declare-styleable name="NavGraphNavigator">
+        <attr format="reference" name="startDestination"/>
+    </declare-styleable>
+    <declare-styleable name="NavHost">
+        <attr format="reference" name="navGraph"/>
+    </declare-styleable>
+    <declare-styleable name="NavInclude">
+        <attr format="reference" name="graph"/>
+    </declare-styleable>
     <declare-styleable name="NavigationBarActiveIndicator">
     
     <attr name="android:color"/>
@@ -12825,6 +12815,11 @@
     
     <attr format="dimension" name="drawerLayoutCornerSize"/>
   </declare-styleable>
+    <declare-styleable name="Navigator">
+        <attr name="android:id"/>
+        <attr format="string" name="route"/>
+        <attr name="android:label"/>
+    </declare-styleable>
     <declare-styleable name="OnClick"><attr name="targetId"/><attr name="clickAction">
             <flag name="toggle" value="0x0011"/>
             <flag name="transitionToEnd" value="0x0001"/>

@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Partager avec <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Réduire"</string>
     <string gender="unknown" name="alert_description">Alerte</string>
+    <string msgid="389117264260014992" name="autofill">"Saisie automatique"</string>
     <string name="bottomsheet_action_collapse">Réduire la bottom sheet</string>
     <string name="bottomsheet_action_expand">Développer la bottom sheet</string>
     <string name="bottomsheet_action_expand_halfway">Développer en entier</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">Caractères saisis %1$d sur %2$d</string>
     <string name="character_counter_overflowed_content_description">Nombre maximal de caractères dépassé : %1$d sur %2$d</string>
     <string name="clear_text_end_icon_content_description">Effacer le texte</string>
+    <string msgid="406453423630273620" name="close_drawer">"Fermer le menu de navigation"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Fermer la feuille"</string>
     <string gender="unknown" name="combobox_description">Liste déroulante</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Activer</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s ne fonctionnera pas tant que vous n\'aurez pas activé les services Google Play.</string>
@@ -86,7 +89,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"Utiliser un mot de passe"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Lien copié dans le presse-papiers"</string>
     <string name="crop_image_menu_crop">Redimensionner</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Données incorrectes"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"Erreur inconnue"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Fenêtre pop-up"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Menu déroulant"</string>
     <string name="error_a11y_label">Erreur : Non valide</string>
     <string name="error_icon_content_description">Erreur</string>
     <string name="exo_controls_cc_disabled_description">Activer les sous-titres</string>
@@ -162,6 +168,8 @@
     <string name="ic_rotate_right_24">Pivoter à droite</string>
     <string name="icon_content_description">Icône de la boîte de dialogue</string>
     <string gender="unknown" name="imagebutton_description">Bouton, image</string>
+    <string msgid="6827826412747255547" name="in_progress">"En cours"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Partiellement coché"</string>
     <string name="item_view_role_description">Tabulation</string>
     <string gender="unknown" name="link_description">Lien</string>
     <string name="material_clock_toggle_content_description">Sélectionner le format AM ou PM</string>
@@ -224,29 +232,43 @@
     <string name="mtrl_picker_toggle_to_year_selection">Appuyer pour passer à la vue \"Année\"</string>
     <string name="mtrl_timepicker_cancel">Annuler</string>
     <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Menu de navigation"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Non sélectionné"</string>
     <string name="password_toggle_content_description">Afficher le mot de passe</string>
     <string name="pick_image_camera">Appareil photo</string>
     <string name="pick_image_chooser_title">Sélectionner la source</string>
     <string name="pick_image_gallery">Galerie</string>
     <string gender="unknown" name="progressbar_description">Barre de progression</string>
     <string gender="unknown" name="radiogroup_description">Groupe de boutons radio</string>
+    <string msgid="5941395253238309765" name="range_end">"Fin de plage"</string>
+    <string msgid="7097486360902471446" name="range_start">"Début de plage"</string>
     <string gender="unknown" name="rn_tab_description">Onglet</string>
     <string gender="unknown" name="scrollbar_description">Barre de défilement</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Rechercher"</string>
     <string name="searchview_clear_text_content_description">Effacer le texte</string>
     <string name="searchview_navigation_content_description">Retour</string>
+    <string msgid="6043586758067023" name="selected">"Sélectionné"</string>
     <string name="side_sheet_accessibility_pane_title">Feuille latérale</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"Alerte"</string>
     <string gender="unknown" name="spinbutton_description">Toupie</string>
     <string gender="unknown" name="state_busy_description">opération en cours</string>
     <string gender="unknown" name="state_collapsed_description">réduit</string>
+    <string msgid="4139871816613051306" name="state_empty">"Vide"</string>
     <string gender="unknown" name="state_expanded_description">agrandi</string>
     <string gender="unknown" name="state_mixed_description">mixte</string>
+    <string msgid="5834637030682409883" name="state_off">"Désactivé"</string>
     <string gender="unknown" name="state_off_description">désactivé</string>
+    <string msgid="1490883874751719580" name="state_on">"Activé"</string>
     <string gender="unknown" name="state_on_description">activé</string>
     <string gender="unknown" name="state_unselected_description">désélectionné(s)</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">Récapitulatif</string>
+    <string msgid="2561197295334830845" name="switch_role">"Changer"</string>
+    <string msgid="1672349317127674378" name="tab">"Onglet"</string>
     <string gender="unknown" name="tablist_description">Liste d’onglets</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> pour cent."</string>
     <string gender="unknown" name="timer_description">Minuteur</string>
     <string gender="unknown" name="toolbar_description">Barre d’outils</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"Info-bulle"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"Afficher l\'info-bulle"</string>
 </resources>

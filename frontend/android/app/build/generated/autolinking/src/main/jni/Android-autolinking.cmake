@@ -17,7 +17,7 @@ add_subdirectory("E:/Apploication/frontend/node_modules/react-native-safe-area-c
 add_subdirectory("E:/Apploication/frontend/node_modules/react-native-screens/android/src/main/jni/" rnscreens_autolinked_build)
 
 add_subdirectory("E:/Apploication/frontend/node_modules/react-native-webview/android/build/generated/source/codegen/jni/" RNCWebViewSpec_autolinked_build)
-add_subdirectory("E:/Apploication/frontend/node_modules/react-native-edge-to-edge/android/build/generated/source/codegen/jni/" RNEdgeToEdge_autolinked_build)
+add_subdirectory("E:/Apploication/frontend/node_modules/react-native-worklets/android/build/generated/source/codegen/jni/" rnworklets_autolinked_build)
 
 set(AUTOLINKED_LIBRARIES
   react_codegen_rnasyncstorage
@@ -31,5 +31,5 @@ set(AUTOLINKED_LIBRARIES
   react_codegen_rnscreens
   
   react_codegen_RNCWebViewSpec
-  react_codegen_RNEdgeToEdge
+  react_codegen_rnworklets
 )

@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Jaa: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Tiivistä"</string>
     <string gender="unknown" name="alert_description">Hälytys</string>
+    <string msgid="389117264260014992" name="autofill">"Automaattinen täyttö"</string>
     <string name="bottomsheet_action_collapse">Tiivistä alapaneeli</string>
     <string name="bottomsheet_action_expand">Laajenna alapaneeli</string>
     <string name="bottomsheet_action_expand_halfway">Laajenna puoliväliin</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">%1$d/%2$d merkkiä kirjoitettu</string>
     <string name="character_counter_overflowed_content_description">Merkkiraja ylitetty: %1$d/%2$d</string>
     <string name="clear_text_end_icon_content_description">Tyhjennä teksti</string>
+    <string msgid="406453423630273620" name="close_drawer">"Sulje navigointivalikko"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Sulje taulukko"</string>
     <string gender="unknown" name="combobox_description">Yhdistelmäruutu</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Ota käyttöön</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
@@ -85,7 +88,10 @@
     <string name="common_signin_button_text_long">Kirjaudu Google-tilille</string>
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"Käytä salasanaa"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Linkki kopioitu leikepöydälle"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Virheellinen syöte"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"Tuntematon virhe"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Ponnahdusikkuna"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Avattava valikko"</string>
     <string name="error_a11y_label">Virhe: ei kelpaa</string>
     <string name="error_icon_content_description">Virhe</string>
     <string name="exo_controls_cc_disabled_description">Ota tekstitykset käyttöön</string>
@@ -157,6 +163,8 @@
     <string name="icon_content_description">Valintaikkunan kuvake</string>
     <string gender="unknown" name="image_description">Kuva</string>
     <string gender="unknown" name="imagebutton_description">Painike, kuva</string>
+    <string msgid="6827826412747255547" name="in_progress">"Kesken"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Osittain tarkistettu"</string>
     <string name="item_view_role_description">Välilehti</string>
     <string gender="unknown" name="link_description">Linkki</string>
     <string name="material_clock_toggle_content_description">Valitse AP tai IP</string>
@@ -220,26 +228,40 @@
     <string name="mtrl_picker_toggle_to_year_selection">Siirry vuosinäkymään napauttamalla</string>
     <string name="mtrl_timepicker_cancel">Peru</string>
     <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Navigointivalikko"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Ei valittu"</string>
     <string name="password_toggle_content_description">Näytä salasana</string>
     <string gender="unknown" name="progressbar_description">Edistymispalkki</string>
     <string gender="unknown" name="radiogroup_description">Valintanappiryhmä</string>
+    <string msgid="5941395253238309765" name="range_end">"Alueen loppu"</string>
+    <string msgid="7097486360902471446" name="range_start">"Alueen alku"</string>
     <string gender="unknown" name="rn_tab_description">Välilehti</string>
     <string gender="unknown" name="scrollbar_description">Vierityspalkki</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Haku"</string>
     <string name="searchview_clear_text_content_description">Tyhjennä teksti</string>
     <string name="searchview_navigation_content_description">Takaisin</string>
+    <string msgid="6043586758067023" name="selected">"Valittu"</string>
     <string name="side_sheet_accessibility_pane_title">Sivupalkki</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"Ilmoitus"</string>
     <string gender="unknown" name="spinbutton_description">Pyörityspainike</string>
     <string gender="unknown" name="state_busy_description">varattu</string>
     <string gender="unknown" name="state_collapsed_description">pienennetty</string>
+    <string msgid="4139871816613051306" name="state_empty">"Tyhjä"</string>
     <string gender="unknown" name="state_expanded_description">laajennettu</string>
     <string gender="unknown" name="state_mixed_description">yhdistetty</string>
+    <string msgid="5834637030682409883" name="state_off">"Pois päältä"</string>
     <string gender="unknown" name="state_off_description">ei käytössä</string>
+    <string msgid="1490883874751719580" name="state_on">"Päällä"</string>
     <string gender="unknown" name="state_on_description">käytössä</string>
     <string gender="unknown" name="state_unselected_description">ei valittu</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">Yhteenveto</string>
+    <string msgid="2561197295334830845" name="switch_role">"Vaihda"</string>
+    <string msgid="1672349317127674378" name="tab">"Välilehti"</string>
     <string gender="unknown" name="tablist_description">Välilehtilista</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> prosenttia"</string>
     <string gender="unknown" name="timer_description">Ajastin</string>
     <string gender="unknown" name="toolbar_description">Työkalupalkki</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"vihjeteksti"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"näytä vihjeteksti"</string>
 </resources>

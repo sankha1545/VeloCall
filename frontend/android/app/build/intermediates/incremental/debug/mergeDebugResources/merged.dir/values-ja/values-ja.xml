@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>と共有"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"折りたたむ"</string>
     <string gender="unknown" name="alert_description">アラート</string>
+    <string msgid="389117264260014992" name="autofill">"自動入力"</string>
     <string name="bottomsheet_action_collapse">ボトムシートを閉じる</string>
     <string name="bottomsheet_action_expand">ボトムシートを開く</string>
     <string name="bottomsheet_action_expand_halfway">下半分を展開</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">入力済み文字数: %1$d/%2$d</string>
     <string name="character_counter_overflowed_content_description">文字数制限を超えています（%1$d/%2$d 文字）</string>
     <string name="clear_text_end_icon_content_description">テキストを消去</string>
+    <string msgid="406453423630273620" name="close_drawer">"ナビゲーションメニューを閉じる"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"シートを閉じる"</string>
     <string gender="unknown" name="combobox_description">コンボボックス</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">有効にする</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
@@ -86,7 +89,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"パスワードを使用"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"リンクをクリップボードにコピーしました"</string>
     <string name="crop_image_menu_crop">切り取り</string>
+    <string msgid="8038256446254964252" name="default_error_message">"入力値が無効です"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"不明なエラーです"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"ポップアップウィンドウ"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"プルダウン メニュー"</string>
     <string name="error_a11y_label">エラー: 無効</string>
     <string name="error_icon_content_description">エラー</string>
     <string name="exo_controls_cc_disabled_description">字幕の有効化</string>
@@ -163,6 +169,8 @@
     <string name="icon_content_description">ダイアログ アイコン</string>
     <string gender="unknown" name="image_description">画像</string>
     <string gender="unknown" name="imagebutton_description">ボタン、画像</string>
+    <string msgid="6827826412747255547" name="in_progress">"処理しています"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"一部 ON"</string>
     <string name="item_view_role_description">タブ</string>
     <string gender="unknown" name="link_description">リンク</string>
     <string name="material_clock_toggle_content_description">午前または午後を選択</string>
@@ -226,29 +234,43 @@
     <string name="mtrl_picker_toggle_to_year_selection">タップすると年表示に切り替わります</string>
     <string name="mtrl_timepicker_cancel">キャンセル</string>
     <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="542007171693138492" name="navigation_menu">"ナビゲーションメニュー"</string>
+    <string msgid="6610465462668679431" name="not_selected">"未選択"</string>
     <string name="password_toggle_content_description">パスワードを表示</string>
     <string name="pick_image_camera">撮影</string>
     <string name="pick_image_chooser_title">画像を選択</string>
     <string name="pick_image_gallery">アルバム</string>
     <string gender="unknown" name="progressbar_description">進行状況バー</string>
     <string gender="unknown" name="radiogroup_description">ラジオグループ</string>
+    <string msgid="5941395253238309765" name="range_end">"範囲の末尾"</string>
+    <string msgid="7097486360902471446" name="range_start">"範囲の先頭"</string>
     <string gender="unknown" name="rn_tab_description">タブ</string>
     <string gender="unknown" name="scrollbar_description">スクロールバー</string>
     <string msgid="6264217191555673260" name="search_menu_title">"検索"</string>
     <string name="searchview_clear_text_content_description">テキストを消去</string>
     <string name="searchview_navigation_content_description">戻る</string>
+    <string msgid="6043586758067023" name="selected">"選択済み"</string>
     <string name="side_sheet_accessibility_pane_title">サイドシート</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"アラート"</string>
     <string gender="unknown" name="spinbutton_description">スピンボタン</string>
     <string gender="unknown" name="state_busy_description">作業中</string>
     <string gender="unknown" name="state_collapsed_description">縮小中</string>
+    <string msgid="4139871816613051306" name="state_empty">"なし"</string>
     <string gender="unknown" name="state_expanded_description">展開中</string>
     <string gender="unknown" name="state_mixed_description">混合</string>
+    <string msgid="5834637030682409883" name="state_off">"OFF"</string>
     <string gender="unknown" name="state_off_description">オフ</string>
+    <string msgid="1490883874751719580" name="state_on">"ON"</string>
     <string gender="unknown" name="state_on_description">オン</string>
     <string gender="unknown" name="state_unselected_description">未選択</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">概要</string>
+    <string msgid="2561197295334830845" name="switch_role">"切り替える"</string>
+    <string msgid="1672349317127674378" name="tab">"タブ"</string>
     <string gender="unknown" name="tablist_description">タブリスト</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g>パーセント。"</string>
     <string gender="unknown" name="timer_description">タイマー</string>
     <string gender="unknown" name="toolbar_description">ツールバー</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"ツールチップ"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"ツールチップを表示"</string>
 </resources>

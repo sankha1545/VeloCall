@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ਨਾਲ ਸਾਂਝਾ ਕਰੋ"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"ਸਮੇਟੋ"</string>
     <string gender="unknown" name="alert_description">ਸੁਚੇਤਨਾ</string>
+    <string msgid="389117264260014992" name="autofill">"ਆਟੋਫਿਲ"</string>
     <string name="bottomsheet_action_collapse">ਹੇਠਲੀ ਸ਼ੀਟ ਨੂੰ ਸਮੇਟੋ</string>
     <string name="bottomsheet_action_expand">ਹੇਠਲੀ ਸ਼ੀਟ ਦਾ ਵਿਸਤਾਰ ਕਰੋ</string>
     <string name="bottomsheet_action_expand_halfway">ਅੱਧ ਤੱਕ ਵਿਸਤਾਰ ਕਰੋ</string>
@@ -56,7 +57,7 @@
     <string name="bottomsheet_drag_handle_content_description">ਘਸੀਟਣ ਵਾਲਾ ਹੈਂਡਲ</string>
     <string msgid="881409763997275156" name="call_notification_answer_action">"ਜਵਾਬ ਦਿਓ"</string>
     <string msgid="8793775615905189152" name="call_notification_answer_video_action">"ਵੀਡੀਓ"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"ਅਸਵੀਕਾਰ ਕਰੋ"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"ਕਾਲ ਕੱਟੋ"</string>
     <string msgid="2659457946726154263" name="call_notification_hang_up_action">"ਸਮਾਪਤ ਕਰੋ"</string>
     <string msgid="6107532579223922871" name="call_notification_incoming_text">"ਇਨਕਮਿੰਗ ਕਾਲ"</string>
     <string msgid="8623827134497363134" name="call_notification_ongoing_text">"ਜਾਰੀ ਕਾਲ"</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">%2$d ਵਿੱਚੋਂ %1$d ਅੱਖਰ-ਚਿੰਨ੍ਹ ਦਾਖਲ ਕੀਤੇ ਗਏ</string>
     <string name="character_counter_overflowed_content_description">ਅੱਖਰ-ਚਿੰਨ੍ਹ ਸੀਮਾ %2$d ਤੋਂ %1$d ਵਧੀ</string>
     <string name="clear_text_end_icon_content_description">ਲਿਖਤ ਕਲੀਅਰ ਕਰੋ</string>
+    <string msgid="406453423630273620" name="close_drawer">"ਨੈਵੀਗੇਸ਼ਨ ਮੀਨੂ ਬੰਦ ਕਰੋ"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"ਸ਼ੀਟ ਬੰਦ ਕਰੋ"</string>
     <string gender="unknown" name="combobox_description">ਕੋਂਬੋ ਬਾਕਸ</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">ਚਾਲੂ ਕਰੋ</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s ਕੰਮ ਨਹੀਂ ਕਰੇਗਾ ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ Google Play ਸੇਵਾਵਾਂ ਨੂੰ ਚਾਲੂ ਨਹੀਂ ਕਰਦੇ ਹੋ।</string>
@@ -85,7 +88,10 @@
     <string name="common_signin_button_text_long">Google ਨਾਲ ਸਾਈਨ-ਇਨ ਕਰੋ</string>
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"ਪਾਸਵਰਡ ਵਰਤੋ"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"ਲਿੰਕ ਕਲਿੱਪਬੋਰਡ \'ਤੇ ਕਾਪੀ ਹੋ ਗਿਆ"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"ਅਵੈਧ ਇਨਪੁੱਟ"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"ਅਗਿਆਤ ਗੜਬੜ"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"ਪੌਪ-ਅੱਪ ਵਿੰਡੋ"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"ਡ੍ਰੌਪ-ਡਾਊਨ ਮੀਨੂ"</string>
     <string name="error_a11y_label">ਗੜਬੜ: ਅਵੈਧ</string>
     <string name="error_icon_content_description">ਗੜਬੜ</string>
     <string name="exo_controls_cc_disabled_description">ਉਪਸਿਰਲੇਖਾਂ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
@@ -157,6 +163,8 @@
     <string name="icon_content_description">ਵਿੰਡੋ ਦਾ ਪ੍ਰਤੀਕ</string>
     <string gender="unknown" name="image_description">ਚਿੱਤਰ</string>
     <string gender="unknown" name="imagebutton_description">ਬਟਨ, ਚਿੱਤਰ</string>
+    <string msgid="6827826412747255547" name="in_progress">"ਜਾਰੀ ਹੈ"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"ਅੰਸ਼ਕ ਤੌਰ ਤੇ ਜਾਂਚ ਕੀਤੀ ਗਈ"</string>
     <string name="item_view_role_description">ਟੈਬ</string>
     <string gender="unknown" name="link_description">ਲਿੰਕ</string>
     <string name="material_clock_toggle_content_description">AM ਜਾਂ PM ਚੁਣੋ</string>
@@ -220,26 +228,40 @@
     <string name="mtrl_picker_toggle_to_year_selection">ਸਾਲ ਦ੍ਰਿਸ਼ \'ਤੇ ਸਵਿੱਚ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="mtrl_timepicker_cancel">ਰੱਦ ਕਰੋ</string>
     <string name="mtrl_timepicker_confirm">ਠੀਕ ਹੈ</string>
+    <string msgid="542007171693138492" name="navigation_menu">"ਨੈਵੀਗੇਸ਼ਨ ਮੀਨੂ"</string>
+    <string msgid="6610465462668679431" name="not_selected">"ਚੁਣੀ ਨਹੀਂ ਗਈ"</string>
     <string name="password_toggle_content_description">ਪਾਸਵਰਡ ਦਿਖਾਓ</string>
     <string gender="unknown" name="progressbar_description">ਪ੍ਰੋਗਰੈੱਸ ਬਾਰ</string>
     <string gender="unknown" name="radiogroup_description">ਰਡੀਓ ਗਰੁੱਪ</string>
+    <string msgid="5941395253238309765" name="range_end">"ਰੇਂਜ ਸਮਾਪਤ"</string>
+    <string msgid="7097486360902471446" name="range_start">"ਰੇਂਜ ਸ਼ੁਰੂ"</string>
     <string gender="unknown" name="rn_tab_description">ਟੈਬ</string>
     <string gender="unknown" name="scrollbar_description">ਸਕ੍ਰੋਲ ਬਾਰ</string>
     <string msgid="6264217191555673260" name="search_menu_title">"ਖੋਜ"</string>
     <string name="searchview_clear_text_content_description">ਲਿਖਤ ਕਲੀਅਰ ਕਰੋ</string>
     <string name="searchview_navigation_content_description">ਪਿੱਛੇ</string>
+    <string msgid="6043586758067023" name="selected">"ਚੁਣੀ ਗਈ"</string>
     <string name="side_sheet_accessibility_pane_title">ਸਾਈਡ ਸ਼ੀਟ</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"ਅਲਰਟ"</string>
     <string gender="unknown" name="spinbutton_description">\'ਘੁੰਮਾਓ\' ਬਟਨ</string>
     <string gender="unknown" name="state_busy_description">ਵਿਅਸਤ</string>
     <string gender="unknown" name="state_collapsed_description">ਸਮੇਟਿਆ ਗਿਆ</string>
+    <string msgid="4139871816613051306" name="state_empty">"ਖਾਲੀ"</string>
     <string gender="unknown" name="state_expanded_description">ਵਿਸਤਾਰ ਕੀਤਾ ਗਿਆ</string>
     <string gender="unknown" name="state_mixed_description">ਮਿਕਸਡ</string>
+    <string msgid="5834637030682409883" name="state_off">"ਬੰਦ ਹੈ"</string>
     <string gender="unknown" name="state_off_description">ਬੰਦ</string>
+    <string msgid="1490883874751719580" name="state_on">"ਚਾਲੂ ਹੈ"</string>
     <string gender="unknown" name="state_on_description">ਚਾਲੂ</string>
     <string gender="unknown" name="state_unselected_description">ਚੋਣ ਹਟਾਈ ਗਈ</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">ਸਾਰ</string>
+    <string msgid="2561197295334830845" name="switch_role">"ਸਵਿੱਚ ਕਰੋ"</string>
+    <string msgid="1672349317127674378" name="tab">"ਟੈਬ"</string>
     <string gender="unknown" name="tablist_description">ਟੈਬ ਸੂਚੀ</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> ਫ਼ੀਸਦ।"</string>
     <string gender="unknown" name="timer_description">ਟਾਈਮਰ</string>
     <string gender="unknown" name="toolbar_description">ਟੂਲ ਬਾਰ</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"ਟੂਲ-ਟਿੱਪ"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"ਟੂਲ-ਟਿੱਪ ਦਿਖਾਓ"</string>
 </resources>

@@ -27,6 +27,7 @@ import {
 
 import { useAuth } from "../../lib/auth";
 import { loginWithEmail, loginWithGoogle, loginWithGithub, requestPasswordResetOtp } from "../../lib/authService";
+import { Button } from "@react-navigation/elements";
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -43,8 +44,8 @@ function AnimatedLogo({ size = 88 }: { size?: number }) {
   useEffect(() => {
     const pulse = Animated.loop(
       Animated.sequence([
-        Animated.timing(scale, { toValue: 1, duration: 900, easing: Easing.out(Easing.quad), useNativeDriver: true }),
-        Animated.timing(scale, { toValue: 0.96, duration: 900, easing: Easing.in(Easing.quad), useNativeDriver: true }),
+        Animated.timing(scale, { toValue: 1, duration: 1000,easing: Easing.out(Easing.quad), useNativeDriver: true }),
+        Animated.timing(scale, { toValue: 1,duration: 900, easing: Easing.in(Easing.quad), useNativeDriver: true }),
       ])
     );
     const rot = Animated.loop(Animated.timing(spin, { toValue: 1, duration: 8000, easing: Easing.linear, useNativeDriver: true }));
@@ -77,7 +78,7 @@ function AnimatedLogo({ size = 88 }: { size?: number }) {
     >
       <LinearGradient colors={["#7c3aed", "#06b6d4"]} style={[StyleSheet.absoluteFill, { borderRadius: size / 6 }]} start={[0, 0]} end={[1, 1]} />
       <View style={[StyleSheet.absoluteFill, styles.logoOverlay]}>
-        <Text style={styles.logoLetter}>A</Text>
+        <Text style={styles.logoLetter}>VC</Text>
       </View>
     </Animated.View>
   );
@@ -240,6 +241,8 @@ export default function LoginScreen(): JSX.Element {
       setSocialLoading(false);
     }
   }
+ 
+ 
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -248,13 +251,13 @@ export default function LoginScreen(): JSX.Element {
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : undefined} style={styles.container}>
           <View style={styles.topLogoWrap}>
             <AnimatedLogo size={96} />
-            <Text style={styles.appName}>App Name</Text>
+            <Text style={styles.appName}>VeloCall</Text>
           </View>
 
           <View style={styles.card} accessibilityLabel="Login form" accessibilityRole="header">
             <View style={styles.brandRow}>
               <View style={styles.brandTextWrap}>
-                <Text style={styles.title}>Welcome back</Text>
+                <Text style={styles.title}>Welcome</Text>
                 <Text style={styles.subtitle}>Sign in to your account to continue</Text>
               </View>
             </View>
@@ -367,7 +370,17 @@ export default function LoginScreen(): JSX.Element {
               >
                 {isSubmitting ? <ActivityIndicator color="#fff" /> : <Text style={styles.primaryBtnText}>Sign in</Text>}
               </Pressable>
-
+              <Pressable
+  onPress={() => router.push('/(tabs)')}
+  style={({ pressed }) => [
+    styles.primaryBtn,
+    pressed && styles.btnPressed,
+    { marginTop: 8, backgroundColor: "#06b6d4" } // different color if you want
+  ]}
+>
+  <Text style={styles.primaryBtnText}>Go Home</Text>
+</Pressable>
+ 
               <Text style={styles.divider}>or continue with</Text>
 
               <View style={styles.socials}>

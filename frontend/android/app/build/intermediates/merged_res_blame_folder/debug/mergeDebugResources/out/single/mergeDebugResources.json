@@ -1,98 +1,70 @@
 [
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable-mdpi_splashscreen_logo.png.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable-mdpi/splashscreen_logo.png"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable-hdpi_splashscreen_logo.png.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable-hdpi/splashscreen_logo.png"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable-xxxhdpi_splashscreen_logo.png.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable-xxxhdpi/splashscreen_logo.png"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable-xhdpi_splashscreen_logo.png.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable-xhdpi/splashscreen_logo.png"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable-xxhdpi_splashscreen_logo.png.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable-xxhdpi/splashscreen_logo.png"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable_rn_edit_text_material.xml.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable/rn_edit_text_material.xml"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable-xxxhdpi_splashscreen_logo.png.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable-xxxhdpi/splashscreen_logo.png"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable/ic_launcher_background.xml"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable-xxhdpi_splashscreen_logo.png.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable-xxhdpi/splashscreen_logo.png"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable-hdpi_splashscreen_logo.png.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable-hdpi/splashscreen_logo.png"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/drawable-xhdpi_splashscreen_logo.png.flat",
+        "source": "com.myapp.velocall.app-main-100:/drawable-xhdpi/splashscreen_logo.png"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/drawable-mdpi_splashscreen_logo.png.flat",
-        "source": "com.myapp.velocall.app-main-81:/drawable-mdpi/splashscreen_logo.png"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.myapp.velocall.app-debug-79:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.myapp.velocall.app-main-81:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.myapp.velocall.app-debug-98:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.myapp.velocall.app-main-100:/mipmap-xxhdpi/ic_launcher.webp"
     }
 ]

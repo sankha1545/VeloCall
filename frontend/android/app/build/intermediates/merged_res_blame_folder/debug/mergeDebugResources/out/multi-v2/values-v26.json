@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.myapp.velocall.app-mergeDebugResources-77:/values-v26/values-v26.xml",
+            "outputFile": "com.myapp.velocall.app-mergeDebugResources-96:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SANKHA SUBHRA\\.gradle\\caches\\8.13\\transforms\\f5b3a4a80434b798b3cd931484423e18\\transformed\\appcompat-1.7.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\SANKHA SUBHRA\\.gradle\\caches\\8.14.3\\transforms\\50ca9c4ca9d80b482fe54b61b229cb56\\transformed\\appcompat-1.7.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

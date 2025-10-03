@@ -49,6 +49,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"ចែក​រំលែក​ជា​មួយ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"បង្រួម"</string>
     <string gender="unknown" name="alert_description">ជូន​ដំណឹង</string>
+    <string msgid="389117264260014992" name="autofill">"បំពេញ​ស្វ័យ​ប្រវត្តិ"</string>
     <string name="bottomsheet_action_collapse">បង្រួមសន្លឹក​ខាងក្រោម</string>
     <string name="bottomsheet_action_expand">ពង្រីកសន្លឹក​ខាងក្រោម</string>
     <string name="bottomsheet_action_expand_halfway">ពង្រីក​ពាក់កណ្ដាល</string>
@@ -64,6 +65,8 @@
     <string name="character_counter_content_description">តួ​អក្សរ​បាន​បញ្ចូល​ %1$d នៃ %2$d</string>
     <string name="character_counter_overflowed_content_description">ដែនកំណត់តួអក្សរបានលើស %1$d នៃ %2$d</string>
     <string name="clear_text_end_icon_content_description">សម្អាតអក្សរ</string>
+    <string msgid="406453423630273620" name="close_drawer">"បិទម៉ឺនុយរុករក"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"បិទសន្លឹក"</string>
     <string gender="unknown" name="combobox_description">ប្រអប់បញ្ចូលគ្នា</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">បើក</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកបើកសេវាកម្ម Google Play។</string>
@@ -85,7 +88,10 @@
     <string name="common_signin_button_text_long">ចូលដោយប្រើ Google</string>
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"ប្រើពាក្យសម្ងាត់"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"បាន​ចម្លង​តំណ​ទៅឃ្លីបបត"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"ការបញ្ចូល​មិនត្រឹមត្រូវ"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"មាន​បញ្ហា​ដែល​មិន​ស្គាល់"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"វិនដូ​លោតឡើង"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"ម៉ឺនុយធ្លាក់ចុះ"</string>
     <string name="error_a11y_label">បញ្ហា៖ មិនត្រឹមត្រូវ</string>
     <string name="error_icon_content_description">បញ្ហា</string>
     <string name="exo_controls_cc_disabled_description">បើកអក្សររត់</string>
@@ -157,6 +163,8 @@
     <string name="icon_content_description">រូប​ប្រអប់បញ្ចូល</string>
     <string gender="unknown" name="image_description">រូបភាព</string>
     <string gender="unknown" name="imagebutton_description">ប៊ូតុង, រូបភាព</string>
+    <string msgid="6827826412747255547" name="in_progress">"កំពុងដំណើរការ"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"បានធីកខ្លះ"</string>
     <string name="item_view_role_description">ផ្ទាំង</string>
     <string gender="unknown" name="link_description">តំណ</string>
     <string name="material_clock_toggle_content_description">ជ្រើសរើស AM ឬ PM</string>
@@ -220,26 +228,40 @@
     <string name="mtrl_picker_toggle_to_year_selection">ចុច ដើម្បីប្ដូរទៅទិដ្ឋភាពឆ្នាំ</string>
     <string name="mtrl_timepicker_cancel">បោះបង់</string>
     <string name="mtrl_timepicker_confirm">យល់ព្រម</string>
+    <string msgid="542007171693138492" name="navigation_menu">"ម៉ឺនុយរុករក"</string>
+    <string msgid="6610465462668679431" name="not_selected">"មិនបាន​ជ្រើសរើស"</string>
     <string name="password_toggle_content_description">បង្ហាញពាក្យសម្ងាត់</string>
     <string gender="unknown" name="progressbar_description">របារ​ដំណើរការ</string>
     <string gender="unknown" name="radiogroup_description">ក្រុមវិទ្យុ</string>
+    <string msgid="5941395253238309765" name="range_end">"ចំណុចបញ្ចប់"</string>
+    <string msgid="7097486360902471446" name="range_start">"ចំណុចចាប់ផ្ដើម"</string>
     <string gender="unknown" name="rn_tab_description">ផ្ទាំង</string>
     <string gender="unknown" name="scrollbar_description">របាររំកិល</string>
     <string msgid="6264217191555673260" name="search_menu_title">"ស្វែងរក"</string>
     <string name="searchview_clear_text_content_description">សម្អាតអក្សរ</string>
     <string name="searchview_navigation_content_description">ថយក្រោយ</string>
+    <string msgid="6043586758067023" name="selected">"បានជ្រើសរើស"</string>
     <string name="side_sheet_accessibility_pane_title">សន្លឹកចំហៀង</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"ជូន​ដំណឹង"</string>
     <string gender="unknown" name="spinbutton_description">ប៊ូតុង​បង្វិល</string>
     <string gender="unknown" name="state_busy_description">ជាប់រវល់</string>
     <string gender="unknown" name="state_collapsed_description">បានបង្រួម</string>
+    <string msgid="4139871816613051306" name="state_empty">"ទទេ"</string>
     <string gender="unknown" name="state_expanded_description">បានពង្រីក</string>
     <string gender="unknown" name="state_mixed_description">បានលាយ</string>
+    <string msgid="5834637030682409883" name="state_off">"បិទ"</string>
     <string gender="unknown" name="state_off_description">បិទ</string>
+    <string msgid="1490883874751719580" name="state_on">"បើក"</string>
     <string gender="unknown" name="state_on_description">បើក</string>
     <string gender="unknown" name="state_unselected_description">បាបនដោះការជ្រើសរើស</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">សេចក្ដីសង្ខេប</string>
+    <string msgid="2561197295334830845" name="switch_role">"ប៊ូតុង​បិទបើក"</string>
+    <string msgid="1672349317127674378" name="tab">"Tab"</string>
     <string gender="unknown" name="tablist_description">បញ្ជីថេប</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> ភាគរយ។"</string>
     <string gender="unknown" name="timer_description">មុខងារកំណត់ម៉ោង</string>
     <string gender="unknown" name="toolbar_description">របារ​ឧបករណ៍</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"កំណត់​ពន្យល់"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"បង្ហាញ​កំណត់​ពន្យល់"</string>
 </resources>

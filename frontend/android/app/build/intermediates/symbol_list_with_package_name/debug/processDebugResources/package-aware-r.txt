@@ -116,6 +116,7 @@ array crypto_fingerprint_fallback_vendors
 array delay_showing_prompt_models
 array exo_controls_playback_speeds
 array hide_fingerprint_instantly_prefixes
+attr action
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -176,6 +177,7 @@ attr animation_enabled
 attr appBarLayoutStyle
 attr applyMotionScene
 attr arcMode
+attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr attributeName
@@ -516,6 +518,8 @@ attr customIntegerValue
 attr customNavigationLayout
 attr customPixelDimension
 attr customStringValue
+attr data
+attr dataPattern
 attr dayInvalidStyle
 attr daySelectedStyle
 attr dayStyle
@@ -529,6 +533,7 @@ attr default_artwork
 attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
+attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -580,10 +585,9 @@ attr endIconScaleType
 attr endIconTint
 attr endIconTintMode
 attr enforceMaterialTheme
-attr enforceNavigationBarContrast
-attr enforceSystemBarsLightTheme
 attr enforceTextAppearance
 attr ensureMinTouchTargetSize
+attr enterAnim
 attr errorAccessibilityLabel
 attr errorAccessibilityLiveRegion
 attr errorContentDescription
@@ -594,6 +598,7 @@ attr errorIconTintMode
 attr errorShown
 attr errorTextAppearance
 attr errorTextColor
+attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
 attr expandedHintEnabled
@@ -674,6 +679,7 @@ attr font
 attr fontFamily
 attr fontProviderAuthority
 attr fontProviderCerts
+attr fontProviderFallbackQuery
 attr fontProviderFetchStrategy
 attr fontProviderFetchTimeout
 attr fontProviderPackage
@@ -689,6 +695,7 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
+attr graph
 attr haloColor
 attr haloRadius
 attr headerLayout
@@ -782,6 +789,7 @@ attr labelVisibilityMode
 attr largeFontVerticalOffsetAdjustment
 attr lastBaselineToBottomHeight
 attr lastItemDecorated
+attr launchSingleTop
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -939,6 +947,7 @@ attr measureWithLargestChild
 attr menu
 attr menuAlignmentMode
 attr menuGravity
+attr mimeType
 attr minHeight
 attr minHideDelay
 attr minSeparation
@@ -989,6 +998,7 @@ attr motion_postLayoutCollision
 attr motion_triggerOnCollision
 attr moveWhenScrollAtTop
 attr multiChoiceItemLayout
+attr navGraph
 attr navigationContentDescription
 attr navigationIcon
 attr navigationIconTint
@@ -998,6 +1008,7 @@ attr navigationViewStyle
 attr nestedScrollFlags
 attr nestedScrollViewStyle
 attr nestedScrollable
+attr nullable
 attr number
 attr numericModifiers
 attr offsetAlignmentMode
@@ -1044,6 +1055,11 @@ attr placeholder_emptyVisibility
 attr played_ad_marker_color
 attr played_color
 attr player_layout_id
+attr popEnterAnim
+attr popExitAnim
+attr popUpTo
+attr popUpToInclusive
+attr popUpToSaveState
 attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
@@ -1076,6 +1092,7 @@ attr region_widthMoreThan
 attr removeEmbeddedFabElevation
 attr repeat_toggle_modes
 attr resize_mode
+attr restoreState
 attr retryImage
 attr retryImageScaleType
 attr reverseLayout
@@ -1096,6 +1113,7 @@ attr roundedCornerRadius
 attr roundingBorderColor
 attr roundingBorderPadding
 attr roundingBorderWidth
+attr route
 attr saturation
 attr scaleType
 attr scopeUris
@@ -1172,6 +1190,7 @@ attr splitTrack
 attr srcCompat
 attr stackFromEnd
 attr staggered
+attr startDestination
 attr startIconCheckable
 attr startIconContentDescription
 attr startIconDrawable
@@ -1245,6 +1264,7 @@ attr tabTextAppearance
 attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
+attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -1382,6 +1402,7 @@ attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
 attr unplayed_color
+attr uri
 attr useCompatPadding
 attr useDrawerArrowDrawable
 attr useMaterialThemeColors
@@ -1420,7 +1441,6 @@ attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
-bool windowLightSystemBars
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -1529,8 +1549,6 @@ color design_snackbar_background_color
 color dev_launcher_backgroundColor
 color dev_launcher_colorAccentDark
 color dev_launcher_colorPrimaryDark
-color dev_launcher_errorLogButton
-color dev_launcher_errorMessage
 color dev_launcher_primary
 color dev_launcher_secondaryBackgroundColor
 color dev_launcher_white
@@ -1557,7 +1575,6 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color iconBackground
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2212,7 +2229,6 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
-color navigationBarColor
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
@@ -2239,6 +2255,8 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color vector_tint_color
+color vector_tint_theme_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -3088,68 +3106,6 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
-drawable __node_modules_reactnative_libraries_logbox_ui_logboximages_alerttriangle
-drawable __node_modules_reactnative_libraries_logbox_ui_logboximages_chevronleft
-drawable __node_modules_reactnative_libraries_logbox_ui_logboximages_chevronright
-drawable __node_modules_reactnative_libraries_logbox_ui_logboximages_close
-drawable __node_modules_reactnative_libraries_logbox_ui_logboximages_loader
-drawable __node_modules_reactnavigation_elements_lib_module_assets_backicon
-drawable __node_modules_reactnavigation_elements_lib_module_assets_backiconmask
-drawable __node_modules_reactnavigation_elements_lib_module_assets_clearicon
-drawable __node_modules_reactnavigation_elements_lib_module_assets_closeicon
-drawable __node_modules_reactnavigation_elements_lib_module_assets_searchicon
-drawable __reactnativelab_reactnative_libraries_logbox_ui_logboximages_alerttriangle
-drawable __reactnativelab_reactnative_libraries_logbox_ui_logboximages_chevronleft
-drawable __reactnativelab_reactnative_libraries_logbox_ui_logboximages_chevronright
-drawable __reactnativelab_reactnative_libraries_logbox_ui_logboximages_close
-drawable __reactnativelab_reactnative_libraries_logbox_ui_logboximages_loader
-drawable _expodevclientcomponents_assets_branchicon
-drawable _expodevclientcomponents_assets_branchiconlight
-drawable _expodevclientcomponents_assets_buildingicon
-drawable _expodevclientcomponents_assets_checkicon
-drawable _expodevclientcomponents_assets_checkiconlight
-drawable _expodevclientcomponents_assets_chevronrighticon
-drawable _expodevclientcomponents_assets_clipboardicon
-drawable _expodevclientcomponents_assets_debugicon
-drawable _expodevclientcomponents_assets_extensionsfilledactiveicon
-drawable _expodevclientcomponents_assets_extensionsfilledactiveiconlight
-drawable _expodevclientcomponents_assets_extensionsfilledinactiveicon
-drawable _expodevclientcomponents_assets_extensionsfilledinactiveiconlight
-drawable _expodevclientcomponents_assets_extensionsicon
-drawable _expodevclientcomponents_assets_extensionsiconlight
-drawable _expodevclientcomponents_assets_homefilledactiveicon
-drawable _expodevclientcomponents_assets_homefilledactiveiconlight
-drawable _expodevclientcomponents_assets_homefilledinactiveicon
-drawable _expodevclientcomponents_assets_homefilledinactiveiconlight
-drawable _expodevclientcomponents_assets_infoicon
-drawable _expodevclientcomponents_assets_infoiconlight
-drawable _expodevclientcomponents_assets_inspectelementicon
-drawable _expodevclientcomponents_assets_loadingindicatoricon
-drawable _expodevclientcomponents_assets_logoicon
-drawable _expodevclientcomponents_assets_performanceicon
-drawable _expodevclientcomponents_assets_questionmarkicon
-drawable _expodevclientcomponents_assets_refreshicon
-drawable _expodevclientcomponents_assets_runicon
-drawable _expodevclientcomponents_assets_settingsfilledactiveicon
-drawable _expodevclientcomponents_assets_settingsfilledactiveiconlight
-drawable _expodevclientcomponents_assets_settingsfilledinactiveicon
-drawable _expodevclientcomponents_assets_settingsfilledinactiveiconlight
-drawable _expodevclientcomponents_assets_shakedeviceicon
-drawable _expodevclientcomponents_assets_shakedeviceiconlight
-drawable _expodevclientcomponents_assets_showmenuatlaunchicon
-drawable _expodevclientcomponents_assets_showmenuatlaunchiconlight
-drawable _expodevclientcomponents_assets_terminalicon
-drawable _expodevclientcomponents_assets_threefingerlongpressicon
-drawable _expodevclientcomponents_assets_threefingerlongpressiconlight
-drawable _expodevclientcomponents_assets_toolbaroverlayicon
-drawable _expodevclientcomponents_assets_updateicon
-drawable _expodevclientcomponents_assets_updateiconlight
-drawable _expodevclientcomponents_assets_usericon
-drawable _expodevclientcomponents_assets_usericonlight
-drawable _expodevclientcomponents_assets_warningtriangleicon
-drawable _expodevclientcomponents_assets_warningtriangleiconlight
-drawable _expodevclientcomponents_assets_xicon
-drawable _expodevclientcomponents_assets_xiconlight
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -3229,9 +3185,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alert
 drawable autofill_inline_suggestion_chip_background
 drawable avd_hide_password
 drawable avd_show_password
+drawable branch_icon
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3240,6 +3198,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bug
+drawable check_circle
+drawable chevron_right
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3261,13 +3222,15 @@ drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable compat_splash_screen
 drawable compat_splash_screen_no_icon_background
+drawable copy
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable dev_laucher_ic_home_white_36dp
-drawable dev_launcher_ic_refresh_white_36dp
+drawable dev_menu_fab_icon
+drawable download
+drawable ellipsis_horizontal
 drawable exo_controls_fastforward
 drawable exo_controls_fullscreen_enter
 drawable exo_controls_fullscreen_exit
@@ -3347,10 +3310,14 @@ drawable exo_styled_controls_speed
 drawable exo_styled_controls_subtitle_off
 drawable exo_styled_controls_subtitle_on
 drawable exo_styled_controls_vr
+drawable expo_logo
+drawable extensions_icon
+drawable fast_refresh
 drawable fingerprint_dialog_error
 drawable fingerprint_dialog_fp_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable home
 drawable ic_arrow_back_24
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3379,6 +3346,8 @@ drawable ic_rotate_right_24
 drawable ic_search_black_24
 drawable icon_background
 drawable indeterminate_static
+drawable inspect
+drawable log_in
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3453,14 +3422,32 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable paused_in_debugger_background
 drawable paused_in_debugger_dialog_background
+drawable performance
+drawable plus
 drawable redbox_top_border_background
+drawable refresh
+drawable refresh_round_icon
 drawable ripple_effect
 drawable rn_edit_text_material
 drawable rns_rounder_top_corners_shape
+drawable scan
+drawable settings
+drawable show_at_launch
 drawable splashscreen_logo
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable update_icon
+drawable updates_nav
+drawable user
+drawable x_close
+font inter_bold
+font inter_medium
+font inter_regular
+font inter_semibold
+font jetbrains_mono_light
+font jetbrains_mono_medium
+font jetbrains_mono_regular
 font roboto_medium_numbers
 id ALT
 id BOTTOM_END
@@ -3519,6 +3506,8 @@ id accessibility_custom_action_9
 id accessibility_hint
 id accessibility_label
 id accessibility_links
+id accessibility_order
+id accessibility_order_parent
 id accessibility_role
 id accessibility_state
 id accessibility_state_expanded
@@ -3551,6 +3540,7 @@ id alert_title
 id aligned
 id all
 id always
+id androidx_compose_ui_view_composition_context
 id animateToEnd
 id animateToStart
 id arc
@@ -3570,7 +3560,6 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
-id bottom_sheet
 id bounce
 id browser_actions_header_text
 id browser_actions_menu_item_icon
@@ -3598,12 +3587,14 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id coil3_request_manager
 id collapseActionView
 id compatible
+id compose_prefetch_scheduler
+id compose_view_saveable_id_tag
 id compress
 id confirm_button
-id console_home_button
-id console_reload_button
+id consume_window_insets_tag
 id container
 id content
 id contentPanel
@@ -3658,13 +3649,6 @@ id end_padder
 id end_time_text
 id enterAlways
 id enterAlwaysCollapsed
-id errorDetails
-id error_footer
-id error_footer_content
-id error_main_content
-id error_stack
-id error_title
-id error_viewPager
 id escape
 id exitUntilCollapsed
 id exo_ad_overlay
@@ -3759,11 +3743,12 @@ id graph_wrap
 id group_divider
 id groups
 id header_title
+id hide_graphics_layer_in_inspector_tag
 id hide_ime_id
+id hide_in_inspector_tag
 id hideable
 id home
 id homeAsUp
-id homeButton
 id honorRequest
 id ic_flip_24
 id ic_flip_24_horizontally
@@ -3779,9 +3764,11 @@ id ignoreRequest
 id image
 id indeterminate
 id info
+id inspection_slot_table_set
 id invalidate_transform
 id invisible
 id inward
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3798,9 +3785,7 @@ id line3
 id linear
 id listMode
 id list_item
-id list_view
 id m3_side_sheet
-id main_layout
 id marquee
 id masked
 id match_parent
@@ -3862,6 +3847,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_controller_view_tag
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3894,6 +3880,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id original_focusability
 id outline
 id outward
 id oval
@@ -3912,6 +3899,7 @@ id performance
 id pin
 id play_button
 id pointer_events
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -3924,7 +3912,6 @@ id rectangle
 id rectangleHorizontalOnly
 id rectangleVerticalOnly
 id rectangles
-id reloadButton
 id report_drawn
 id reverseSawtooth
 id rewind_button
@@ -4011,11 +3998,13 @@ id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
 id tag_accessibility_pane_title
+id tag_compat_insets_dispatch
 id tag_on_apply_window_listener
 id tag_on_receive_content_listener
 id tag_on_receive_content_mime_types
 id tag_screen_reader_focusable
 id tag_state_description
+id tag_system_bar_state_monitor
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -4069,6 +4058,7 @@ id view_clipped
 id view_offset_helper
 id view_tag_instance_handle
 id view_tag_native_id
+id view_tree_disjoint_parent
 id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
@@ -4082,6 +4072,7 @@ id with_icon
 id withinBounds
 id wrap
 id wrap_content
+id wrapped_composition_tag
 id zoom
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -4204,7 +4195,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout alert_title_layout
 layout autofill_inline_suggestion
-layout bottom_sheet
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout crop_image_activity
@@ -4226,10 +4216,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dev_loading_view
-layout error_activity_content_view
-layout error_console_fragment
-layout error_console_list_item
-layout error_fragment
 layout exo_list_divider
 layout exo_player_control_view
 layout exo_player_view
@@ -4323,7 +4309,6 @@ layout splash_screen_view
 layout support_simple_spinner_dropdown_item
 menu crop_image_menu
 mipmap ic_launcher
-mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals exo_controls_fastforward_by_amount_description
 plurals exo_controls_rewind_by_amount_description
@@ -4360,6 +4345,7 @@ string alert_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string autofill
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -4374,6 +4360,11 @@ string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
 string catalyst_change_bundle_location
+string catalyst_change_bundle_location_apply
+string catalyst_change_bundle_location_cancel
+string catalyst_change_bundle_location_input_hint
+string catalyst_change_bundle_location_input_label
+string catalyst_change_bundle_location_instructions
 string catalyst_copy_button
 string catalyst_debug_connecting
 string catalyst_debug_error
@@ -4403,6 +4394,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string close_drawer
+string close_sheet
 string combobox_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -4425,13 +4418,12 @@ string common_signin_button_text_long
 string confirm_device_credential_password
 string copy_toast_msg
 string crop_image_menu_crop
+string default_error_message
 string default_error_msg
 string default_media_controller_time
+string default_popup_window_title
 string default_web_client_id
-string dev_launcher_error_details
-string dev_launcher_error_header
-string dev_launcher_go_to_home
-string dev_launcher_reload
+string dropdown_menu
 string enter_fullscreen_mode
 string error_a11y_label
 string error_icon_content_description
@@ -4489,8 +4481,6 @@ string exo_track_surround
 string exo_track_surround_5_point_1
 string exo_track_surround_7_point_1
 string exo_track_unknown
-string expo_splash_screen_resize_mode
-string expo_splash_screen_status_bar_translucent
 string expo_system_ui_user_interface_style
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4523,6 +4513,8 @@ string ic_rotate_right_24
 string icon_content_description
 string image_description
 string imagebutton_description
+string in_progress
+string indeterminate
 string item_view_role_description
 string link_description
 string m3_exceed_max_badge_text_suffix
@@ -4630,6 +4622,8 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string navigation_menu
+string not_selected
 string ongoing_notification_channel_name
 string password_toggle_content_description
 string path_password_eye
@@ -4642,28 +4636,40 @@ string pick_image_gallery
 string progressbar_description
 string project_id
 string radiogroup_description
+string range_end
+string range_start
+string react_native_dev_server_ip
 string rn_tab_description
 string scrollbar_description
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string selected
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string snackbar_pane_title
 string spinbutton_description
-string splash_screen_text
 string state_busy_description
 string state_collapsed_description
+string state_empty
 string state_expanded_description
 string state_mixed_description
+string state_off
 string state_off_description
+string state_on
 string state_on_description
 string state_unselected_description
 string status_bar_notification_info_overflow
 string summary_description
+string switch_role
+string tab
 string tablist_description
+string template_percent
 string timer_description
 string toolbar_description
+string tooltip_description
+string tooltip_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -4968,6 +4974,7 @@ style CardView_Dark
 style CardView_Light
 style DialogAnimationFade
 style DialogAnimationSlide
+style DialogWindowTheme
 style ExoMediaButton
 style ExoMediaButton_FastForward
 style ExoMediaButton_Next
@@ -5000,6 +5007,7 @@ style ExoStyledControls_TimeText
 style ExoStyledControls_TimeText_Duration
 style ExoStyledControls_TimeText_Position
 style ExoStyledControls_TimeText_Separator
+style FloatingDialogWindowTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text
@@ -5269,7 +5277,6 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
-style Theme_AppCompat_Transparent_NoActionBar
 style Theme_AutofillInlineSuggestion
 style Theme_Catalyst
 style Theme_Catalyst_LogBox
@@ -5281,23 +5288,6 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_DevLauncher_ErrorActivity
-style Theme_DevLauncher_LauncherActivity
-style Theme_EdgeToEdge
-style Theme_EdgeToEdge_DayNight_Common
-style Theme_EdgeToEdge_Light
-style Theme_EdgeToEdge_Light_Common
-style Theme_EdgeToEdge_Material2
-style Theme_EdgeToEdge_Material2_DayNight_Common
-style Theme_EdgeToEdge_Material2_Light
-style Theme_EdgeToEdge_Material2_Light_Common
-style Theme_EdgeToEdge_Material3
-style Theme_EdgeToEdge_Material3_DayNight_Common
-style Theme_EdgeToEdge_Material3_Dynamic
-style Theme_EdgeToEdge_Material3_Dynamic_DayNight_Common
-style Theme_EdgeToEdge_Material3_Dynamic_Light
-style Theme_EdgeToEdge_Material3_Dynamic_Light_Common
-style Theme_EdgeToEdge_Material3_Light
-style Theme_EdgeToEdge_Material3_Light_Common
 style Theme_FullScreenDialog
 style Theme_FullScreenDialogAnimatedFade
 style Theme_FullScreenDialogAnimatedSlide
@@ -5498,6 +5488,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style TranslucentDialog
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -5888,6 +5879,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style custom
 style redboxButton
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
@@ -5895,6 +5887,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable ActivityNavigator android_name action data dataPattern targetPackage
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
@@ -5946,7 +5939,7 @@ styleable ExtendedFloatingActionButton_Behavior_Layout behavior_autoHide behavio
 styleable FloatingActionButton android_enabled backgroundTint backgroundTintMode borderWidth elevation ensureMinTouchTargetSize fabCustomSize fabSize hideMotionSpec hoveredFocusedTranslationZ maxImageSize pressedTranslationZ rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec useCompatPadding
 styleable FloatingActionButton_Behavior_Layout behavior_autoHide
 styleable FlowLayout itemSpacing lineSpacing
-styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
+styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFallbackQuery fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable Fragment android_name android_id android_tag
@@ -5997,10 +5990,17 @@ styleable MotionHelper onHide onShow
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
+styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive popUpToSaveState restoreState
+styleable NavArgument android_name android_defaultValue argType nullable
+styleable NavDeepLink android_autoVerify action mimeType uri
+styleable NavGraphNavigator startDestination
+styleable NavHost navGraph
+styleable NavInclude graph
 styleable NavigationBarActiveIndicator android_height android_width android_color marginHorizontal shapeAppearance
 styleable NavigationBarView activeIndicatorLabelPadding backgroundTint elevation itemActiveIndicatorStyle itemBackground itemIconSize itemIconTint itemPaddingBottom itemPaddingTop itemRippleColor itemTextAppearanceActive itemTextAppearanceActiveBoldEnabled itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable NavigationRailView headerLayout itemMinHeight menuGravity paddingBottomSystemWindowInsets paddingStartSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay
 styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemRippleColor itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextAppearanceActiveBoldEnabled itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
+styleable Navigator android_label android_id route
 styleable OnClick clickAction targetId
 styleable OnSwipe dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp touchAnchorId touchAnchorSide touchRegionId
 styleable PlayerControlView ad_marker_color ad_marker_width bar_gravity bar_height buffered_color controller_layout_id played_ad_marker_color played_color repeat_toggle_modes scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size show_fastforward_button show_next_button show_previous_button show_rewind_button show_shuffle_button show_timeout time_bar_min_update_interval touch_target_height unplayed_color

@@ -55,6 +55,7 @@
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Sdílet s aplikací <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Sbalit"</string>
     <string gender="unknown" name="alert_description">Výstraha</string>
+    <string msgid="389117264260014992" name="autofill">"Automatické vyplňování"</string>
     <string name="bottomsheet_action_collapse">Sbalit spodní tabulku</string>
     <string name="bottomsheet_action_expand">Rozbalit spodní tabulku</string>
     <string name="bottomsheet_action_expand_halfway">Rozbalit napůl</string>
@@ -70,6 +71,8 @@
     <string name="character_counter_content_description">Zadané znaky: %1$d z %2$d</string>
     <string name="character_counter_overflowed_content_description">Byl překročen povolený počet znaků (%1$d z %2$d)</string>
     <string name="clear_text_end_icon_content_description">Vymazat text</string>
+    <string msgid="406453423630273620" name="close_drawer">"Zavřít navigační panel"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Zavřít sešit"</string>
     <string gender="unknown" name="combobox_description">Kombinované pole</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Povolit</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text">Ke spuštění aplikace %1$s je třeba aktivovat služby Google Play.</string>
@@ -92,7 +95,10 @@
     <string msgid="5912733858573823945" name="confirm_device_credential_password">"Použít heslo"</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Odkaz zkopírován do schránky"</string>
     <string name="crop_image_menu_crop">Oříznout</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Neplatný údaj"</string>
     <string msgid="4776854077120974966" name="default_error_msg">"Neznámá chyba"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Vyskakovací okno"</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Rozbalovací nabídka"</string>
     <string name="error_a11y_label">Chyba: neplatné</string>
     <string name="error_icon_content_description">Chyba</string>
     <string name="exo_controls_cc_disabled_description">Zapnout titulky</string>
@@ -169,6 +175,8 @@
     <string name="icon_content_description">Ikona dialogového okna</string>
     <string gender="unknown" name="image_description">Obrázek</string>
     <string gender="unknown" name="imagebutton_description">Tlačítko, obrázek</string>
+    <string msgid="6827826412747255547" name="in_progress">"Probíhá"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Částečně zaškrtnuto"</string>
     <string name="item_view_role_description">Karta</string>
     <string gender="unknown" name="link_description">Odkaz</string>
     <string name="material_clock_toggle_content_description">Vyberte AM nebo PM</string>
@@ -232,27 +240,41 @@
     <string name="mtrl_picker_toggle_to_year_selection">Klepnutím přepnete na zobrazení jednotlivých let</string>
     <string name="mtrl_timepicker_cancel">Zrušit</string>
     <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Navigační nabídka"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Nevybráno"</string>
     <string name="password_toggle_content_description">Zobrazit heslo</string>
     <string name="pick_image_chooser_title">Vybrat zdroj</string>
     <string gender="unknown" name="progressbar_description">Ukazatel postupu</string>
     <string gender="unknown" name="radiogroup_description">Skupina přepínačů</string>
+    <string msgid="5941395253238309765" name="range_end">"Konec rozsahu"</string>
+    <string msgid="7097486360902471446" name="range_start">"Začátek rozsahu"</string>
     <string gender="unknown" name="rn_tab_description">Karta</string>
     <string gender="unknown" name="scrollbar_description">Posuvník</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Hledat"</string>
     <string name="searchview_clear_text_content_description">Vymazat text</string>
     <string name="searchview_navigation_content_description">Zpět</string>
+    <string msgid="6043586758067023" name="selected">"Vybráno"</string>
     <string name="side_sheet_accessibility_pane_title">Postranní list</string>
+    <string msgid="2792228137354697160" name="snackbar_pane_title">"Upozornění"</string>
     <string gender="unknown" name="spinbutton_description">Číselník</string>
     <string gender="unknown" name="state_busy_description">zaneprázdněno</string>
     <string gender="unknown" name="state_collapsed_description">sbaleno</string>
+    <string msgid="4139871816613051306" name="state_empty">"Prázdné"</string>
     <string gender="unknown" name="state_expanded_description">rozbaleno</string>
     <string gender="unknown" name="state_mixed_description">oboje</string>
+    <string msgid="5834637030682409883" name="state_off">"Vypnuto"</string>
     <string gender="unknown" name="state_off_description">vyp</string>
+    <string msgid="1490883874751719580" name="state_on">"Zapnuto"</string>
     <string gender="unknown" name="state_on_description">zap</string>
     <string gender="unknown" name="state_unselected_description">nevybráno</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string gender="unknown" name="summary_description">Přehled</string>
+    <string msgid="2561197295334830845" name="switch_role">"Přepnout"</string>
+    <string msgid="1672349317127674378" name="tab">"Karta"</string>
     <string gender="unknown" name="tablist_description">Seznam karet</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> procent."</string>
     <string gender="unknown" name="timer_description">Časovač</string>
     <string gender="unknown" name="toolbar_description">Panel nástrojů</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"popisek"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"zobrazit popisek"</string>
 </resources>
