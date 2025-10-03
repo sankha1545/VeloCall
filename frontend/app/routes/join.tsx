@@ -1,5 +1,5 @@
 // app/join.tsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -12,16 +12,15 @@ import {
   KeyboardAvoidingView,
   Pressable,
   Alert,
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 
 export default function JoinScreen(): JSX.Element {
   const router = useRouter();
 
-  // Default name used when no param passing is available
-  const [meetingId, setMeetingId] = useState('');
-  const [displayName, setDisplayName] = useState('sankha subhra das');
+  const [meetingId, setMeetingId] = useState("");
+  const [displayName, setDisplayName] = useState("sankha subhra das");
   const [dontConnectAudio, setDontConnectAudio] = useState(false);
   const [turnOffVideo, setTurnOffVideo] = useState(false);
 
@@ -29,20 +28,45 @@ export default function JoinScreen(): JSX.Element {
 
   const onJoin = () => {
     if (!canJoin) {
-      Alert.alert('Meeting ID required', 'Please enter a Meeting ID or personal link name.');
+      Alert.alert(
+        "Meeting ID required",
+        "Please enter a Meeting ID or personal link name."
+      );
       return;
     }
-    console.log('Joining meeting', { meetingId, displayName, dontConnectAudio, turnOffVideo });
-    Alert.alert('Joining', `Joining meeting ${meetingId} as ${displayName}`);
-    router.back();
+
+    // Default signaling URL guess for emulator/simulator.
+    // For physical device, replace with machine LAN IP, e.g. ws://192.168.1.42:5000/ws
+    const defaultSignaling =
+      Platform.OS === "android" ? "ws://10.0.2.2:5000/ws" : "ws://127.0.0.1:5000/ws";
+
+    // Build URL route and pass simple flags via query string
+    const route = `/subroutes/meeting?room=${encodeURIComponent(
+      meetingId
+    )}&signalingUrl=${encodeURIComponent(
+      defaultSignaling
+    )}&audio=${dontConnectAudio ? "false" : "true"}&video=${
+      turnOffVideo ? "false" : "true"
+    }&displayName=${encodeURIComponent(displayName)}`;
+
+    console.log("Navigating to", route);
+    router.push(route);
   };
 
   return (
     <View style={joinStyles.overlay}>
       <StatusBar barStyle="light-content" />
-      <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={joinStyles.container}>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
+        style={joinStyles.container}
+      >
         <View style={joinStyles.header}>
-          <Pressable accessibilityRole="button" accessibilityLabel="Back" onPress={() => router.back()} style={joinStyles.backWrap}>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel="Back"
+            onPress={() => router.back()}
+            style={joinStyles.backWrap}
+          >
             <Ionicons name="chevron-back" size={26} color="#fff" />
           </Pressable>
           <Text style={joinStyles.headerTitle}>Join a meeting</Text>
@@ -64,8 +88,14 @@ export default function JoinScreen(): JSX.Element {
             />
           </View>
 
-          <TouchableOpacity onPress={() => Alert.alert('Personal link', 'Join with a personal link name')}>
-            <Text style={joinStyles.personalLink}>Join with a personal link name</Text>
+          <TouchableOpacity
+            onPress={() =>
+              Alert.alert("Personal link", "Join with a personal link name")
+            }
+          >
+            <Text style={joinStyles.personalLink}>
+              Join with a personal link name
+            </Text>
           </TouchableOpacity>
 
           <View style={[joinStyles.inputWrap, { marginTop: 18 }]}>
@@ -81,29 +111,54 @@ export default function JoinScreen(): JSX.Element {
           </View>
 
           <TouchableOpacity
-            style={[joinStyles.joinButton, !canJoin && joinStyles.joinButtonDisabled]}
+            style={[
+              joinStyles.joinButton,
+              !canJoin && joinStyles.joinButtonDisabled,
+            ]}
             onPress={onJoin}
             disabled={!canJoin}
             accessibilityRole="button"
             accessibilityLabel="Join meeting"
             accessibilityState={{ disabled: !canJoin }}
           >
-            <Text style={[joinStyles.joinButtonText, !canJoin && joinStyles.joinButtonTextDisabled]}>Join</Text>
+            <Text
+              style={[
+                joinStyles.joinButtonText,
+                !canJoin && joinStyles.joinButtonTextDisabled,
+              ]}
+            >
+              Join
+            </Text>
           </TouchableOpacity>
 
-          <Text style={joinStyles.helperText}>If you received an invitation link, tap on the link to join the meeting</Text>
+          <Text style={joinStyles.helperText}>
+            If you received an invitation link, tap on the link to join the
+            meeting
+          </Text>
 
           <View style={joinStyles.joinOptions}>
             <Text style={joinStyles.joinOptionsTitle}>Join options</Text>
 
             <View style={joinStyles.optionRow}>
               <Text style={joinStyles.optionLabel}>Don't connect to audio</Text>
-              <Switch value={dontConnectAudio} onValueChange={setDontConnectAudio} thumbColor={dontConnectAudio ? '#fff' : '#fff'} trackColor={{ false: '#4b5563', true: '#2b7cf0' }} accessibilityLabel="Don't connect to audio" />
+              <Switch
+                value={dontConnectAudio}
+                onValueChange={setDontConnectAudio}
+                thumbColor={dontConnectAudio ? "#fff" : "#fff"}
+                trackColor={{ false: "#4b5563", true: "#2b7cf0" }}
+                accessibilityLabel="Don't connect to audio"
+              />
             </View>
 
             <View style={joinStyles.optionRow}>
               <Text style={joinStyles.optionLabel}>Turn off my video</Text>
-              <Switch value={turnOffVideo} onValueChange={setTurnOffVideo} thumbColor={turnOffVideo ? '#fff' : '#fff'} trackColor={{ false: '#4b5563', true: '#2b7cf0' }} accessibilityLabel="Turn off my video" />
+              <Switch
+                value={turnOffVideo}
+                onValueChange={setTurnOffVideo}
+                thumbColor={turnOffVideo ? "#fff" : "#fff"}
+                trackColor={{ false: "#4b5563", true: "#2b7cf0" }}
+                accessibilityLabel="Turn off my video"
+              />
             </View>
           </View>
         </View>
@@ -112,39 +167,57 @@ export default function JoinScreen(): JSX.Element {
   );
 }
 
-/* Join styles */
 const joinStyles = StyleSheet.create({
-  overlay: { flex: 1, backgroundColor: 'rgba(8,10,12,0.98)' },
+  overlay: { flex: 1, backgroundColor: "rgba(8,10,12,0.98)" },
   container: { flex: 1 },
   header: {
     height: 64,
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight ?? 12 : 12,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight ?? 12 : 12,
     paddingHorizontal: 12,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     borderBottomWidth: 0,
   },
-  backWrap: { width: 40, alignItems: 'flex-start' },
-  headerTitle: { color: '#fff', fontSize: 20, fontWeight: '600' },
+  backWrap: { width: 40, alignItems: "flex-start" },
+  headerTitle: { color: "#fff", fontSize: 20, fontWeight: "600" },
   form: { paddingHorizontal: 16, paddingTop: 18 },
   inputWrap: {
-    backgroundColor: '#111214',
+    backgroundColor: "#111214",
     borderRadius: 8,
     paddingHorizontal: 12,
-    paddingVertical: Platform.OS === 'ios' ? 14 : 12,
+    paddingVertical: Platform.OS === "ios" ? 14 : 12,
     borderWidth: 1,
-    borderColor: '#222224',
+    borderColor: "#222224",
   },
-  input: { color: '#fff', fontSize: 16, padding: 0 },
-  personalLink: { color: '#2b7cf0', marginTop: 12, fontSize: 14 },
-  joinButton: { marginTop: 18, backgroundColor: '#2b7cf0', height: 52, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
-  joinButtonDisabled: { backgroundColor: '#374151' },
-  joinButtonText: { color: '#fff', fontWeight: '700', fontSize: 16 },
-  joinButtonTextDisabled: { color: '#9ca3af' },
-  helperText: { color: '#9ca3af', marginTop: 12, fontSize: 13 },
-  joinOptions: { marginTop: 22, borderTopWidth: 1, borderTopColor: '#1f2223', paddingTop: 12 },
-  joinOptionsTitle: { color: '#9ca3af', marginBottom: 12, fontSize: 13 },
-  optionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: '#171819' },
-  optionLabel: { color: '#e5e7eb', fontSize: 16 },
+  input: { color: "#fff", fontSize: 16, padding: 0 },
+  personalLink: { color: "#2b7cf0", marginTop: 12, fontSize: 14 },
+  joinButton: {
+    marginTop: 18,
+    backgroundColor: "#2b7cf0",
+    height: 52,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  joinButtonDisabled: { backgroundColor: "#374151" },
+  joinButtonText: { color: "#fff", fontWeight: "700", fontSize: 16 },
+  joinButtonTextDisabled: { color: "#9ca3af" },
+  helperText: { color: "#9ca3af", marginTop: 12, fontSize: 13 },
+  joinOptions: {
+    marginTop: 22,
+    borderTopWidth: 1,
+    borderTopColor: "#1f2223",
+    paddingTop: 12,
+  },
+  joinOptionsTitle: { color: "#9ca3af", marginBottom: 12, fontSize: 13 },
+  optionRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: "#171819",
+  },
+  optionLabel: { color: "#e5e7eb", fontSize: 16 },
 });

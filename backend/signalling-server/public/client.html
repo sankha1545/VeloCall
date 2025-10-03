@@ -1,26 +1,90 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>WebRTC Meeting</title>
+  <title>VeloCall Meeting — Professional</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 12px; background:#111; color:#eee; }
-    video { width: 30%; border-radius:8px; margin: 6px; background:black; }
-    #videos { display:flex; flex-wrap:wrap; }
-    .controls { margin-bottom:12px; }
-    button { padding:8px 12px; margin-right:8px }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
 </head>
 <body>
-  <h2>WebRTC Meeting (web client)</h2>
-  <div class="controls">
-    <span id="roomLabel"></span>
-    <button id="btnLeave">Leave</button>
-  </div>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">MX</div>
+      <div>
+        <h1>VeloCall Meeting</h1>
+        <div class="room" id="roomLabel">Room: —</div>
+      </div>
+    </div>
 
-  <div id="videos">
-    <video id="localVideo" autoplay playsinline muted></video>
+    <div style="display:flex;align-items:center;gap:18px">
+      <div class="status" id="connectionStatus">Status: waiting for camera...</div>
+      <div style="font-size:0.9rem;color:var(--muted)">Room: <strong id="roomShort">—</strong></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage" aria-label="Video stage">
+      <div class="stage-inner">
+        <div id="videos">
+          <!-- main large local tile -->
+          <div class="tile large local" id="tile-local">
+            <video id="localVideo" autoplay playsinline muted></video>
+            <div class="meta"><span id="localBadge">You (camera off)</span></div>
+          </div>
+        </div>
+
+        <!-- bottom overlay controls -->
+        <div class="controls-overlay" role="toolbar" aria-label="Meeting controls">
+          <button class="btn" id="btnToggleAudio" aria-pressed="false" title="Mute/unmute (M)"><span class="icon" id="btnToggleAudioIcon">🔈</span><span id="btnToggleAudioText">Mute</span></button>
+          <button class="btn" id="btnToggleVideo" aria-pressed="false" title="Enable/disable video (V)"><span class="icon" id="btnToggleVideoIcon">🎥</span><span id="btnToggleVideoText">Disable Video</span></button>
+          <button class="btn" id="btnToggleScreenShare" title="Share screen (S)">⬆️ Share</button>
+          <button class="btn secondary" id="btnCopyLink" title="Copy meeting link">🔗 Copy Link</button>
+          <button class="btn danger" id="btnLeave" title="Leave meeting">⤫ Leave</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:700">Session</div>
+            <div class="status">Room details and local status.</div>
+          </div>
+          <div style="text-align:right">
+            <div class="status">Local: <span id="micStatus" style="color:#6ee7b7">Mic: active</span></div>
+            <div style="height:6px"></div>
+            <div class="status">Participants: <strong id="peerCount">1</strong></div>
+          </div>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:700;margin-bottom:8px">Hints</div>
+        <div class="status">• Use the buttons to mute/unmute or stop/start the camera.</div>
+        <div style="height:10px"></div>
+        <div class="status">• Keyboard shortcuts: M mute, V toggle video, S share screen.</div>
+        <div style="height:10px"></div>
+        <div style="display:flex;gap:8px">
+          <button class="btn" id="btnReconnect">Reconnect</button>
+          <button class="btn" id="btnToggleStats">Stats</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- confirmation modal -->
+  <div class="modal-backdrop" id="confirmModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <h3>Leave meeting</h3>
+      <p>Are you sure you want to leave the meeting?</p>
+      <div class="actions">
+        <button class="btn secondary" id="cancelLeave">Cancel</button>
+        <button class="btn danger" id="confirmLeave">Leave</button>
+      </div>
+    </div>
   </div>
 
   <script src="client.js"></script>
